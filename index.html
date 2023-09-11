@@ -11,352 +11,535 @@
 
     <title>Page Title</title>
 
+    <!-- Styling to better show these examples -->
+    <style type="text/css">
+        .is-flex {
+            background-color: #f8f9fa;
+        }
+
+        .card {
+            max-width: 400px;
+        }
+
+        .is-flex div {
+            border: 1px solid white;
+            background-color: #6c757d;
+            color: white;
+            padding: 0.5rem;
+        }
+
+        [class*=align-items-],
+        [data-example="alignSelf"],
+        [class*=align-content-] {
+            height: 200px;
+        }
+    </style>
+
     <script defer src="js/all.js"></script>
 </head>
 
 <body>
+    //=======================Flexbox==========================
+    <div class="is-flex is-justify-content-center">
+        <h1><i class="fas fa-home"></i></h1>
+        <hr>
+        <i class="fa-solid fa-wifi" style="color: #1eed02;"></i>
+    </div>
 
-    <h1><i class="fas fa-home"></i></h1>
-    <i class="fa-solid fa-wifi" style="color: #1eed02;"></i>
+    <h2 class="subtitle has-text-weight-bold">Container</h2>
+    <div class="is-flex">Flexbox container</div>
 
+    <hr>
+    <h2 class="subtitle has-text-weight-bold">Direction</h2>
+    <h3 class="subtitle">Row</h3>
+    <div class="is-flex is-flex-direction-row">
+        <div>Flex direction row</div>
+        <div>Flex direction row</div>
+        <div>Flex direction row</div>
+    </div>
+    <br>
+    <h3 class="subtitle">Row-reverse</h3>
+    <div class="is-flex is-flex-direction-row-reverse">
+        <div>Flex direction row-reverse</div>
+        <div>Flex direction row-reverse</div>
+        <div>Flex direction row-reverse</div>
+    </div>
+    <br>
+    <h3 class="subtitle">Column</h3>
+    <div class="is-flex is-flex-direction-column">
+        <div>Flex direction column</div>
+        <div>Flex direction column</div>
+        <div>Flex direction column</div>
+    </div>
+    <br>
+    <h3 class="subtitle">Column-reverse</h3>
+    <div class="is-flex is-flex-direction-column-reverse">
+        <div>Flex direction column-reverse</div>
+        <div>Flex direction column-reverse</div>
+        <div>Flex direction column-reverse</div>
+    </div>
 
-    <main>
+    <hr>
+    <h2 class="subtitle has-text-weight-bold">Wrap</h2>
+    <h3 class="subtitle">Nowrap</h3>
+    <div class="is-flex is-flex-wrap-nowrap">
+        <div>Flex-wrap nowrap</div>
+        <div>Flex-wrap nowrap</div>
+        <div>Flex-wrap nowrap</div>
+        <div>Flex-wrap nowrap</div>
+        <div>Flex-wrap nowrap</div>
+        <div>Flex-wrap nowrap</div>
+        <div>Flex-wrap nowrap</div>
+        <div>Flex-wrap nowrap</div>
+        <div>Flex-wrap nowrap</div>
+        <div>Flex-wrap nowrap</div>
+        <div>Flex-wrap nowrap</div>
+        <div>Flex-wrap nowrap</div>
+        <div>Flex-wrap nowrap</div>
+        <div>Flex-wrap nowrap</div>
+        <div>Flex-wrap nowrap</div>
+        <div>Flex-wrap nowrap</div>
+        <div>Flex-wrap nowrap</div>
+        <div>Flex-wrap nowrap</div>
+        <div>Flex-wrap nowrap</div>
+        <div>Flex-wrap nowrap</div>
+    </div>
+    <br>
+    <h3 class="subtitle">Wrap</h3>
+    <div class="is-flex is-flex-wrap-wrap">
+        <div>Flex-wrap wrap</div>
+        <div>Flex-wrap wrap</div>
+        <div>Flex-wrap wrap</div>
+        <div>Flex-wrap wrap</div>
+        <div>Flex-wrap wrap</div>
+        <div>Flex-wrap wrap</div>
+        <div>Flex-wrap wrap</div>
+        <div>Flex-wrap wrap</div>
+        <div>Flex-wrap wrap</div>
+        <div>Flex-wrap wrap</div>
+        <div>Flex-wrap wrap</div>
+        <div>Flex-wrap wrap</div>
+        <div>Flex-wrap wrap</div>
+        <div>Flex-wrap wrap</div>
+        <div>Flex-wrap wrap</div>
+        <div>Flex-wrap wrap</div>
+        <div>Flex-wrap wrap</div>
+        <div>Flex-wrap wrap</div>
+        <div>Flex-wrap wrap</div>
+        <div>Flex-wrap wrap</div>
+    </div>
+    <br>
+    <h3 class="subtitle">Wrap-reverse</h3>
+    <div class="is-flex is-flex-wrap-wrap-reverse">
+        <div>Flex-wrap reverse</div>
+        <div>Flex-wrap reverse</div>
+        <div>Flex-wrap reverse</div>
+        <div>Flex-wrap reverse</div>
+        <div>Flex-wrap reverse</div>
+        <div>Flex-wrap reverse</div>
+        <div>Flex-wrap reverse</div>
+        <div>Flex-wrap reverse</div>
+        <div>Flex-wrap reverse</div>
+        <div>Flex-wrap reverse</div>
+        <div>Flex-wrap reverse</div>
+        <div>Flex-wrap reverse</div>
+        <div>Flex-wrap reverse</div>
+        <div>Flex-wrap reverse</div>
+        <div>Flex-wrap reverse</div>
+        <div>Flex-wrap reverse</div>
+        <div>Flex-wrap reverse</div>
+        <div>Flex-wrap reverse</div>
+        <div>Flex-wrap reverse</div>
+        <div>Flex-wrap reverse</div>
+    </div>
 
-        <h2 class="subtitle has-text-weight-bold">Syntax</h2>
-        <pre>{property}{sides}-{size} for all breakpoints
-                    
-        Properties:
-        m - margin
-        p - padding
-        
-        Sides:
-        t - top
-        r - right
-        b - bottom
-        l - left
-        x - left and right
-        y - top and bottom
-        [blank] - all four sides
-        
-        Sizes:
-        0 - 0
-        1 - 0.25rem
-        2 - 0.5rem
-        3 - 0,75rem
-        4 - 1rem
-        5 - 1.5rem
-        6 - 3rem</pre><br>
+    <hr>
+    <h2 class="subtitle has-text-weight-bold">Justify content</h2>
+    <h3 class="subtitle">Flex start</h3>
+    <div class="is-flex is-justify-content-flex-start">
+        <div>Justify content flex start</div>
+        <div>Justify content flex start</div>
+        <div>Justify content flex start</div>
+    </div>
+    <br>
+    <h3 class="subtitle">Flex end</h3>
+    <div class="is-flex is-justify-content-flex-end">
+        <div>Justify content flex end</div>
+        <div>Justify content flex end</div>
+        <div>Justify content flex end</div>
+    </div>
+    <br>
+    <h3 class="subtitle">Center</h3>
+    <div class="is-flex is-justify-content-center">
+        <div>Justify content center</div>
+        <div>Justify content center</div>
+        <div>Justify content center</div>
+    </div>
+    <br>
+    <h3 class="subtitle">Space between</h3>
+    <div class="is-flex is-justify-content-space-between">
+        <div>Justify content space between</div>
+        <div>Justify content space between</div>
+        <div>Justify content space between</div>
+    </div>
+    <br>
+    <h3 class="subtitle">Space around</h3>
+    <div class="is-flex is-justify-content-space-around">
+        <div>Justify content space around</div>
+        <div>Justify content space around</div>
+        <div>Justify content space around</div>
+    </div>
+    <br>
+    <h3 class="subtitle">Space evenly</h3>
+    <div class="is-flex is-justify-content-space-evenly">
+        <div>Justify content space evenly</div>
+        <div>Justify content space evenly</div>
+        <div>Justify content space evenly</div>
+    </div>
 
-        <h2 class="subtitle has-text-weight-bold">Margin</h2>
-        <h3 class="subtitle">Top</h4>
-            <div class="mt-0">mt-0</div>
-            <div class="mt-1">mt-1</div>
-            <div class="mt-2">mt-2</div>
-            <div class="mt-3">mt-3</div>
-            <div class="mt-4">mt-4</div>
-            <div class="mt-5">mt-5</div>
-            <div class="mt-6">mt-6</div>
-            <hr>
-            <h3 class="subtitle">Right</h3>
-            <div class="mr-0">mr-0</div>
-            <div class="mr-1">mr-1</div>
-            <div class="mr-2">mr-2</div>
-            <div class="mr-3">mr-3</div>
-            <div class="mr-4">mr-4</div>
-            <div class="mr-5">mr-5</div>
-            <div class="mr-6">mr-6</div>
-            <hr>
-            <h3 class="subtitle">Bottom</h3>
-            <div class="mb-0">mb-0</div>
-            <div class="mb-1">mb-1</div>
-            <div class="mb-2">mb-2</div>
-            <div class="mb-3">mb-3</div>
-            <div class="mb-4">mb-4</div>
-            <div class="mb-5">mb-5</div>
-            <div class="mb-6">mb-6</div>
-            <hr>
-            <h3 class="subtitle">Left</h3>
-            <div class="ml-0">ml-0</div>
-            <div class="ml-1">ml-1</div>
-            <div class="ml-2">ml-2</div>
-            <div class="ml-3">ml-3</div>
-            <div class="ml-4">ml-4</div>
-            <div class="ml-5">ml-5</div>
-            <div class="ml-6">ml-6</div>
-            <hr>
-            <h3 class="subtitle">Horizontal</h3>
-            <div class="mx-0">mx-0</div>
-            <div class="mx-1">mx-1</div>
-            <div class="mx-2">mx-2</div>
-            <div class="mx-3">mx-3</div>
-            <div class="mx-4">mx-4</div>
-            <div class="mx-5">mx-5</div>
-            <div class="mx-6">mx-6</div>
-            <hr>
-            <h3 class="subtitle">Vertical</h3>
-            <div class="my-0">my-0</div>
-            <div class="my-1">my-1</div>
-            <div class="my-2">my-2</div>
-            <div class="my-3">my-3</div>
-            <div class="my-4">my-4</div>
-            <div class="my-5">my-5</div>
-            <div class="my-6">my-6</div>
-            <hr>
-            <h3 class="subtitle">All sides</h3>
-            <div class="m-0">m-0</div>
-            <div class="m-1">m-1</div>
-            <div class="m-2">m-2</div>
-            <div class="m-3">m-3</div>
-            <div class="m-4">m-4</div>
-            <div class="m-5">m-5</div>
-            <div class="m-6">m-6</div>
+    <hr>
+    <h2 class="subtitle has-text-weight-bold">Align content</h2>
+    <h3 class="subtitle">Flex start</h3>
+    <div class="is-flex is-align-content-flex-start is-flex-wrap-wrap">
+        <div>Align content flex start</div>
+        <div>Align content flex start</div>
+        <div>Align content flex start</div>
+        <div>Align content flex start</div>
+        <div>Align content flex start</div>
+        <div>Align content flex start</div>
+        <div>Align content flex start</div>
+        <div>Align content flex start</div>
+        <div>Align content flex start</div>
+        <div>Align content flex start</div>
+    </div>
+    <br>
+    <h3 class="subtitle">Flex end</h3>
+    <div class="is-flex is-align-content-flex-end is-flex-wrap-wrap">
+        <div>Align content flex end</div>
+        <div>Align content flex end</div>
+        <div>Align content flex end</div>
+        <div>Align content flex end</div>
+        <div>Align content flex end</div>
+        <div>Align content flex end</div>
+        <div>Align content flex end</div>
+        <div>Align content flex end</div>
+        <div>Align content flex end</div>
+        <div>Align content flex end</div>
+    </div>
+    <br>
+    <h3 class="subtitle">Center</h3>
+    <div class="is-flex is-align-content-center is-flex-wrap-wrap">
+        <div>Align content center</div>
+        <div>Align content center</div>
+        <div>Align content center</div>
+        <div>Align content center</div>
+        <div>Align content center</div>
+        <div>Align content center</div>
+        <div>Align content center</div>
+        <div>Align content center</div>
+        <div>Align content center</div>
+        <div>Align content center</div>
+    </div>
+    <br>
+    <h3 class="subtitle">Space between</h3>
+    <div class="is-flex is-align-content-space-between is-flex-wrap-wrap">
+        <div>Align content space between</div>
+        <div>Align content space between</div>
+        <div>Align content space between</div>
+        <div>Align content space between</div>
+        <div>Align content space between</div>
+        <div>Align content space between</div>
+        <div>Align content space between</div>
+        <div>Align content space between</div>
+        <div>Align content space between</div>
+        <div>Align content space between</div>
+    </div>
+    <br>
+    <h3 class="subtitle">Space around</h3>
+    <div class="is-flex is-align-content-space-around is-flex-wrap-wrap">
+        <div>Align content space around</div>
+        <div>Align content space around</div>
+        <div>Align content space around</div>
+        <div>Align content space around</div>
+        <div>Align content space around</div>
+        <div>Align content space around</div>
+        <div>Align content space around</div>
+        <div>Align content space around</div>
+        <div>Align content space around</div>
+        <div>Align content space around</div>
+    </div>
+    <br>
+    <h3 class="subtitle">Space evenly</h3>
+    <div class="is-flex is-align-content-space-evenly is-flex-wrap-wrap">
+        <div>Align content space evenly</div>
+        <div>Align content space evenly</div>
+        <div>Align content space evenly</div>
+        <div>Align content space evenly</div>
+        <div>Align content space evenly</div>
+        <div>Align content space evenly</div>
+        <div>Align content space evenly</div>
+        <div>Align content space evenly</div>
+        <div>Align content space evenly</div>
+        <div>Align content space evenly</div>
+    </div>
+    <br>
+    <h3 class="subtitle">Stretch</h3>
+    <div class="is-flex is-align-content-stretch is-flex-wrap-wrap">
+        <div>Align content stretch</div>
+        <div>Align content stretch</div>
+        <div>Align content stretch</div>
+        <div>Align content stretch</div>
+        <div>Align content stretch</div>
+        <div>Align content stretch</div>
+        <div>Align content stretch</div>
+        <div>Align content stretch</div>
+        <div>Align content stretch</div>
+        <div>Align content stretch</div>
+    </div>
 
-            <h2 class="subtitle has-text-weight-bold">Padding</h2>
-            <h3 class="subtitle">Top</h3>
-            <div class="pt-0">pt-0</div>
-            <div class="pt-1">pt-1</div>
-            <div class="pt-2">pt-2</div>
-            <div class="pt-3">pt-3</div>
-            <div class="pt-4">pt-4</div>
-            <div class="pt-5">pt-5</div>
-            <div class="pt-6">pt-6</div>
-            <hr>
-            <h3 class="subtitle">Right</h3>
-            <div class="pr-0">pr-0</div>
-            <div class="pr-1">pr-1</div>
-            <div class="pr-2">pr-2</div>
-            <div class="pr-3">pr-3</div>
-            <div class="pr-4">pr-4</div>
-            <div class="pr-5">pr-5</div>
-            <div class="pr-6">pr-6</div>
-            <hr>
-            <h3 class="subtitle">Bottom</h3>
-            <div class="pb-0">pb-0</div>
-            <div class="pb-1">pb-1</div>
-            <div class="pb-2">pb-2</div>
-            <div class="pb-3">pb-3</div>
-            <div class="pb-4">pb-4</div>
-            <div class="pb-5">pb-5</div>
-            <div class="pb-6">pb-6</div>
-            <hr>
-            <h3 class="subtitle">Left</h3>
-            <div class="pl-0">pl-0</div>
-            <div class="pl-1">pl-1</div>
-            <div class="pl-2">pl-2</div>
-            <div class="pl-3">pl-3</div>
-            <div class="pl-4">pl-4</div>
-            <div class="pl-5">pl-5</div>
-            <div class="pl-6">pl-6</div>
-            <hr>
-            <h3 class="subtitle">Horizontal</h3>
-            <div class="px-0">px-0</div>
-            <div class="px-1">px-1</div>
-            <div class="px-2">px-2</div>
-            <div class="px-3">px-3</div>
-            <div class="px-4">px-4</div>
-            <div class="px-5">px-5</div>
-            <div class="px-6">px-6</div>
-            <hr>
-            <h3 class="subtitle">Vertical</h3>
-            <div class="py-0">py-0</div>
-            <div class="py-1">py-1</div>
-            <div class="py-2">py-2</div>
-            <div class="py-3">py-3</div>
-            <div class="py-4">py-4</div>
-            <div class="py-5">py-5</div>
-            <div class="py-6">py-6</div>
-            <hr>
-            <h3 class="h5 subtitle">All sides</h3>
-            <div class="p-0">p-0</div>
-            <div class="p-1">p-1</div>
-            <div class="p-2">p-2</div>
-            <div class="p-3">p-3</div>
-            <div class="p-4">p-4</div>
-            <div class="p-5">p-5</div>
-            <div class="p-6">p-6</div>
+    <hr>
+    <h2 class="subtitle has-text-weight-bold">Align items</h2>
+    <h3 class="subtitle">Stretch</h3>
+    <div class="is-flex is-align-items-stretch">
+        <div>Justify content stretch</div>
+        <div>Justify content stretch</div>
+        <div>Justify content stretch</div>
+    </div>
+    <br>
+    <h3 class="subtitle">Flex start</h3>
+    <div class="is-flex is-align-items-flex-start">
+        <div>Justify content flex start</div>
+        <div>Justify content flex start</div>
+        <div>Justify content flex start</div>
+    </div>
+    <br>
+    <h3 class="subtitle">Flex end</h3>
+    <div class="is-flex is-align-items-flex-end">
+        <div>Justify content flex end</div>
+        <div>Justify content flex end</div>
+        <div>Justify content flex end</div>
+    </div>
+    <br>
+    <h3 class="subtitle">Center</h3>
+    <div class="is-flex is-align-items-center">
+        <div>Justify content center</div>
+        <div>Justify content center</div>
+        <div>Justify content center</div>
+    </div>
+    <br>
+    <h3 class="subtitle">Baseline</h3>
+    <div class="is-flex is-align-items-baseline">
+        <div>Justify content baseline</div>
+        <div>Justify content baseline</div>
+        <div>Justify content baseline</div>
+    </div>
 
-            //=================================================
+    <hr>
+    <h2 class="subtitle has-text-weight-bold">Align self</h2>
+    <h3 class="subtitle">Auto</h3>
+    <div class="is-flex" data-example="alignSelf">
+        <div class="is-align-self-auto">Align self auto</div>
+        <div>Flex item</div>
+        <div>Flex item</div>
+    </div>
+    <br>
+    <h3 class="subtitle">Flex start</h3>
+    <div class="is-flex" data-example="alignSelf">
+        <div class="is-align-self-flex-start">Align self flex start</div>
+        <div>Flex item</div>
+        <div>Flex item</div>
+    </div>
+    <br>
+    <h3 class="subtitle">Flex end</h3>
+    <div class="is-flex" data-example="alignSelf">
+        <div class="is-align-self-flex-end">Align self flex end</div>
+        <div>Flex item</div>
+        <div>Flex item</div>
+    </div>
+    <br>
+    <h3 class="subtitle">Center</h3>
+    <div class="is-flex" data-example="alignSelf">
+        <div class="is-align-self-center">Align self center</div>
+        <div>Flex item</div>
+        <div>Flex item</div>
+    </div>
+    <br>
+    <h3 class="subtitle">Baseline</h3>
+    <div class="is-flex" data-example="alignSelf">
+        <div class="is-align-self-baseline">Align self baseline</div>
+        <div>Flex item</div>
+        <div>Flex item</div>
+    </div>
+    <br>
+    <h3 class="subtitle">Stretch</h3>
+    <div class="is-flex" data-example="alignSelf">
+        <div class="is-align-self-stretch">Align self stretch</div>
+        <div>Flex item</div>
+        <div>Flex item</div>
+    </div>
 
-            <h2 class="subtitle has-text-weight-bold">Text size</h2>
-            <p class="is-size-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus
-                quis
-                placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
+    <hr>
+    <h2 class="subtitle has-text-weight-bold">Grow</h2>
+    <div class="is-flex">
+        <div class="is-flex-grow-0">Flex grow 0</div>
+        <div class="is-flex-grow-1">Flex grow 1</div>
+        <div class="is-flex-grow-2">Flex grow 2</div>
+        <div class="is-flex-grow-3">Flex grow 3</div>
+        <div class="is-flex-grow-4">Flex grow 4</div>
+        <div class="is-flex-grow-5">Flex grow 5</div>
+    </div>
 
-            <p class="is-size-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus
-                quis
-                placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
+    <hr>
+    <h2 class="subtitle has-text-weight-bold">Shrink</h2>
+    <div class="is-flex">
+        <div class="is-flex-shrink-0">Flex shrink 0</div>
+        <div class="is-flex-shrink-1">Flex shrink 1</div>
 
-            <p class="is-size-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus
-                quis
-                placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
+        <div class="is-flex-shrink-2">Flex shrink 2</div>
+        <div class="is-flex-shrink-3">Flex shrink 3</div>
+        <div class="is-flex-shrink-4">Flex shrink 4</div>
+        <div class="is-flex-shrink-5">Flex shrink 5</div>
+    </div>
 
-            <p class="is-size-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus
-                quis
-                placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
+    <!--  //=======================Other=================================-->
 
-            <p class="is-size-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus
-                quis
-                placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
+    <h2 class="subtitle has-text-weight-bold">Float left and right</h2>
+    <div class="notification is-primary">
+        <button class="button is-warning ">Float right</button>
+        <button class="button is-danger">Float left</button>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat ut,
+            porta
+            nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis
+            efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor
+            urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales
+            sem.
+        </p>
+    </div>
 
-            <p class="is-size-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus
-                quis
-                placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
+    <hr>
+    <h2 class="subtitle has-text-weight-bold">Clear floating children</h2>
+    <div class="notification is-primary is-clearfix">
+        <button class="button is-warning is-pulled-right">Float right</button>
+        <button class="button is-danger is-pulled-left">Float left</button>
+    </div>
 
-            <p class="is-size-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus
-                quis
-                placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
+    <hr>
+    <h2 class="subtitle has-text-weight-bold">Remove margin</h2>
+    <div class="box" style="margin-bottom: 5rem;">
+        <h1 class="title">Title</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat ut,
+            porta
+            nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis
+            efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor
+            urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales
+            sem.
+        </p>
+    </div>
 
-            <hr>
-            <h2 class="subtitle has-text-weight-bold">Responsive text size (examples)</h2>
-            <h2 class="subtitle">Chart: <a
-                   href="https://bulma.io/documentation/helpers/typography-helpers/">https://bulma.io/documentation/helpers/typography-helpers/</a>
-            </h2>
-            <p class="is-size-1-mobile">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi,
-                tempus quis
-                placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
+    <hr>
+    <h2 class="subtitle has-text-weight-bold">Remove padding</h2>
+    <div class="box">
+        <h1 class="title">Title</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat ut,
+            porta
+            nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis
+            efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor
+            urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales
+            sem.
+        </p>
+    </div>
 
-            <p class="is-size-2-tablet">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi,
-                tempus quis
-                placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
+    <hr>
+    <h2 class="subtitle has-text-weight-bold">Remove border-radius</h2>
+    <div class="box">
+        <h1 class="title">Title</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat ut,
+            porta
+            nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis
+            efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor
+            urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales
+            sem.
+        </p>
+    </div>
 
-            <p class="is-size-3-touch">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi,
-                tempus quis
-                placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
+    <hr>
+    <h2 class="subtitle has-text-weight-bold">Remove shadow</h2>
+    <div class="box">
+        <h1 class="title">Title</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat ut,
+            porta
+            nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis
+            efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor
+            urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales
+            sem.
+        </p>
+    </div>
 
-            <p class="is-size-4-desktop">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi,
-                tempus quis
-                placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
+    <hr>
+    <h2 class="subtitle has-text-weight-bold">Prevent text from being selectable</h2>
+    <div class="box">
+        <h1 class="title">Title</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat ut,
+            porta
+            nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis
+            efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor
+            urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales
+            sem.
+        </p>
+    </div>
 
-            <p class="is-size-5-widescreen">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus
-                mi, tempus
-                quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
+    <hr>
+    <h2 class="subtitle has-text-weight-bold">Apply pointing cursor</h2>
+    <button>Button with pointer</button>
 
-            <p class="is-size-6-fullhd">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi,
-                tempus quis
-                placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
+    <hr>
+    <h2 class="subtitle has-text-weight-bold">Cover first positioned parent</h2>
+    <div class="card">
+        <div class="card-image">
+            <figure class="image is-4by3">
+                <img src="../img/400x300.png" alt="Card image">
+            </figure>
+        </div>
+        <div class="card-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique dolor a turpis
+            laoreet posuere. Nulla malesuada, velit vel tempus ullamcorper, diam lorem porta est, nec sodales sem dui
+            eget
+            purus.</div>
+    </div>
 
-            <hr>
-            <h2 class="subtitle has-text-weight-bold">Text alignment</h2>
-            <p class="has-text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi,
-                tempus quis
-                placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
+    <hr>
+    <h2 class="subtitle has-text-weight-bold">Hide overflow</h2>
+    <div class="card">
+        <div class="card-image">
+            <figure class="image is-4by3">
+                <img src="../img/400x300.png" alt="Card image">
+            </figure>
+        </div>
+        <div class="card-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel erat porttitor,
+            pulvinar
+            orci ac, vehicula dui. Donec bibendum libero non commodo efficitur. Phasellus ante neque, gravida non arcu
+            ac,
+            hendrerit fermentum leo. Vestibulum nec mi in tortor semper fringilla. Donec in risus posuere, lobortis
+            sapien
+            mattis, iaculis velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+            himenaeos. Nullam tempor et nunc sit amet blandit. Nullam facilisis urna et interdum consectetur.
+            Pellentesque
+            sollicitudin interdum mi, eget ultricies eros rhoncus ut. Ut sollicitudin, nisl in cursus aliquet, lacus
+            ante
+            rutrum felis, in luctus odio felis vel felis. Morbi vitae venenatis tortor. In pellentesque turpis et ipsum
+            viverra, ac imperdiet turpis gravida. Morbi blandit tellus velit, vel ornare lacus scelerisque ut. Praesent
+            commodo, lectus quis egestas feugiat, augue ex lobortis dui, vel rutrum lacus magna id arcu.</div>
+    </div>
 
-            <p class="has-text-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi,
-                tempus quis
-                placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
+    <hr>
+    <h2 class="subtitle has-text-weight-bold">Position relative</h2>
+    <div style="height: 5em;">
+        <p class="is-overlay">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique dolor a turpis
+            laoreet
+            posuere. Nulla malesuada, velit vel tempus ullamcorper, diam lorem porta est, nec sodales sem dui eget
+            purus.
+        </p>
+    </div>
 
-            <p class="has-text-centered">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi,
-                tempus quis
-                placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
-
-            <p class="has-text-justified">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus
-                mi, tempus
-                quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
-
-            <hr>
-            <h2 class="subtitle has-text-weight-bold">Responsive text alignment (examples)</h2>
-            <h2 class="subtitle">Chart: <a
-                   href="https://bulma.io/documentation/helpers/typography-helpers/">https://bulma.io/documentation/helpers/typography-helpers/</a>
-            </h2>
-            <p class="has-text-left-mobile">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus
-                mi, tempus
-                quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
-
-            <p class="has-text-right-tablet">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus
-                mi, tempus
-                quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
-
-            <p class="has-text-centered-tablet-only">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque risus mi,
-                tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
-
-            <p class="has-text-justified-touch">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-                risus mi,
-                tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
-
-            <p class="has-text-left-desktop">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus
-                mi, tempus
-                quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
-
-            <p class="has-text-right-desktop-only">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-                risus mi,
-                tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
-
-            <p class="has-text-centered-widescreen">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque risus mi,
-                tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
-
-            <p class="has-text-justified-widescreen-only">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque
-                risus mi, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
-
-            <p class="has-text-left-fullhd">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus
-                mi, tempus
-                quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
-
-            <hr>
-            <h2 class="subtitle has-text-weight-bold">Text transformation</h2>
-            <p class="is-capitalized">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi,
-                tempus quis
-                placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
-
-            <p class="is-lowercase">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi,
-                tempus quis
-                placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
-
-            <p class="is-uppercase">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi,
-                tempus quis
-                placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
-
-            <p class="is-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus
-                quis
-                placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
-
-            <hr>
-            <h2 class="subtitle has-text-weight-bold">Text weight</h2>
-            <p class="has-text-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus
-                mi, tempus
-                quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
-
-            <p class="has-text-weight-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-                risus mi, tempus
-                quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
-
-            <p class="has-text-weight-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-                risus mi, tempus
-                quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
-
-            <p class="has-text-weight-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-                risus mi,
-                tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
-
-            <p class="has-text-weight-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus
-                mi, tempus
-                quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
-
-            <hr>
-            <h2 class="subtitle has-text-weight-bold">Font family</h2>
-            <p class="is-family-sans-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus
-                mi, tempus
-                quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
-
-            <p class="is-family-monospace">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus
-                mi, tempus
-                quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
-
-            <p class="is-family-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi,
-                tempus quis
-                placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
-
-            <p class="is-family-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus
-                mi, tempus
-                quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
-
-            <p class="is-family-code">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi,
-                tempus quis
-                placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.</p>
-
-    </main>
 </body>
 
 </html>
