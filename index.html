@@ -45,95 +45,26 @@
         <i class="fa-solid fa-wifi" style="color: #1eed02;"></i>
     </div>
 
-    //=======================Responsiveness==========================
-    <h2 class="subtitle has-text-weight-bold">Columns on mobile too</h2>
-    <div class="columns is-mobile">
-        <div class="column">
-            <div class="box">.column</div>
-        </div>
-        <div class="column">
-            <div class="box">.column</div>
-        </div>
-        <div class="column">
-            <div class="box">.column</div>
-        </div>
-    </div>
-
-    <hr>
-    <h2 class="subtitle has-text-weight-bold">Columns only on desktop</h2>
-    <div class="columns is-desktop">
-        <div class="column">
-            <div class="box">.column</div>
-        </div>
-        <div class="column">
-            <div class="box">.column</div>
-        </div>
-        <div class="column">
-            <div class="box">.column</div>
-        </div>
-    </div>
-
-    <hr>
-    <h2 class="subtitle has-text-weight-bold">Narrow column for mobile only</h2>
-    <div class="columns is-mobile">
-        <div class="column is-narrow-mobile">
-            <div class="box">.column.is-narrow-mobile</div>
-        </div>
-        <div class="column">
-            <div class="box">col</div>
-        </div>
-        <div class="column">
-            <div class="box">col</div>
-        </div>
-    </div>
-
-    <hr>
-    <h2 class="subtitle has-text-weight-bold">Narrow column for tablet and up</h2>
+    //=======================Nesting==========================
+    <h2 class="subtitle has-text-weight-bold">Nesting columns</h2>
     <div class="columns">
-        <div class="column is-narrow-tablet">
-            <div class="box">.column.is-narrow-tablet</div>
+        <div class="column">
+            <div class="box">.column</div>
         </div>
         <div class="column">
-            <div class="box">col</div>
+            <div class="box">.column</div>
         </div>
         <div class="column">
-            <div class="box">col</div>
+            <div class="columns is-mobile">
+                <div class="column">
+                    <div class="box">nested</div>
+                </div>
+                <div class="column">
+                    <div class="box">nested</div>
+                </div>
+            </div>
         </div>
     </div>
-
-    <hr>
-    <h2 class="subtitle has-text-weight-bold">Narrow column for desktop and up</h2>
-    <div class="columns">
-        <div class="column is-narrow-desktop">
-            <div class="box">.column.is-narrow-desktop</div>
-        </div>
-        <div class="column">
-            <div class="box">col</div>
-        </div>
-        <div class="column">
-            <div class="box">col</div>
-        </div>
-    </div>
-
-    <hr>
-    <h2 class="subtitle has-text-weight-bold">Different column sizes per breakpoint with same values as width (example)
-    </h2>
-    <div class="columns">
-        <div
-             class="column is-half-mobile is-one-third-tablet is-one-quarter-desktop is-one-fifth-widescreen is-1-fullhd">
-            <div class="box">.column</div>
-        </div>
-        <div class="column">
-            <div class="box">.column</div>
-        </div>
-        <div class="column">
-            <div class="box">.column</div>
-        </div>
-        <div class="column">
-            <div class="box">.column</div>
-        </div>
-    </div>
-
 </body>
 
 </html>
