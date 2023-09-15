@@ -9,7 +9,7 @@
     <!-- Bulma CSS -->
     <link rel="stylesheet" type="text/css" href="css/bulma-rtl.min.css">
 
-    <title>Page Title</title>
+    <title>DIMON</title>
 
     <!-- Styling to better show these examples -->
     <style type="text/css">
@@ -49,83 +49,116 @@
         <i class="fa-solid fa-wifi" style="color: #1eed02;"></i>
     </div>
 
-    //=======================Layout: Level.==========================
-    <main>
+    //=======================Layout: Media Object.==========================
+    <h2 class="subtitle has-text-weight-bold">Default media object</h2>
+    <article class="media">
+        <figure class="media-left">
+            <div class="image is-64x64">
+                <img src="../img/64x64.png">
+            </div>
+        </figure>
+        <div class="media-content">
+            <div class="content">
+                <div><strong>Full name</strong> <small>@username</small> <small><time
+                              datetime="2018-03-15T14:35">(15-03-2018 14:35)</time></small></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida ac felis vitae feugiat.
+                    Suspendisse suscipit vel mi at fermentum. Praesent tincidunt urna non lorem tristique imperdiet. In
+                    maximus lacinia faucibus. Donec a elit libero.</p>
+            </div>
+            <div><small><a href="#0">Like</a> &middot; <a href="#0">Reply</a></small></div>
+        </div>
+        <div class="media-right">
+            <button class="delete"></button>
+        </div>
+    </article>
 
-        <h2 class="subtitle has-text-weight-bold">Default level</h2>
-        <nav class="level">
-            <div class="level-left">
-                <div class="level-item">
-                    <button class="button is-primary">Button</button>
+    <hr>
+    <h2 class="subtitle has-text-weight-bold">Nested media objects</h2>
+    <article class="media">
+        <figure class="media-left">
+            <div class="image is-64x64">
+                <img src="../img/64x64.png">
+            </div>
+        </figure>
+        <div class="media-content">
+            <div class="content">
+                <div><strong>Full name</strong> <small>@username</small> <small><time
+                              datetime="2018-03-15T14:35">(15-03-2018 14:35)</time></small></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida ac felis vitae feugiat.
+                    Suspendisse suscipit vel mi at fermentum. Praesent tincidunt urna non lorem tristique imperdiet. In
+                    maximus lacinia faucibus. Donec a elit libero.</p>
+            </div>
+            <div><small><a href="#0">Like</a> &middot; <a href="#0">Reply</a></small></div>
+            <article class="media">
+                <figure class="media-left">
+                    <div class="image is-64x64">
+                        <img src="../img/64x64.png">
+                    </div>
+                </figure>
+                <div class="media-content">
+                    <div class="content">
+                        <div><strong>Full name</strong> <small>@username</small> <small><time
+                                      datetime="2018-03-15T14:35">(15-03-2018 14:35)</time></small></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida ac felis vitae
+                            feugiat.
+                            Suspendisse suscipit vel mi at fermentum. Praesent tincidunt urna non lorem tristique
+                            imperdiet.
+                            In maximus lacinia faucibus. Donec a elit libero.</p>
+                    </div>
+                    <div><small><a href="#0">Like</a> &middot; <a href="#0">Reply</a></small></div>
                 </div>
-                <div class="level-item">
-                    <button class="button is-success">Button</button>
+            </article>
+            <article class="media">
+                <figure class="media-left">
+                    <div class="image is-64x64">
+                        <img src="../img/64x64.png">
+                    </div>
+                </figure>
+                <div class="media-content">
+                    <div class="content">
+                        <div><strong>Full name</strong> <small>@username</small> <small><time
+                                      datetime="2018-03-15T14:35">(15-03-2018 14:35)</time></small></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida ac felis vitae
+                            feugiat.
+                            Suspendisse suscipit vel mi at fermentum. Praesent tincidunt urna non lorem tristique
+                            imperdiet.
+                            In maximus lacinia faucibus. Donec a elit libero.</p>
+                    </div>
+                    <div><small><a href="#0">Like</a> &middot; <a href="#0">Reply</a></small></div>
+                    <article class="media">
+                        <figure class="media-left">
+                            <div class="image is-64x64">
+                                <img src="../img/64x64.png">
+                            </div>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <div><strong>Full name</strong> <small>@username</small> <small><time
+                                              datetime="2018-03-15T14:35">(15-03-2018 14:35)</time></small></div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida ac felis
+                                    vitae
+                                    feugiat. Suspendisse suscipit vel mi at fermentum. Praesent tincidunt urna non lorem
+                                    tristique imperdiet. In maximus lacinia faucibus. Donec a elit libero.</p>
+                            </div>
+                            <div><small><a href="#0">Like</a> &middot; <a href="#0">Reply</a></small></div>
+                            <article class="media">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida ac felis
+                                    vitae
+                                    feugiat. Suspendisse suscipit vel mi at fermentum. Praesent tincidunt urna non lorem
+                                    tristique imperdiet. In maximus lacinia faucibus. Donec a elit libero.</p>
+                            </article>
+                            <article class="media">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida ac felis
+                                    vitae
+                                    feugiat. Suspendisse suscipit vel mi at fermentum. Praesent tincidunt urna non lorem
+                                    tristique imperdiet. In maximus lacinia faucibus. Donec a elit libero.</p>
+                            </article>
+                        </div>
+                    </article>
                 </div>
-            </div>
-            <div class="level-right">
-                <div class="level-item">
-                    <button class="button is-warning">Button</button>
-                </div>
-                <div class="level-item">
-                    <button class="button is-danger">Button</button>
-                </div>
-            </div>
-        </nav>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Centered level</h2>
-        <nav class="level">
-            <div class="level-item">
-                <button class="button is-primary">Button</button>
-            </div>
-            <div class="level-item">
-                <button class="button is-success">Button</button>
-            </div>
-            <div class="level-item">
-                <button class="button is-warning">Button</button>
-            </div>
-            <div class="level-item">
-                <button class="button is-danger">Button</button>
-            </div>
-        </nav>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Mobile default level</h2>
-        <nav class="level is-mobile">
-            <div class="level-left">
-                <div class="level-item">
-                    <button class="button is-primary">Button</button>
-                </div>
-                <div class="level-item">
-                    <button class="button is-success">Button</button>
-                </div>
-            </div>
-            <div class="level-right">
-                <div class="level-item">
-                    <button class="button is-warning">Button</button>
-                </div>
-                <div class="level-item">
-                    <button class="button is-danger">Button</button>
-                </div>
-            </div>
-        </nav>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Mobile centered level</h2>
-        <nav class="level is-mobile">
-            <div class="level-item">
-                <button class="button is-primary">Button</button>
-            </div>
-            <div class="level-item">
-                <button class="button is-success">Button</button>
-            </div>
-            <div class="level-item">
-                <button class="button is-warning">Button</button>
-            </div>
-            <div class="level-item">
-                <button class="button is-danger">Button</button>
-            </div>
-        </nav>
+            </article>
+        </div>
+    </article>
 
     </main>
 
