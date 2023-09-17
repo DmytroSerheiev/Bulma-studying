@@ -49,434 +49,178 @@
         <i class="fa-solid fa-wifi" style="color: #1eed02;"></i>
     </div>
 
-    //=======================Form controls==========================
+    //=======================Form Input==========================
+
     <main>
 
-        <h2 class="subtitle has-text-weight-bold">Form controls: Wrap form controls in a .control container</h2>
-        <div class="control">
-            <input type="text" class="input" id="textInput" placeholder="Text input">
-        </div>
-        <div class="control">
-            <div class="select">
-                <select>
-                    <option vaiue="">Default select</option>
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
-                </select>
-            </div>
-        </div>
-        <div class="control">
-            <textarea class="textarea" placeholder="Write your message here..."></textarea>
-        </div>
-        <div class="control">
-            <button type="submit" class="button is-primary">Submit</button>
+        <h2 class="subtitle has-text-weight-bold">Input type: text</h2>
+        <input type="text" class="input" placeholder="Input type: text">
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Input type: password</h2>
+        <input type="password" class="input" placeholder="Input type: password">
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Input type: email</h2>
+        <input type="email" class="input" placeholder="Input type: email">
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Input type: telephone</h2>
+        <input type="tel" class="input" placeholder="Input type: telephone">
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Input color: primary</h2>
+        <input type="text" class="input is-primary" placeholder="Input color: primary">
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Input color: info</h2>
+        <input type="text" class="input is-info" placeholder="Input color: info">
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Input color: success</h2>
+        <input type="text" class="input is-success" placeholder="Input color: success">
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Input color: warning</h2>
+        <input type="text" class="input is-warning" placeholder="Input color: warning">
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Input color: danger</h2>
+        <input type="text" class="input is-danger" placeholder="Input color: danger">
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Input size: small</h2>
+        <input type="text" class="input is-small" placeholder="Input size: small">
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Input size: normal</h2>
+        <input type="text" class="input" placeholder="Input size: normal">
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Input size: medium</h2>
+        <input type="text" class="input is-medium" placeholder="Input size: medium">
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Input size: large</h2>
+        <input type="text" class="input is-large" placeholder="Input size: large">
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Input style: rounded</h2>
+        <input type="text" class="input is-rounded" placeholder="Input style: rounded">
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Input state: normal</h2>
+        <input type="text" class="input" placeholder="Input state: normal">
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Input state: hover</h2>
+        <input type="text" class="input is-hovered" placeholder="Input state: hover">
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Input state: focus</h2>
+        <input type="text" class="input is-focused" placeholder="Input state: focus">
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Input state: disabled</h2>
+        <input type="text" class="input" placeholder="Input state: disabled" disabled>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Input state: loading (small)</h2>
+        <div class="control is-small is-loading">
+            <input type="text" class="input is-small" placeholder="Input state: loading (small)">
         </div>
 
         <hr>
-        <h2 class="subtitle has-text-weight-bold">Form fields: Wrap label/input/help text/button in a .field container
-        </h2>
-        <form>
-            <div class="field">
-                <label class="label" for="textInput">Text input</label>
-                <div class="control">
-                    <input type="text" class="input" id="textInput" placeholder="Text input">
-                </div>
-                <p class="help">Descriptive help text for the input element.</p>
-            </div>
-            <div class="field">
-                <label class="label" for="numberInput">Number input</label>
-                <div class="control">
-                    <input type="number" class="input" id="numberInput" placeholder="1234">
-                </div>
-                <p class="help">Descriptive help text for the input element.</p>
-            </div>
-            <div class="field">
-                <div class="control">
-                    <button type="submit" class="button is-primary">Submit</button>
-                </div>
-            </div>
-        </form>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Form addon: button</h2>
-        <div class="field has-addons">
-            <div class="control">
-                <input type="text" class="input" placeholder="Keyword">
-            </div>
-            <div class="control">
-                <button type="button" class="button is-primary">Search</button>
-            </div>
+        <h2 class="subtitle has-text-weight-bold">Input state: loading (normal)</h2>
+        <div class="control is-loading">
+            <input type="text" class="input" placeholder="Input state: loading (normal)">
         </div>
 
         <hr>
-        <h2 class="subtitle has-text-weight-bold">Form addon: static button</h2>
-        <div class="field has-addons">
-            <div class="control">
-                <input type="email" class="input" placeholder="Email address">
-            </div>
-            <div class="control">
-                <button type="button" class="button is-static">@domain.com</button>
-            </div>
+        <h2 class="subtitle has-text-weight-bold">Input state: loading (medium)</h2>
+        <div class="control is-medium is-loading">
+            <input type="text" class="input is-medium" placeholder="Input state: loading (medium)">
         </div>
 
         <hr>
-        <h2 class="subtitle has-text-weight-bold">Form addon: select and button</h2>
-        <div class="field has-addons">
-            <div class="control">
-                <div class="select">
-                    <select>
-                        <option vaiue="€">€</option>
-                        <option value="$">$</option>
-                        <option value="£">£</option>
-                    </select>
-                </div>
-            </div>
-            <div class="control">
-                <input type="number" class="input" placeholder="1234">
-            </div>
-            <div class="control">
-                <button type="button" class="button is-primary">Transfer</button>
-            </div>
+        <h2 class="subtitle has-text-weight-bold">Input state: loading (large)</h2>
+        <div class="control is-large is-loading">
+            <input type="text" class="input is-large" placeholder="Input state: loading (large)">
         </div>
 
         <hr>
-        <h2 class="subtitle has-text-weight-bold">Form addon: select and button with expanded input</h2>
-        <div class="field has-addons">
-            <div class="control">
-                <div class="select">
-                    <select>
-                        <option vaiue="€">€</option>
-                        <option value="$">$</option>
-                        <option value="£">£</option>
-                    </select>
-                </div>
-            </div>
-            <div class="control is-expanded">
-                <input type="number" class="input" placeholder="1234">
-            </div>
-            <div class="control">
-                <button type="button" class="button is-primary">Transfer</button>
-            </div>
+        <h2 class="subtitle has-text-weight-bold">Input readonly</h2>
+        <input type="text" class="input" value="Input readonly" readonly>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Input static</h2>
+        <input type="text" class="input is-static" value="Input static">
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Input with icon in the left side</h2>
+        <div class="control has-icons-left">
+            <input type="text" class="input" placeholder="Icon left side">
+            <span class="icon is-left">
+                <i class="fas fa-envelope"></i>
+            </span>
         </div>
 
         <hr>
-        <h2 class="subtitle has-text-weight-bold">Form addon: button with expanded select</h2>
-        <div class="field has-addons">
-            <div class="control is-expanded">
-                <div class="select is-fullwidth">
-                    <select>
-                        <option vaiue="message1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</option>
-                        <option value="message2">Nunc feugiat posuere metus eget venenatis.</option>
-                        <option value="message3">Cras lacinia purus id enim gravida, at accumsan purus cursus.</option>
-                        <option value="message4">Sed maximus, velit nec ultricies malesuada, est nibh ullamcorper
-                            tellus,
-                            tincidunt egestas urna nibh id magna.</option>
-                        <option value="message5">Ut efficitur auctor nisi, eu suscipit sapien blandit a.</option>
-                    </select>
-                </div>
-            </div>
-            <div class="control">
-                <button type="button" class="button is-primary">Send message</button>
-            </div>
+        <h2 class="subtitle has-text-weight-bold">Input with icon in the right side</h2>
+        <div class="control has-icons-right">
+            <input type="text" class="input" placeholder="Icon right side">
+            <span class="icon is-right">
+                <i class="fas fa-check"></i>
+            </span>
         </div>
 
         <hr>
-        <h2 class="subtitle has-text-weight-bold">Centered form addon: select and button</h2>
-        <div class="field has-addons has-addons-centered">
-            <div class="control">
-                <div class="select">
-                    <select>
-                        <option vaiue="€">€</option>
-                        <option value="$">$</option>
-                        <option value="£">£</option>
-                    </select>
-                </div>
-            </div>
-            <div class="control">
-                <input type="number" class="input" placeholder="1234">
-            </div>
-            <div class="control">
-                <button type="button" class="button is-primary">Transfer</button>
-            </div>
+        <h2 class="subtitle has-text-weight-bold">Input with icons in both sides</h2>
+        <div class="control has-icons-left has-icons-right">
+            <input type="text" class="input" placeholder="Icon both sides">
+            <span class="icon is-left">
+                <i class="fas fa-envelope"></i>
+            </span>
+            <span class="icon is-right">
+                <i class="fas fa-check"></i>
+            </span>
         </div>
 
         <hr>
-        <h2 class="subtitle has-text-weight-bold">Right-aligned form addon: select and button</h2>
-        <div class="field has-addons has-addons-right">
-            <div class="control">
-                <div class="select">
-                    <select>
-                        <option vaiue="€">€</option>
-                        <option value="$">$</option>
-                        <option value="£">£</option>
-                    </select>
-                </div>
-            </div>
-            <div class="control">
-                <input type="number" class="input" placeholder="1234">
-            </div>
-            <div class="control">
-                <button type="button" class="button is-primary">Transfer</button>
-            </div>
+        <h2 class="subtitle has-text-weight-bold">Small input with icons in both sides</h2>
+        <div class="control has-icons-left has-icons-right">
+            <input type="text" class="input is-small" placeholder="Icon both sides (small)">
+            <span class="icon is-left">
+                <i class="fas fa-envelope"></i>
+            </span>
+            <span class="icon is-right">
+                <i class="fas fa-check"></i>
+            </span>
         </div>
 
         <hr>
-        <h2 class="subtitle has-text-weight-bold">Form group</h2>
-        <div class="field is-grouped">
-            <div class="control">
-                <button type="submit" class="button is-primary">Submit</button>
-            </div>
-            <div class="control">
-                <button type="reset" class="button is-danger">Reset</button>
-            </div>
+        <h2 class="subtitle has-text-weight-bold">Medium input with icons in both sides</h2>
+        <div class="control has-icons-left has-icons-right">
+            <input type="text" class="input is-medium" placeholder="Icon both sides (medium)">
+            <span class="icon is-left">
+                <i class="fas fa-envelope"></i>
+            </span>
+            <span class="icon is-right">
+                <i class="fas fa-check"></i>
+            </span>
         </div>
 
         <hr>
-        <h2 class="subtitle has-text-weight-bold">Centered form group</h2>
-        <div class="field is-grouped is-grouped-centered">
-            <div class="control">
-                <button type="submit" class="button is-primary">Submit</button>
-            </div>
-            <div class="control">
-                <button type="reset" class="button is-danger">Reset</button>
-            </div>
+        <h2 class="subtitle has-text-weight-bold">Large input with icons in both sides</h2>
+        <div class="control has-icons-left has-icons-right">
+            <input type="text" class="input is-large" placeholder="Icon both sides (large)">
+            <span class="icon is-left">
+                <i class="fas fa-envelope"></i>
+            </span>
+            <span class="icon is-right">
+                <i class="fas fa-check"></i>
+            </span>
         </div>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Right-aligned form group</h2>
-        <div class="field is-grouped is-grouped-right">
-            <div class="control">
-                <button type="submit" class="button is-primary">Submit</button>
-            </div>
-            <div class="control">
-                <button type="reset" class="button is-danger">Reset</button>
-            </div>
-        </div>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Form group with expaned input</h2>
-        <div class="field is-grouped">
-            <div class="control is-expanded">
-                <input type="text" class="input" placeholder="Keyword">
-            </div>
-            <div class="control">
-                <button type="button" class="button is-primary">Search</button>
-            </div>
-        </div>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Form group with multiple lines</h2>
-        <div class="field is-grouped is-grouped-multiline">
-            <div class="control">
-                <button type="submit" class="button">Button</button>
-            </div>
-            <div class="control">
-                <button type="submit" class="button">Button</button>
-            </div>
-            <div class="control">
-                <button type="submit" class="button">Button</button>
-            </div>
-            <div class="control">
-                <button type="submit" class="button">Button</button>
-            </div>
-            <div class="control">
-                <button type="submit" class="button">Button</button>
-            </div>
-            <div class="control">
-                <button type="submit" class="button">Button</button>
-            </div>
-            <div class="control">
-                <button type="submit" class="button">Button</button>
-            </div>
-            <div class="control">
-                <button type="submit" class="button">Button</button>
-            </div>
-            <div class="control">
-                <button type="submit" class="button">Button</button>
-            </div>
-            <div class="control">
-                <button type="submit" class="button">Button</button>
-            </div>
-            <div class="control">
-                <button type="submit" class="button">Button</button>
-            </div>
-            <div class="control">
-                <button type="submit" class="button">Button</button>
-            </div>
-            <div class="control">
-                <button type="submit" class="button">Button</button>
-            </div>
-            <div class="control">
-                <button type="submit" class="button">Button</button>
-            </div>
-            <div class="control">
-                <button type="submit" class="button">Button</button>
-            </div>
-            <div class="control">
-                <button type="submit" class="button">Button</button>
-            </div>
-            <div class="control">
-                <button type="submit" class="button">Button</button>
-            </div>
-            <div class="control">
-                <button type="submit" class="button">Button</button>
-            </div>
-            <div class="control">
-                <button type="submit" class="button">Button</button>
-            </div>
-            <div class="control">
-                <button type="submit" class="button">Button</button>
-            </div>
-        </div>
-        <p>Alternatively use the .buttons class to create a multiline list of buttons (see "<a
-               href="button.html">Elements -
-                Button</a>")</p>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Horizontal form</h2>
-        <div class="field is-horizontal">
-            <div class="field-label is-normal">
-                <label class="label">Label</label>
-            </div>
-            <div class="field-body">
-                <div class="field">
-                    <div class="control">
-                        <input type="text" class="input" id="textInput" placeholder="Text input">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="field is-horizontal">
-            <div class="field-label is-normal">
-                <label class="label">Long label</label>
-            </div>
-            <div class="field-body">
-                <div class="field">
-                    <div class="control">
-                        <div class="select">
-                            <select>
-                                <option vaiue="">Default select</option>
-                                <option value="1">Option 1</option>
-                                <option value="2">Option 2</option>
-                                <option value="3">Option 3</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="field is-horizontal">
-            <div class="field-label is-normal">
-                <label class="label">Even longer label</label>
-            </div>
-            <div class="field-body">
-                <div class="field">
-                    <div class="control">
-                        <textarea class="textarea" placeholder="Write your message here..."></textarea>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="field is-horizontal">
-            <div class="field-label">
-                <!-- Leave empty to provide spacing -->
-            </div>
-            <div class="field-body">
-                <div class="field">
-                    <div class="control">
-                        <button type="submit" class="button is-primary">Submit</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Vertical alignment for different label and input sizes</h2>
-        <h2 class="subtitle has-text-weight-bold">Small label and input</h2>
-        <div class="field is-horizontal">
-            <div class="field-label is-small">
-                <label class="label">Small</label>
-            </div>
-            <div class="field-body">
-                <div class="field">
-                    <div class="control">
-                        <input type="text" class="input is-small" id="textInput" placeholder="Text input">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Normal label and input</h2>
-        <div class="field is-horizontal">
-            <div class="field-label is-normal">
-                <label class="label">Normal</label>
-            </div>
-            <div class="field-body">
-                <div class="field">
-                    <div class="control">
-                        <input type="text" class="input" id="textInput" placeholder="Text input">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Medium label and input</h2>
-        <div class="field is-horizontal">
-            <div class="field-label is-medium">
-                <label class="label">Medium</label>
-            </div>
-            <div class="field-body">
-                <div class="field">
-                    <div class="control">
-                        <input type="text" class="input is-medium" id="textInput" placeholder="Text input">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Large label and input</h2>
-        <div class="field is-horizontal">
-            <div class="field-label is-large">
-                <label class="label">Large</label>
-            </div>
-            <div class="field-body">
-                <div class="field">
-                    <div class="control">
-                        <input type="text" class="input is-large" id="textInput" placeholder="Text input">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Disabled form</h2>
-        <form>
-            <fieldset disabled>
-                <div class="field">
-                    <label class="label" for="textInput">Text input</label>
-                    <div class="control">
-                        <input type="text" class="input" id="textInput" placeholder="Text input">
-                    </div>
-                    <p class="help">Descriptive help text for the input element.</p>
-                </div>
-                <div class="field">
-                    <label class="label" for="numberInput">Number input</label>
-                    <div class="control">
-                        <input type="number" class="input" id="numberInput" placeholder="1234">
-                    </div>
-                    <p class="help">Descriptive help text for the input element.</p>
-                </div>
-                <div class="field">
-                    <div class="control">
-                        <button type="submit" class="button is-primary">Submit</button>
-                    </div>
-                </div>
-            </fieldset>
-        </form>
 
     </main>
 
