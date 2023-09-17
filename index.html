@@ -49,96 +49,333 @@
         <i class="fa-solid fa-wifi" style="color: #1eed02;"></i>
     </div>
 
-    //=======================Form Textarea.==========================
+    //=======================Form Select.==========================
 
     <main>
 
-        <h2 class="subtitle has-text-weight-bold">Default textarea</h2>
-        <textarea class="textarea" placeholder="Write your message here..."></textarea>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Textarea with height set with [rows] attribute</h2>
-        <textarea class="textarea" placeholder="Write your message here..." rows="9"></textarea>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Textarea: primary</h2>
-        <textarea class="textarea is-info" placeholder="Textarea color: primary"></textarea>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Textarea: info</h2>
-        <textarea class="textarea is-info" placeholder="Textarea color: info"></textarea>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Textarea: success</h2>
-        <textarea class="textarea is-success" placeholder="Textarea color: success"></textarea>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Textarea: warning</h2>
-        <textarea class="textarea is-warning" placeholder="Textarea color: warning"></textarea>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Textarea: danger</h2>
-        <textarea class="textarea is-danger" placeholder="Textarea color: danger"></textarea>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Textarea size: small</h2>
-        <textarea class="textarea is-small" placeholder="Textarea size: small"></textarea>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Textarea size: normal</h2>
-        <textarea class="textarea" placeholder="Textarea size: normal"></textarea>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Textarea size: medium</h2>
-        <textarea class="textarea is-medium" placeholder="Textarea size: medium"></textarea>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Textarea size: large</h2>
-        <textarea class="textarea is-large" placeholder="Textarea size: large"></textarea>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Textarea state: normal</h2>
-        <textarea class="textarea" placeholder="Textarea state: normal"></textarea>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Textarea state: hover</h2>
-        <textarea class="textarea is-hovered" placeholder="Textarea state: hover"></textarea>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Textarea state: focus</h2>
-        <textarea class="textarea is-focused" placeholder="Textarea state: focus"></textarea>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Textarea state: disabled</h2>
-        <textarea class="textarea" placeholder="Textarea state: disabled" disabled></textarea>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Textarea state: loading (small)</h2>
-        <div class="control is-small is-loading">
-            <textarea class="textarea is-small" placeholder="Textarea state: loading (small)"></textarea>
+        <h2 class="subtitle has-text-weight-bold">Default select</h2>
+        <div class="select">
+            <select>
+                <option vaiue="">Default select</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
         </div>
 
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Textarea state: loading (normal)</h2>
-        <div class="control is-loading">
-            <textarea class="textarea" placeholder="Textarea state: loading (normal)"></textarea>
-        </div>
+        <br>
 
         <hr>
-        <h2 class="subtitle has-text-weight-bold">Textarea state: loading (medium)</h2>
-        <div class="control is-medium is-loading">
-            <textarea class="textarea is-medium" placeholder="Textarea state: loading (medium)"></textarea>
+        <h2 class="subtitle has-text-weight-bold">Multiple select with height set with [size] attribute</h2>
+        <div class="select is-multiple">
+            <select multiple size="5">
+                <option vaiue="">Multiple select</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+                <option value="1">Option 4</option>
+                <option value="2">Option 5</option>
+                <option value="3">Option 6</option>
+                <option value="1">Option 7</option>
+                <option value="2">Option 8</option>
+                <option value="3">Option 9</option>
+                <option value="3">Option 10</option>
+            </select>
         </div>
 
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Textarea state: loading (large)</h2>
-        <div class="control is-large is-loading">
-            <textarea class="textarea is-large" placeholder="Textarea state: loading (large)"></textarea>
-        </div>
+        <br>
 
         <hr>
-        <h2 class="subtitle has-text-weight-bold">Textarea readonly</h2>
-        <textarea class="textarea" readonly>Textarea readonly</textarea>
+        <h2 class="subtitle has-text-weight-bold">Select color: primary</h2>
+        <div class="select is-primary">
+            <select>
+                <option vaiue="">Select color: primary</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Select color: info</h2>
+        <div class="select is-info">
+            <select>
+                <option vaiue="">Select color: info</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Select color: success</h2>
+        <div class="select is-success">
+            <select>
+                <option vaiue="">Select color: success</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Select color: warning</h2>
+        <div class="select is-warning">
+            <select>
+                <option vaiue="">Select color: warning</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Select color: danger</h2>
+        <div class="select is-danger">
+            <select>
+                <option vaiue="">Select color: danger</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Select style: rounded</h2>
+        <div class="select is-rounded">
+            <select>
+                <option vaiue="">Select style: rounded</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Select size: small</h2>
+        <div class="select is-small">
+            <select>
+                <option vaiue="">Select size: small</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Select size: normal</h2>
+        <div class="select">
+            <select>
+                <option vaiue="">Select size: normal</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Select size: medium</h2>
+        <div class="select is-medium">
+            <select>
+                <option vaiue="">Select size: medium</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Select size: large</h2>
+        <div class="select is-large">
+            <select>
+                <option vaiue="">Select size: large</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Select state: normal</h2>
+        <div class="select">
+            <select>
+                <option vaiue="">Select state: normal</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Select state: hover</h2>
+        <div class="select">
+            <select class="is-hovered">
+                <option vaiue="">Select state: hover</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Select state: focus</h2>
+        <div class="select">
+            <select class="is-focused">
+                <option vaiue="">Select state: focus</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Select state: loading (small)</h2>
+        <div class="select is-small is-loading">
+            <select>
+                <option vaiue="">Select state: loading (small)</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Select state: loading (normal)</h2>
+        <div class="select is-loading">
+            <select>
+                <option vaiue="">Select state: loading (normal)</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Select state: loading (medium)</h2>
+        <div class="select is-medium is-loading">
+            <select>
+                <option vaiue="">Select state: loading (medium)</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Select state: loading (large)</h2>
+        <div class="select is-large is-loading">
+            <select>
+                <option vaiue="">Select state: loading (large)</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Small select with icon in the left side</h2>
+        <div class="control has-icons-left">
+            <div class="select is-small">
+                <select>
+                    <option vaiue="">Select with icon (small)</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+            </div>
+            <div class="icon is-left">
+                <i class="fas fa-flag"></i>
+            </div>
+        </div>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Normal select with icon in the left side</h2>
+        <div class="control has-icons-left">
+            <div class="select">
+                <select>
+                    <option vaiue="">Select with icon (normal)</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+            </div>
+            <div class="icon is-left">
+                <i class="fas fa-flag"></i>
+            </div>
+        </div>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Medium select with icon in the left side</h2>
+        <div class="control has-icons-left">
+            <div class="select is-medium">
+                <select>
+                    <option vaiue="">Select with icon (medium)</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+            </div>
+            <div class="icon is-left">
+                <i class="fas fa-flag"></i>
+            </div>
+        </div>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Large select with icon in the left side</h2>
+        <div class="control has-icons-left">
+            <div class="select is-large">
+                <select>
+                    <option vaiue="">Select with icon (large)</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+            </div>
+            <div class="icon is-left">
+                <i class="fas fa-flag"></i>
+            </div>
+        </div>
+
 
     </main>
 
