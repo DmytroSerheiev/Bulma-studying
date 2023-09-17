@@ -49,333 +49,223 @@
         <i class="fa-solid fa-wifi" style="color: #1eed02;"></i>
     </div>
 
-    //=======================Form Select.==========================
+    //=======================Form Checkbox.==========================
 
     <main>
 
-        <h2 class="subtitle has-text-weight-bold">Default select</h2>
-        <div class="select">
-            <select>
-                <option vaiue="">Default select</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-            </select>
-        </div>
-
-        <br>
+        <h2 class="subtitle has-text-weight-bold">Checkbox</h2>
+        <label class="checkbox">
+            <input type="checkbox" value="marketing"> Send me special offers
+        </label>
 
         <hr>
-        <h2 class="subtitle has-text-weight-bold">Multiple select with height set with [size] attribute</h2>
-        <div class="select is-multiple">
-            <select multiple size="5">
-                <option vaiue="">Multiple select</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-                <option value="1">Option 4</option>
-                <option value="2">Option 5</option>
-                <option value="3">Option 6</option>
-                <option value="1">Option 7</option>
-                <option value="2">Option 8</option>
-                <option value="3">Option 9</option>
-                <option value="3">Option 10</option>
-            </select>
-        </div>
-
-        <br>
+        <h2 class="subtitle has-text-weight-bold">Checkbox with link</h2>
+        <label class="checkbox">
+            <input type="checkbox" value="terms"> I accept the <a href="#0">terms and conditions</a>
+        </label>
 
         <hr>
-        <h2 class="subtitle has-text-weight-bold">Select color: primary</h2>
-        <div class="select is-primary">
-            <select>
-                <option vaiue="">Select color: primary</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-            </select>
-        </div>
-
-        <br>
+        <h2 class="subtitle has-text-weight-bold">Pre-checked checkbox </h2>
+        <label class="checkbox">
+            <input type="checkbox" value="newsletter" checked> Sign up for newsletter
+        </label>
 
         <hr>
-        <h2 class="subtitle has-text-weight-bold">Select color: info</h2>
-        <div class="select is-info">
-            <select>
-                <option vaiue="">Select color: info</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-            </select>
-        </div>
+        <h2 class="subtitle has-text-weight-bold">Disabled checkbox</h2>
+        <label class="checkbox" disabled>
+            <input type="checkbox" value="settings" disabled> Apply settings
+        </label>
 
-        <br>
+        <h2 class="subtitle has-text-weight-bold">Default</h2>
+        <div class="field">
+            <input type="checkbox" class="is-checkradio" id="exampleCheckbox" name="exampleCheckbox" checked="checked">
+            <label for="exampleCheckbox">Checkbox</label>
+            <input type="checkbox" class="is-checkradio" id="exampleCheckboxDisabled" name="exampleCheckboxDisabled"
+                   checked="checked" disabled>
+            <label for="exampleCheckboxDisabled">Checkbox (disabled)</label>
+        </div>
+        <div class="field">
+            <input type="radio" class="is-checkradio" id="exampleRadioInline1" name="exampleRadioInline"
+                   checked="checked">
+            <label for="exampleRadioInline1">Radio Button 1</label>
+            <input type="radio" class="is-checkradio" id="exampleRadioInline2" name="exampleRadioInline">
+            <label for="exampleRadioInline2">Radio Button 2</label>
+            <input type="radio" class="is-checkradio" id="exampleRadioInline3" name="exampleRadioInline" disabled>
+            <label for="exampleRadioInline3">Radio Button 3</label>
+        </div>
 
         <hr>
-        <h2 class="subtitle has-text-weight-bold">Select color: success</h2>
-        <div class="select is-success">
-            <select>
-                <option vaiue="">Select color: success</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-            </select>
+        <h2 class="subtitle has-text-weight-bold">Default Right-To-Left</h2>
+        <div class="field">
+            <input type="checkbox" class="is-checkradio is-rtl" id="exampleCheckboxRtl" name="exampleCheckboxRtl"
+                   checked="checked">
+            <label for="exampleCheckboxRtl">Checkbox</label>
         </div>
-
-        <br>
+        <div class="field">
+            <input type="radio" class="is-checkradio is-rtl" id="exampleRadioInlineRtl1" name="exampleRadioInlineRtl"
+                   checked="checked">
+            <label for="exampleRadioInlineRtl1">Radio Button 1</label>
+            <input type="radio" class="is-checkradio is-rtl" id="exampleRadioInlineRtl2" name="exampleRadioInlineRtl">
+            <label for="exampleRadioInlineRtl2">Radio Button 2</label>
+        </div>
 
         <hr>
-        <h2 class="subtitle has-text-weight-bold">Select color: warning</h2>
-        <div class="select is-warning">
-            <select>
-                <option vaiue="">Select color: warning</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-            </select>
+        <h2 class="subtitle has-text-weight-bold">Colors</h2>
+        <div class="field">
+            <input type="checkbox" class="is-checkradio" id="exampleCheckboxColorDefault"
+                   name="exampleCheckboxColorDefault"
+                   checked="checked">
+            <label for="exampleCheckboxColorDefault">Default</label>
         </div>
-
-        <br>
+        <div class="field">
+            <input type="checkbox" class="is-checkradio is-success" id="exampleCheckboxColorSuccess"
+                   name="exampleCheckboxColorSuccess" checked="checked">
+            <label for="exampleCheckboxColorSuccess">Success</label>
+        </div>
+        <div class="field">
+            <input type="checkbox" class="is-checkradio is-warning" id="exampleCheckboxColorWarning"
+                   name="exampleCheckboxColorWarning" checked="checked">
+            <label for="exampleCheckboxColorWarning">Warning</label>
+        </div>
+        <div class="field">
+            <input type="checkbox" class="is-checkradio is-danger" id="exampleCheckboxColorDanger"
+                   name="exampleCheckboxColorDanger" checked="checked">
+            <label for="exampleCheckboxColorDanger">Danger</label>
+        </div>
+        <div class="field">
+            <input type="checkbox" class="is-checkradio is-info" id="exampleCheckboxColorInfo"
+                   name="exampleCheckboxColorInfo"
+                   checked="checked">
+            <label for="exampleCheckboxColorInfo">Info</label>
+        </div>
+        <div class="field has-background-dark has-text-white">
+            <input type="checkbox" class="is-checkradio is-white" id="exampleCheckboxColorWhite"
+                   name="exampleCheckboxColorWhite" checked="checked">
+            <label for="exampleCheckboxColorWhite">White</label>
+        </div>
 
         <hr>
-        <h2 class="subtitle has-text-weight-bold">Select color: danger</h2>
-        <div class="select is-danger">
-            <select>
-                <option vaiue="">Select color: danger</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-            </select>
+        <h2 class="subtitle has-text-weight-bold">Colors (background)</h2>
+        <div class="field">
+            <input type="checkbox" class="is-checkradio has-background-color" id="exampleCheckboxBackgroundColorDefault"
+                   name="exampleCheckboxBackgroundColorDefault" checked="checked">
+            <label for="exampleCheckboxBackgroundColorDefault">Default</label>
         </div>
-
-        <br>
+        <div class="field">
+            <input type="checkbox" class="is-checkradio has-background-color is-success"
+                   id="exampleCheckboxBackgroundColorSuccess" name="exampleCheckboxBackgroundColorSuccess"
+                   checked="checked">
+            <label for="exampleCheckboxBackgroundColorSuccess">Success</label>
+        </div>
+        <div class="field">
+            <input type="checkbox" class="is-checkradio has-background-color is-warning"
+                   id="exampleCheckboxBackgroundColorWarning" name="exampleCheckboxBackgroundColorWarning"
+                   checked="checked">
+            <label for="exampleCheckboxBackgroundColorWarning">Warning</label>
+        </div>
+        <div class="field">
+            <input type="checkbox" class="is-checkradio has-background-color is-danger"
+                   id="exampleCheckboxBackgroundColorDanger" name="exampleCheckboxBackgroundColorDanger"
+                   checked="checked">
+            <label for="exampleCheckboxBackgroundColorDanger">Danger</label>
+        </div>
+        <div class="field">
+            <input type="checkbox" class="is-checkradio has-background-color is-info"
+                   id="exampleCheckboxBackgroundColorInfo"
+                   name="exampleCheckboxBackgroundColorInfo" checked="checked">
+            <label for="exampleCheckboxBackgroundColorInfo">Info</label>
+        </div>
+        <div class="field has-background-dark has-text-white">
+            <input type="checkbox" class="is-checkradio has-background-color is-white"
+                   id="exampleCheckboxBackgroundColorWhite"
+                   name="exampleCheckboxBackgroundColorWhite" checked="checked">
+            <label for="exampleCheckboxBackgroundColorWhite">White</label>
+        </div>
 
         <hr>
-        <h2 class="subtitle has-text-weight-bold">Select style: rounded</h2>
-        <div class="select is-rounded">
-            <select>
-                <option vaiue="">Select style: rounded</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-            </select>
+        <h2 class="subtitle has-text-weight-bold">Sizes</h2>
+        <div class="field">
+            <input type="checkbox" class="is-checkradio is-small" id="exampleCheckboxSizeSmall"
+                   name="exampleCheckboxSizeSmall"
+                   checked="checked">
+            <label for="exampleCheckboxSizeSmall">Small</label>
         </div>
-
-        <br>
+        <div class="field">
+            <input type="checkbox" class="is-checkradio" id="exampleCheckboxSizeDefault"
+                   name="exampleCheckboxSizeDefault"
+                   checked="checked">
+            <label for="exampleCheckboxSizeDefault">Default</label>
+        </div>
+        <div class="field">
+            <input type="checkbox" class="is-checkradio is-mediun" id="exampleCheckboxSizeMedium"
+                   name="exampleCheckboxSizeMedium" checked="checked">
+            <label for="exampleCheckboxSizeMedium">Medium</label>
+        </div>
+        <div class="field">
+            <input type="checkbox" class="is-checkradio is-large" id="exampleCheckboxSizeLarge"
+                   name="exampleCheckboxSizeLarge"
+                   checked="checked">
+            <label for="exampleCheckboxSizeLarge">Large</label>
+        </div>
 
         <hr>
-        <h2 class="subtitle has-text-weight-bold">Select size: small</h2>
-        <div class="select is-small">
-            <select>
-                <option vaiue="">Select size: small</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-            </select>
+        <h2 class="subtitle has-text-weight-bold">Styles</h2>
+        <div class="field">
+            <input type="checkbox" class="is-checkradio is-circle" id="exampleCheckboxStyleCircle"
+                   name="exampleCheckboxStyleCircle" checked="checked">
+            <label for="exampleCheckboxStyleCircle">Circle</label>
+        </div>
+        <div class="field">
+            <input type="checkbox" class="is-checkradio is-block" id="exampleCheckboxStyleBlock"
+                   name="exampleCheckboxStyleBlock" checked="checked">
+            <label for="exampleCheckboxStyleBlock">Block</label>
+        </div>
+        <div class="field">
+            <input type="checkbox" class="is-checkradio has-no-border" id="exampleCheckboxStyleNoBorder"
+                   name="exampleCheckboxStyleNoBorder" checked="checked">
+            <label for="exampleCheckboxStyleNoBorder">No Border</label>
         </div>
 
-        <br>
+        <h2 class="subtitle has-text-weight-bold">Radio buttons</h2>
+        <div class="control">
+            <label class="radio">
+                <input type="radio" name="rsvpNormal" value="yes"> Yes
+            </label>
+            <label class="radio">
+                <input type="radio" name="rsvpNormal" value="no"> No
+            </label>
+            <label class="radio">
+                <input type="radio" name="rsvpNormal" value="maybe"> Maybe
+            </label>
+        </div>
 
         <hr>
-        <h2 class="subtitle has-text-weight-bold">Select size: normal</h2>
-        <div class="select">
-            <select>
-                <option vaiue="">Select size: normal</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-            </select>
+        <h2 class="subtitle has-text-weight-bold">Radio buttons with one pre-checked</h2>
+        <div class="control">
+            <label class="radio">
+                <input type="radio" name="rsvpChecked" value="yes" checked> Yes
+            </label>
+            <label class="radio">
+                <input type="radio" name="rsvpChecked" value="no"> No
+            </label>
+            <label class="radio">
+                <input type="radio" name="rsvpChecked" value="maybe"> Maybe
+            </label>
         </div>
-
-        <br>
 
         <hr>
-        <h2 class="subtitle has-text-weight-bold">Select size: medium</h2>
-        <div class="select is-medium">
-            <select>
-                <option vaiue="">Select size: medium</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-            </select>
+        <h2 class="subtitle has-text-weight-bold">Radio buttons with one disabled</h2>
+        <div class="control">
+            <label class="radio">
+                <input type="radio" name="rsvpDisabled" value="yes"> Yes
+            </label>
+            <label class="radio">
+                <input type="radio" name="rsvpDisabled" value="no"> No
+            </label>
+            <label class="radio" disabled>
+                <input type="radio" name="rsvpDisabled" value="maybe" disabled> Maybe
+            </label>
         </div>
-
-        <br>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Select size: large</h2>
-        <div class="select is-large">
-            <select>
-                <option vaiue="">Select size: large</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-            </select>
-        </div>
-
-        <br>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Select state: normal</h2>
-        <div class="select">
-            <select>
-                <option vaiue="">Select state: normal</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-            </select>
-        </div>
-
-        <br>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Select state: hover</h2>
-        <div class="select">
-            <select class="is-hovered">
-                <option vaiue="">Select state: hover</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-            </select>
-        </div>
-
-        <br>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Select state: focus</h2>
-        <div class="select">
-            <select class="is-focused">
-                <option vaiue="">Select state: focus</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-            </select>
-        </div>
-
-        <br>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Select state: loading (small)</h2>
-        <div class="select is-small is-loading">
-            <select>
-                <option vaiue="">Select state: loading (small)</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-            </select>
-        </div>
-
-        <br>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Select state: loading (normal)</h2>
-        <div class="select is-loading">
-            <select>
-                <option vaiue="">Select state: loading (normal)</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-            </select>
-        </div>
-
-        <br>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Select state: loading (medium)</h2>
-        <div class="select is-medium is-loading">
-            <select>
-                <option vaiue="">Select state: loading (medium)</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-            </select>
-        </div>
-
-        <br>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Select state: loading (large)</h2>
-        <div class="select is-large is-loading">
-            <select>
-                <option vaiue="">Select state: loading (large)</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-            </select>
-        </div>
-
-        <br>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Small select with icon in the left side</h2>
-        <div class="control has-icons-left">
-            <div class="select is-small">
-                <select>
-                    <option vaiue="">Select with icon (small)</option>
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
-                </select>
-            </div>
-            <div class="icon is-left">
-                <i class="fas fa-flag"></i>
-            </div>
-        </div>
-
-        <br>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Normal select with icon in the left side</h2>
-        <div class="control has-icons-left">
-            <div class="select">
-                <select>
-                    <option vaiue="">Select with icon (normal)</option>
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
-                </select>
-            </div>
-            <div class="icon is-left">
-                <i class="fas fa-flag"></i>
-            </div>
-        </div>
-
-        <br>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Medium select with icon in the left side</h2>
-        <div class="control has-icons-left">
-            <div class="select is-medium">
-                <select>
-                    <option vaiue="">Select with icon (medium)</option>
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
-                </select>
-            </div>
-            <div class="icon is-left">
-                <i class="fas fa-flag"></i>
-            </div>
-        </div>
-
-        <br>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Large select with icon in the left side</h2>
-        <div class="control has-icons-left">
-            <div class="select is-large">
-                <select>
-                    <option vaiue="">Select with icon (large)</option>
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
-                </select>
-            </div>
-            <div class="icon is-left">
-                <i class="fas fa-flag"></i>
-            </div>
-        </div>
-
 
     </main>
 
