@@ -49,177 +49,311 @@
         <i class="fa-solid fa-wifi" style="color: #1eed02;"></i>
     </div>
 
-    //=======================Form Input==========================
+    //=======================Form file.==========================
 
     <main>
 
-        <h2 class="subtitle has-text-weight-bold">Input type: text</h2>
-        <input type="text" class="input" placeholder="Input type: text">
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Input type: password</h2>
-        <input type="password" class="input" placeholder="Input type: password">
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Input type: email</h2>
-        <input type="email" class="input" placeholder="Input type: email">
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Input type: telephone</h2>
-        <input type="tel" class="input" placeholder="Input type: telephone">
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Input color: primary</h2>
-        <input type="text" class="input is-primary" placeholder="Input color: primary">
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Input color: info</h2>
-        <input type="text" class="input is-info" placeholder="Input color: info">
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Input color: success</h2>
-        <input type="text" class="input is-success" placeholder="Input color: success">
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Input color: warning</h2>
-        <input type="text" class="input is-warning" placeholder="Input color: warning">
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Input color: danger</h2>
-        <input type="text" class="input is-danger" placeholder="Input color: danger">
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Input size: small</h2>
-        <input type="text" class="input is-small" placeholder="Input size: small">
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Input size: normal</h2>
-        <input type="text" class="input" placeholder="Input size: normal">
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Input size: medium</h2>
-        <input type="text" class="input is-medium" placeholder="Input size: medium">
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Input size: large</h2>
-        <input type="text" class="input is-large" placeholder="Input size: large">
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Input style: rounded</h2>
-        <input type="text" class="input is-rounded" placeholder="Input style: rounded">
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Input state: normal</h2>
-        <input type="text" class="input" placeholder="Input state: normal">
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Input state: hover</h2>
-        <input type="text" class="input is-hovered" placeholder="Input state: hover">
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Input state: focus</h2>
-        <input type="text" class="input is-focused" placeholder="Input state: focus">
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Input state: disabled</h2>
-        <input type="text" class="input" placeholder="Input state: disabled" disabled>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Input state: loading (small)</h2>
-        <div class="control is-small is-loading">
-            <input type="text" class="input is-small" placeholder="Input state: loading (small)">
+        <h2 class="subtitle has-text-weight-bold">Normal file upload</h2>
+        <div class="file">
+            <label class="file-label">
+                <input type="file" class="file-input" name="document">
+                <span class="file-cta">
+                    <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                    </span>
+                    <span class="file-label">Choose a file...</span>
+                </span>
+            </label>
         </div>
 
         <hr>
-        <h2 class="subtitle has-text-weight-bold">Input state: loading (normal)</h2>
-        <div class="control is-loading">
-            <input type="text" class="input" placeholder="Input state: loading (normal)">
+        <h2 class="subtitle has-text-weight-bold">File upload with placeholder</h2>
+        <div class="file has-name">
+            <label class="file-label">
+                <input type="file" class="file-input" name="document">
+                <span class="file-cta">
+                    <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                    </span>
+                    <span class="file-label">Choose a file...</span>
+                </span>
+                <span class="file-name">Job Application.pdf</span>
+            </label>
         </div>
 
         <hr>
-        <h2 class="subtitle has-text-weight-bold">Input state: loading (medium)</h2>
-        <div class="control is-medium is-loading">
-            <input type="text" class="input is-medium" placeholder="Input state: loading (medium)">
+        <h2 class="subtitle has-text-weight-bold">Full-width file upload with placeholder</h2>
+        <div class="file has-name is-fullwidth">
+            <label class="file-label">
+                <input type="file" class="file-input" name="document">
+                <span class="file-cta">
+                    <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                    </span>
+                    <span class="file-label">Choose a file...</span>
+                </span>
+                <span class="file-name">Job Application.pdf</span>
+            </label>
         </div>
 
         <hr>
-        <h2 class="subtitle has-text-weight-bold">Input state: loading (large)</h2>
-        <div class="control is-large is-loading">
-            <input type="text" class="input is-large" placeholder="Input state: loading (large)">
+        <h2 class="subtitle has-text-weight-bold">Boxed file upload</h2>
+        <div class="file is-boxed">
+            <label class="file-label">
+                <input type="file" class="file-input" name="document">
+                <span class="file-cta">
+                    <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                    </span>
+                    <span class="file-label">Choose a file...</span>
+                </span>
+            </label>
         </div>
 
         <hr>
-        <h2 class="subtitle has-text-weight-bold">Input readonly</h2>
-        <input type="text" class="input" value="Input readonly" readonly>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Input static</h2>
-        <input type="text" class="input is-static" value="Input static">
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Input with icon in the left side</h2>
-        <div class="control has-icons-left">
-            <input type="text" class="input" placeholder="Icon left side">
-            <span class="icon is-left">
-                <i class="fas fa-envelope"></i>
-            </span>
+        <h2 class="subtitle has-text-weight-bold">Boxed file upload with placeholder</h2>
+        <div class="file is-boxed has-name">
+            <label class="file-label">
+                <input type="file" class="file-input" name="document">
+                <span class="file-cta">
+                    <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                    </span>
+                    <span class="file-label">Choose a file...</span>
+                </span>
+                <span class="file-name">Job Application.pdf</span>
+            </label>
         </div>
 
         <hr>
-        <h2 class="subtitle has-text-weight-bold">Input with icon in the right side</h2>
-        <div class="control has-icons-right">
-            <input type="text" class="input" placeholder="Icon right side">
-            <span class="icon is-right">
-                <i class="fas fa-check"></i>
-            </span>
+        <h2 class="subtitle has-text-weight-bold">White normal file upload</h2>
+        <div class="file is-white">
+            <label class="file-label">
+                <input type="file" class="file-input" name="document">
+                <span class="file-cta">
+                    <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                    </span>
+                    <span class="file-label">Choose a file...</span>
+                </span>
+            </label>
         </div>
 
         <hr>
-        <h2 class="subtitle has-text-weight-bold">Input with icons in both sides</h2>
-        <div class="control has-icons-left has-icons-right">
-            <input type="text" class="input" placeholder="Icon both sides">
-            <span class="icon is-left">
-                <i class="fas fa-envelope"></i>
-            </span>
-            <span class="icon is-right">
-                <i class="fas fa-check"></i>
-            </span>
+        <h2 class="subtitle has-text-weight-bold">Black file upload with placeholder</h2>
+        <div class="file has-name is-black">
+            <label class="file-label">
+                <input type="file" class="file-input" name="document">
+                <span class="file-cta">
+                    <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                    </span>
+                    <span class="file-label">Choose a file...</span>
+                </span>
+                <span class="file-name">Job Application.pdf</span>
+            </label>
         </div>
 
         <hr>
-        <h2 class="subtitle has-text-weight-bold">Small input with icons in both sides</h2>
-        <div class="control has-icons-left has-icons-right">
-            <input type="text" class="input is-small" placeholder="Icon both sides (small)">
-            <span class="icon is-left">
-                <i class="fas fa-envelope"></i>
-            </span>
-            <span class="icon is-right">
-                <i class="fas fa-check"></i>
-            </span>
+        <h2 class="subtitle has-text-weight-bold">Light boxed file upload</h2>
+        <div class="file is-boxed is-light">
+            <label class="file-label">
+                <input type="file" class="file-input" name="document">
+                <span class="file-cta">
+                    <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                    </span>
+                    <span class="file-label">Choose a file...</span>
+                </span>
+            </label>
         </div>
 
         <hr>
-        <h2 class="subtitle has-text-weight-bold">Medium input with icons in both sides</h2>
-        <div class="control has-icons-left has-icons-right">
-            <input type="text" class="input is-medium" placeholder="Icon both sides (medium)">
-            <span class="icon is-left">
-                <i class="fas fa-envelope"></i>
-            </span>
-            <span class="icon is-right">
-                <i class="fas fa-check"></i>
-            </span>
+        <h2 class="subtitle has-text-weight-bold">Dark boxed file upload with placeholder</h2>
+        <div class="file is-boxed has-name is-dark">
+            <label class="file-label">
+                <input type="file" class="file-input" name="document">
+                <span class="file-cta">
+                    <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                    </span>
+                    <span class="file-label">Choose a file...</span>
+                </span>
+                <span class="file-name">Job Application.pdf</span>
+            </label>
         </div>
 
         <hr>
-        <h2 class="subtitle has-text-weight-bold">Large input with icons in both sides</h2>
-        <div class="control has-icons-left has-icons-right">
-            <input type="text" class="input is-large" placeholder="Icon both sides (large)">
-            <span class="icon is-left">
-                <i class="fas fa-envelope"></i>
-            </span>
-            <span class="icon is-right">
-                <i class="fas fa-check"></i>
-            </span>
+        <h2 class="subtitle has-text-weight-bold">Primary normal file upload</h2>
+        <div class="file is-primary">
+            <label class="file-label">
+                <input type="file" class="file-input" name="document">
+                <span class="file-cta">
+                    <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                    </span>
+                    <span class="file-label">Choose a file...</span>
+                </span>
+            </label>
+        </div>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Link file upload with placeholder</h2>
+        <div class="file has-name is-link">
+            <label class="file-label">
+                <input type="file" class="file-input" name="document">
+                <span class="file-cta">
+                    <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                    </span>
+                    <span class="file-label">Choose a file...</span>
+                </span>
+                <span class="file-name">Job Application.pdf</span>
+            </label>
+        </div>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Info boxed file upload</h2>
+        <div class="file is-boxed is-info">
+            <label class="file-label">
+                <input type="file" class="file-input" name="document">
+                <span class="file-cta">
+                    <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                    </span>
+                    <span class="file-label">Choose a file...</span>
+                </span>
+            </label>
+        </div>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Success boxed file upload with placeholder</h2>
+        <div class="file is-boxed has-name is-success">
+            <label class="file-label">
+                <input type="file" class="file-input" name="document">
+                <span class="file-cta">
+                    <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                    </span>
+                    <span class="file-label">Choose a file...</span>
+                </span>
+                <span class="file-name">Job Application.pdf</span>
+            </label>
+        </div>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Warning normal file upload</h2>
+        <div class="file is-warning">
+            <label class="file-label">
+                <input type="file" class="file-input" name="document">
+                <span class="file-cta">
+                    <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                    </span>
+                    <span class="file-label">Choose a file...</span>
+                </span>
+            </label>
+        </div>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Danger file upload with placeholder</h2>
+        <div class="file has-name is-danger">
+            <label class="file-label">
+                <input type="file" class="file-input" name="document">
+                <span class="file-cta">
+                    <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                    </span>
+                    <span class="file-label">Choose a file...</span>
+                </span>
+                <span class="file-name">Job Application.pdf</span>
+            </label>
+        </div>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Small file upload</h2>
+        <div class="file is-small">
+            <label class="file-label">
+                <input type="file" class="file-input" name="document">
+                <span class="file-cta">
+                    <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                    </span>
+                    <span class="file-label">Choose a file...</span>
+                </span>
+            </label>
+        </div>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Normal file upload</h2>
+        <div class="file">
+            <label class="file-label">
+                <input type="file" class="file-input" name="document">
+                <span class="file-cta">
+                    <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                    </span>
+                    <span class="file-label">Choose a file...</span>
+                </span>
+            </label>
+        </div>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Medium file upload</h2>
+        <div class="file is-medium">
+            <label class="file-label">
+                <input type="file" class="file-input" name="document">
+                <span class="file-cta">
+                    <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                    </span>
+                    <span class="file-label">Choose a file...</span>
+                </span>
+            </label>
+        </div>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Large file upload</h2>
+        <div class="file is-large">
+            <label class="file-label">
+                <input type="file" class="file-input" name="document">
+                <span class="file-cta">
+                    <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                    </span>
+                    <span class="file-label">Choose a file...</span>
+                </span>
+            </label>
+        </div>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Centered boxed file upload with placeholder</h2>
+        <div class="file is-boxed has-name is-centered">
+            <label class="file-label">
+                <input type="file" class="file-input" name="document">
+                <span class="file-cta">
+                    <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                    </span>
+                    <span class="file-label">Choose a file...</span>
+                </span>
+                <span class="file-name">Job Application.pdf</span>
+            </label>
+        </div>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Right-aligned file upload with placeholder</h2>
+        <div class="file has-name is-right">
+            <label class="file-label">
+                <input type="file" class="file-input" name="document">
+                <span class="file-cta">
+                    <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                    </span>
+                    <span class="file-label">Choose a file...</span>
+                </span>
+                <span class="file-name">Job Application.pdf</span>
+            </label>
         </div>
 
     </main>
