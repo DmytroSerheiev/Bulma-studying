@@ -49,19 +49,412 @@
         <i class="fa-solid fa-wifi" style="color: #1eed02;"></i>
     </div>
 
-    //=======================Default box.==========================
-
+    //=======================Element button.==========================
     <main>
 
-        <h2 class="subtitle has-text-weight-bold">Default box</h2>
-        <div class="box">
-            <h1 class="title">Title</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat ut,
-                porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis
-                venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin
-                porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem
-                eget,
-                facilisis sodales sem.</p>
+        <h2 class="subtitle has-text-weight-bold">Button with anchor tag</h2>
+        <a href="#0" class="button">Anchor tag</a>
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Button with button tag</h2>
+        <button type="button" class="button">Button tag</button>
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Button with input submit tag</h2>
+        <input type="submit" class="button" value="Input submit">
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Button with input reset tag</h2>
+        <input type="reset" class="button" value="Input reset">
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Button as text</h2>
+        <button type="button" class="button is-text">Text button</button>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Colors</h2>
+        <button type="button" class="button is-white">White button</button>
+        <button type="button" class="button is-black">Black button</button>
+        <button type="button" class="button is-light">Light button</button>
+        <button type="button" class="button is-dark">Dark button</button>
+
+        <br><br>
+
+        <button type="button" class="button is-primary">Primary button</button>
+        <button type="button" class="button is-link">Link button</button>
+        <button type="button" class="button is-info">Info button</button>
+        <button type="button" class="button is-success">Success button</button>
+        <button type="button" class="button is-warning">Warning button</button>
+        <button type="button" class="button is-danger">Danger button</button>
+
+        <br><br>
+
+        <button type="button" class="button is-primary is-light">Primary button</button>
+        <button type="button" class="button is-link is-light">Link button</button>
+        <button type="button" class="button is-info is-light">Info button</button>
+        <button type="button" class="button is-success is-light">Success button</button>
+        <button type="button" class="button is-warning is-light">Warning button</button>
+        <button type="button" class="button is-danger is-light">Danger button</button>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Sizes</h2>
+        <button type="button" class="button is-small">Small button</button>
+        <button type="button" class="button">Default button</button>
+        <button type="button" class="button is-medium">Medium button</button>
+        <button type="button" class="button is-large">Large button</button>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Displays</h2>
+        <button type="button" class="button is-fullwidth">Full-width button</button>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Outlined style</h2>
+        <button type="button" class="button is-outlined">Default button</button>
+        <button type="button" class="button is-white is-outlined">White button</button>
+        <button type="button" class="button is-black is-outlined">Black button</button>
+        <button type="button" class="button is-light is-outlined">Light button</button>
+        <button type="button" class="button is-dark is-outlined">Dark button</button>
+        <button type="button" class="button is-primary is-outlined">Primary button</button>
+        <button type="button" class="button is-link is-outlined">Link button</button>
+        <button type="button" class="button is-info is-outlined">Info button</button>
+        <button type="button" class="button is-success is-outlined">Success button</button>
+        <button type="button" class="button is-warning is-outlined">Warning button</button>
+        <button type="button" class="button is-danger is-outlined">Danger button</button>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Inverted style (the text color becomes the background color and
+            opposite)
+        </h2>
+        <div class="exampleInverted">
+            <button type="button" class="button is-white is-inverted">White button</button>
+            <button type="button" class="button is-black is-inverted">Black button</button>
+            <button type="button" class="button is-light is-inverted">Light button</button>
+            <button type="button" class="button is-dark is-inverted">Dark button</button>
+            <button type="button" class="button is-primary is-inverted">Primary button</button>
+            <button type="button" class="button is-link is-inverted">Link button</button>
+            <button type="button" class="button is-info is-inverted">Info button</button>
+            <button type="button" class="button is-success is-inverted">Success button</button>
+            <button type="button" class="button is-warning is-inverted">Warning button</button>
+            <button type="button" class="button is-danger is-inverted">Danger button</button>
+        </div>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Inverted and outlined style (the inverted color becomes the text
+            colors)
+        </h2>
+        <div class="exampleInvertedOutlined">
+            <button type="button" class="button is-white is-inverted is-outlined">White button</button>
+            <button type="button" class="button is-black is-inverted is-outlined">Black button</button>
+            <button type="button" class="button is-light is-inverted is-outlined">Light button</button>
+            <button type="button" class="button is-dark is-inverted is-outlined">Dark button</button>
+            <button type="button" class="button is-primary is-inverted is-outlined">Primary button</button>
+            <button type="button" class="button is-link is-inverted is-outlined">Link button</button>
+            <button type="button" class="button is-info is-inverted is-outlined">Info button</button>
+            <button type="button" class="button is-success is-inverted is-outlined">Success button</button>
+            <button type="button" class="button is-warning is-inverted is-outlined">Warning button</button>
+            <button type="button" class="button is-danger is-inverted is-outlined">Danger button</button>
+        </div>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Rounded style</h2>
+        <button type="button" class="button is-rounded">Default button</button>
+        <button type="button" class="button is-white is-rounded">White button</button>
+        <button type="button" class="button is-black is-rounded">Black button</button>
+        <button type="button" class="button is-light is-rounded">Light button</button>
+        <button type="button" class="button is-dark is-rounded">Dark button</button>
+        <button type="button" class="button is-primary is-rounded">Primary button</button>
+        <button type="button" class="button is-link is-rounded">Link button</button>
+        <button type="button" class="button is-info is-rounded">Info button</button>
+        <button type="button" class="button is-success is-rounded">Success button</button>
+        <button type="button" class="button is-warning is-rounded">Warning button</button>
+        <button type="button" class="button is-danger is-rounded">Danger button</button>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Normal state</h2>
+        <button type="button" class="button">Default button</button>
+        <button type="button" class="button is-white">White button</button>
+        <button type="button" class="button is-black">Black button</button>
+        <button type="button" class="button is-light">Light button</button>
+        <button type="button" class="button is-dark">Dark button</button>
+        <button type="button" class="button is-primary">Primary button</button>
+        <button type="button" class="button is-link">Link button</button>
+        <button type="button" class="button is-info">Info button</button>
+        <button type="button" class="button is-success">Success button</button>
+        <button type="button" class="button is-warning">Warning button</button>
+        <button type="button" class="button is-danger">Danger button</button>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Hover state</h2>
+        <button type="button" class="button is-hovered">Default button</button>
+        <button type="button" class="button is-white is-hovered">White button</button>
+        <button type="button" class="button is-black is-hovered">Black button</button>
+        <button type="button" class="button is-light is-hovered">Light button</button>
+        <button type="button" class="button is-dark is-hovered">Dark button</button>
+        <button type="button" class="button is-primary is-hovered">Primary button</button>
+        <button type="button" class="button is-link is-hovered">Link button</button>
+        <button type="button" class="button is-info is-hovered">Info button</button>
+        <button type="button" class="button is-success is-hovered">Success button</button>
+        <button type="button" class="button is-warning is-hovered">Warning button</button>
+        <button type="button" class="button is-danger is-hovered">Danger button</button>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Focus state</h2>
+        <button type="button" class="button is-focused">Default button</button>
+        <button type="button" class="button is-white is-focused">White button</button>
+        <button type="button" class="button is-black is-focused">Black button</button>
+        <button type="button" class="button is-light is-focused">Light button</button>
+        <button type="button" class="button is-dark is-focused">Dark button</button>
+        <button type="button" class="button is-primary is-focused">Primary button</button>
+        <button type="button" class="button is-link is-focused">Link button</button>
+        <button type="button" class="button is-info is-focused">Info button</button>
+        <button type="button" class="button is-success is-focused">Success button</button>
+        <button type="button" class="button is-warning is-focused">Warning button</button>
+        <button type="button" class="button is-danger is-focused">Danger button</button>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Active state</h2>
+        <button type="button" class="button is-active">Default button</button>
+        <button type="button" class="button is-white is-active">White button</button>
+        <button type="button" class="button is-black is-active">Black button</button>
+        <button type="button" class="button is-light is-active">Light button</button>
+        <button type="button" class="button is-dark is-active">Dark button</button>
+        <button type="button" class="button is-primary is-active">Primary button</button>
+        <button type="button" class="button is-link is-active">Link button</button>
+        <button type="button" class="button is-info is-active">Info button</button>
+        <button type="button" class="button is-success is-active">Success button</button>
+        <button type="button" class="button is-warning is-active">Warning button</button>
+        <button type="button" class="button is-danger is-active">Danger button</button>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Loading state</h2>
+        <button type="button" class="button is-loading">Default button</button>
+        <button type="button" class="button is-white is-loading">White button</button>
+        <button type="button" class="button is-black is-loading">Black button</button>
+        <button type="button" class="button is-light is-loading">Light button</button>
+        <button type="button" class="button is-dark is-loading">Dark button</button>
+        <button type="button" class="button is-primary is-loading">Primary button</button>
+        <button type="button" class="button is-link is-loading">Link button</button>
+        <button type="button" class="button is-info is-loading">Info button</button>
+        <button type="button" class="button is-success is-loading">Success button</button>
+        <button type="button" class="button is-warning is-loading">Warning button</button>
+        <button type="button" class="button is-danger is-loading">Danger button</button>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Disabled state</h2>
+        <button type="button" class="button" title="Disabled button" disabled>Default button</button>
+        <button type="button" class="button is-white" title="Disabled button" disabled>White button</button>
+        <button type="button" class="button is-black" title="Disabled button" disabled>Black button</button>
+        <button type="button" class="button is-light" title="Disabled button" disabled>Light button</button>
+        <button type="button" class="button is-dark" title="Disabled button" disabled>Dark button</button>
+        <button type="button" class="button is-primary" title="Disabled button" disabled>Primary button</button>
+        <button type="button" class="button is-link" title="Disabled button" disabled>Link button</button>
+        <button type="button" class="button is-info" title="Disabled button" disabled>Info button</button>
+        <button type="button" class="button is-success" title="Disabled button" disabled>Success button</button>
+        <button type="button" class="button is-warning" title="Disabled button" disabled>Warning button</button>
+        <button type="button" class="button is-danger" title="Disabled button" disabled>Danger button</button>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Static button</h2>
+        <button type="button" class="button is-static">Static button</button>
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Button with icon only</h2>
+        <button type="button" class="button">
+            <span class="icon is-small">
+                <i class="fas fa-save"></i>
+            </span>
+        </button>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Button with icon and text</h2>
+        <button type="button" class="button">
+            <span class="icon is-small">
+                <i class="fas fa-save"></i>
+            </span>
+            <span>Save</span>
+        </button>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">List of buttons</h2>
+        <div class="buttons">
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+        </div>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">List of buttons with small size</h2>
+        <div class="buttons are-small">
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+        </div>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">List of buttons with medium size</h2>
+        <div class="buttons are-medium">
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+        </div>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">List of buttons with large size</h2>
+        <div class="buttons are-large">
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+        </div>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">List of buttons with large size and individual sizes</h2>
+        <div class="buttons are-large">
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button is-medium">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button is-normal">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+        </div>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Group of attached buttons</h2>
+        <div class="buttons has-addons">
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+        </div>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Centered group of attached buttons</h2>
+        <div class="buttons has-addons is-centered">
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+        </div>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Right-aligned group of attached buttons</h2>
+        <div class="buttons has-addons is-right">
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button">Button</button>
+        </div>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Group of attached buttons with expanded button</h2>
+        <div class="buttons has-addons">
+            <button type="button" class="button">Button</button>
+            <button type="button" class="button is-expanded">Button</button>
+            <button type="button" class="button">Button</button>
         </div>
 
     </main>
