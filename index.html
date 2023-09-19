@@ -45,486 +45,86 @@
         <i class="fa-solid fa-wifi" style="color: #1eed02;"></i>
     </div>
 
-    //=======================Message==========================
+    //=======================Modal==========================
 
     <main>
 
-        <h2 class="subtitle has-text-weight-bold">Default message</h2>
-        <article class="message">
-            <div class="message-header">
-                <p>Message header</p>
-                <button class="delete" aria-label="Delete"></button>
+        <h2 class="subtitle has-text-weight-bold">Default modal</h2>
+        <button class="button is-primary" id="js-default-modal-trigger">Open default modal</button>
+
+        <div class="modal" id="js-default-modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <div class="box">
+                    <h2 class="title has-text-centered">Modal title</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed pulvinar nulla. In congue
+                        ultricies
+                        nunc, a porttitor odio finibus vitae. Nulla aliquam risus dolor, nec bibendum mauris tincidunt
+                        ut.
+                        Donec finibus orci dolor, vel viverra tortor sagittis ut. Curabitur lectus enim, maximus et
+                        condimentum eget, condimentum vitae erat. Cras rutrum nisi ligula, et tristique augue aliquet
+                        eget.
+                        Fusce ut congue justo. Vestibulum tempor nisi a aliquet suscipit.</p>
+                </div>
             </div>
-            <div class="message-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat
-                    ut,
-                    porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
-                    felis
-                    venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin
-                    porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem
-                    eget, facilisis sodales sem.</p>
-            </div>
-        </article>
+            <button class="modal-close is-large" aria-label="Close" id="js-default-modal-close"></button>
+        </div>
 
         <hr>
-        <h2 class="subtitle has-text-weight-bold">Small message</h2>
-        <article class="message is-small">
-            <div class="message-header">
-                <p>Message header</p>
-                <button class="delete" aria-label="Delete"></button>
-            </div>
-            <div class="message-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat
-                    ut,
-                    porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
-                    felis
-                    venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin
-                    porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem
-                    eget, facilisis sodales sem.</p>
-            </div>
-        </article>
+        <h2 class="subtitle has-text-weight-bold">Modal card</h2>
+        <button class="button is-primary" id="js-card-modal-trigger">Open modal card</button>
 
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Medium message</h2>
-        <article class="message is-medium">
-            <div class="message-header">
-                <p>Message header</p>
-                <button class="delete" aria-label="Delete"></button>
+        <div class="modal" id="js-card-modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <h2 class="modal-card-title">Modal card title</h2>
+                    <button class="delete js-card-modal-close" aria-label="Close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed pulvinar nulla. In congue
+                        ultricies
+                        nunc, a porttitor odio finibus vitae. Nulla aliquam risus dolor, nec bibendum mauris tincidunt
+                        ut.
+                        Donec finibus orci dolor, vel viverra tortor sagittis ut. Curabitur lectus enim, maximus et
+                        condimentum eget, condimentum vitae erat. Cras rutrum nisi ligula, et tristique augue aliquet
+                        eget.
+                        Fusce ut congue justo. Vestibulum tempor nisi a aliquet suscipit.</p>
+                </section>
+                <footer class="modal-card-foot">
+                    <button class="button is-success js-card-modal-close">Confirm</button>
+                    <button class="button js-card-modal-close">Cancel</button>
+                </footer>
             </div>
-            <div class="message-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat
-                    ut,
-                    porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
-                    felis
-                    venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin
-                    porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem
-                    eget, facilisis sodales sem.</p>
-            </div>
-        </article>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Large message</h2>
-        <article class="message is-large">
-            <div class="message-header">
-                <p>Message header</p>
-                <button class="delete" aria-label="Delete"></button>
-            </div>
-            <div class="message-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat
-                    ut,
-                    porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
-                    felis
-                    venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin
-                    porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem
-                    eget, facilisis sodales sem.</p>
-            </div>
-        </article>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Message without header</h2>
-        <article class="message">
-            <div class="message-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat
-                    ut,
-                    porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
-                    felis
-                    venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin
-                    porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem
-                    eget, facilisis sodales sem.</p>
-            </div>
-        </article>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Dark message</h2>
-        <article class="message is-dark">
-            <div class="message-header">
-                <p>Message header</p>
-                <button class="delete" aria-label="Delete"></button>
-            </div>
-            <div class="message-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat
-                    ut,
-                    porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
-                    felis
-                    venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin
-                    porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem
-                    eget, facilisis sodales sem.</p>
-            </div>
-        </article>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Primary message</h2>
-        <article class="message is-primary">
-            <div class="message-header">
-                <p>Message header</p>
-                <button class="delete" aria-label="Delete"></button>
-            </div>
-            <div class="message-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat
-                    ut,
-                    porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
-                    felis
-                    venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin
-                    porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem
-                    eget, facilisis sodales sem.</p>
-            </div>
-        </article>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Link message</h2>
-        <article class="message is-link">
-            <div class="message-header">
-                <p>Message header</p>
-                <button class="delete" aria-label="Delete"></button>
-            </div>
-            <div class="message-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat
-                    ut,
-                    porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
-                    felis
-                    venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin
-                    porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem
-                    eget, facilisis sodales sem.</p>
-            </div>
-        </article>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Info message</h2>
-        <article class="message is-info">
-            <div class="message-header">
-                <p>Message header</p>
-                <button class="delete" aria-label="Delete"></button>
-            </div>
-            <div class="message-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat
-                    ut,
-                    porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
-                    felis
-                    venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin
-                    porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem
-                    eget, facilisis sodales sem.</p>
-            </div>
-        </article>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Success message</h2>
-        <article class="message is-success">
-            <div class="message-header">
-                <p>Message header</p>
-                <button class="delete" aria-label="Delete"></button>
-            </div>
-            <div class="message-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat
-                    ut,
-                    porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
-                    felis
-                    venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin
-                    porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem
-                    eget, facilisis sodales sem.</p>
-            </div>
-        </article>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Warning message</h2>
-        <article class="message is-warning">
-            <div class="message-header">
-                <p>Message header</p>
-                <button class="delete" aria-label="Delete"></button>
-            </div>
-            <div class="message-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat
-                    ut,
-                    porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
-                    felis
-                    venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin
-                    porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem
-                    eget, facilisis sodales sem.</p>
-            </div>
-        </article>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Danger message</h2>
-        <article class="message is-danger">
-            <div class="message-header">
-                <p>Message header</p>
-                <button class="delete" aria-label="Delete"></button>
-            </div>
-            <div class="message-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat
-                    ut,
-                    porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
-                    felis
-                    venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin
-                    porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem
-                    eget, facilisis sodales sem.</p>
-            </div>
-        </article>
+        </div>
 
         <script type="text/javascript">
             document.addEventListener('DOMContentLoaded', function () {
+                var defaultModal = document.getElementById('js-default-modal');
+                var defaultModalTrigger = document.getElementById('js-default-modal-trigger');
+                var defaultModalClose = document.getElementById('js-default-modal-close');
 
-                // Get all "navbar-burger" elements
-                var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+                defaultModalTrigger.addEventListener('click', function () {
+                    defaultModal.classList.toggle('is-active');
+                })
 
-                // Check if there are any navbar burgers
-                if ($navbarBurgers.length > 0) {
+                defaultModalClose.addEventListener('click', function () {
+                    defaultModal.classList.toggle('is-active');
+                })
 
-                    // Add a click event on each of them
-                    $navbarBurgers.forEach(function ($el) {
-                        $el.addEventListener('click', function () {
+                var cardModal = document.getElementById('js-card-modal');
+                var cardModalTrigger = document.getElementById('js-card-modal-trigger');
+                var cardModalClose = document.getElementsByClassName('js-card-modal-close');
 
-                            // Get the target from the "data-target" attribute
-                            var target = $el.dataset.target;
-                            var $target = document.getElementById(target);
+                cardModalTrigger.addEventListener('click', function () {
+                    cardModal.classList.toggle('is-active');
+                })
 
-                            // Toggle the class on both the "navbar-burger" and the "navbar-menu"
-                            $el.classList.toggle('is-active');
-                            $target.classList.toggle('is-active');
-
-                        });
-                    });
-                }
-
-            });
-        </script>
-
-        in>
-
-        <h2 class="subtitle has-text-weight-bold">Default message</h2>
-        <article class="message">
-            <div class="message-header">
-                <p>Message header</p>
-                <button class="delete" aria-label="Delete"></button>
-            </div>
-            <div class="message-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat
-                    ut,
-                    porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
-                    felis
-                    venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin
-                    porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem
-                    eget, facilisis sodales sem.</p>
-            </div>
-        </article>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Small message</h2>
-        <article class="message is-small">
-            <div class="message-header">
-                <p>Message header</p>
-                <button class="delete" aria-label="Delete"></button>
-            </div>
-            <div class="message-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat
-                    ut,
-                    porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
-                    felis
-                    venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin
-                    porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem
-                    eget, facilisis sodales sem.</p>
-            </div>
-        </article>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Medium message</h2>
-        <article class="message is-medium">
-            <div class="message-header">
-                <p>Message header</p>
-                <button class="delete" aria-label="Delete"></button>
-            </div>
-            <div class="message-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat
-                    ut,
-                    porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
-                    felis
-                    venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin
-                    porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem
-                    eget, facilisis sodales sem.</p>
-            </div>
-        </article>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Large message</h2>
-        <article class="message is-large">
-            <div class="message-header">
-                <p>Message header</p>
-                <button class="delete" aria-label="Delete"></button>
-            </div>
-            <div class="message-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat
-                    ut,
-                    porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
-                    felis
-                    venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin
-                    porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem
-                    eget, facilisis sodales sem.</p>
-            </div>
-        </article>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Message without header</h2>
-        <article class="message">
-            <div class="message-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat
-                    ut,
-                    porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
-                    felis
-                    venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin
-                    porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem
-                    eget, facilisis sodales sem.</p>
-            </div>
-        </article>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Dark message</h2>
-        <article class="message is-dark">
-            <div class="message-header">
-                <p>Message header</p>
-                <button class="delete" aria-label="Delete"></button>
-            </div>
-            <div class="message-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat
-                    ut,
-                    porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
-                    felis
-                    venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin
-                    porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem
-                    eget, facilisis sodales sem.</p>
-            </div>
-        </article>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Primary message</h2>
-        <article class="message is-primary">
-            <div class="message-header">
-                <p>Message header</p>
-                <button class="delete" aria-label="Delete"></button>
-            </div>
-            <div class="message-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat
-                    ut,
-                    porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
-                    felis
-                    venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin
-                    porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem
-                    eget, facilisis sodales sem.</p>
-            </div>
-        </article>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Link message</h2>
-        <article class="message is-link">
-            <div class="message-header">
-                <p>Message header</p>
-                <button class="delete" aria-label="Delete"></button>
-            </div>
-            <div class="message-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat
-                    ut,
-                    porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
-                    felis
-                    venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin
-                    porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem
-                    eget, facilisis sodales sem.</p>
-            </div>
-        </article>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Info message</h2>
-        <article class="message is-info">
-            <div class="message-header">
-                <p>Message header</p>
-                <button class="delete" aria-label="Delete"></button>
-            </div>
-            <div class="message-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat
-                    ut,
-                    porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
-                    felis
-                    venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin
-                    porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem
-                    eget, facilisis sodales sem.</p>
-            </div>
-        </article>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Success message</h2>
-        <article class="message is-success">
-            <div class="message-header">
-                <p>Message header</p>
-                <button class="delete" aria-label="Delete"></button>
-            </div>
-            <div class="message-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat
-                    ut,
-                    porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
-                    felis
-                    venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin
-                    porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem
-                    eget, facilisis sodales sem.</p>
-            </div>
-        </article>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Warning message</h2>
-        <article class="message is-warning">
-            <div class="message-header">
-                <p>Message header</p>
-                <button class="delete" aria-label="Delete"></button>
-            </div>
-            <div class="message-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat
-                    ut,
-                    porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
-                    felis
-                    venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin
-                    porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem
-                    eget, facilisis sodales sem.</p>
-            </div>
-        </article>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Danger message</h2>
-        <article class="message is-danger">
-            <div class="message-header">
-                <p>Message header</p>
-                <button class="delete" aria-label="Delete"></button>
-            </div>
-            <div class="message-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat
-                    ut,
-                    porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
-                    felis
-                    venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin
-                    porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem
-                    eget, facilisis sodales sem.</p>
-            </div>
-        </article>
-
-        <script type="text/javascript">
-            document.addEventListener('DOMContentLoaded', function () {
-
-                // Get all "navbar-burger" elements
-                var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-                // Check if there are any navbar burgers
-                if ($navbarBurgers.length > 0) {
-
-                    // Add a click event on each of them
-                    $navbarBurgers.forEach(function ($el) {
-                        $el.addEventListener('click', function () {
-
-                            // Get the target from the "data-target" attribute
-                            var target = $el.dataset.target;
-                            var $target = document.getElementById(target);
-
-                            // Toggle the class on both the "navbar-burger" and the "navbar-menu"
-                            $el.classList.toggle('is-active');
-                            $target.classList.toggle('is-active');
-
-                        });
-                    });
-                }
+                Array.prototype.forEach.call(cardModalClose, function (el, i) {
+                    el.addEventListener('click', function () {
+                        cardModal.classList.toggle('is-active');
+                    })
+                });
 
             });
         </script>
