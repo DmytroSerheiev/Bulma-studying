@@ -45,89 +45,73 @@
         <i class="fa-solid fa-wifi" style="color: #1eed02;"></i>
     </div>
 
-    //=======================Modal==========================
+    //=======================Navbar==========================
 
     <main>
 
-        <h2 class="subtitle has-text-weight-bold">Default modal</h2>
-        <button class="button is-primary" id="js-default-modal-trigger">Open default modal</button>
+        <h2 class="subtitle has-text-weight-bold">Navbar with navbar brand only</h2>
 
-        <div class="modal" id="js-default-modal">
-            <div class="modal-background"></div>
-            <div class="modal-content">
-                <div class="box">
-                    <h2 class="title has-text-centered">Modal title</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed pulvinar nulla. In congue
-                        ultricies
-                        nunc, a porttitor odio finibus vitae. Nulla aliquam risus dolor, nec bibendum mauris tincidunt
-                        ut.
-                        Donec finibus orci dolor, vel viverra tortor sagittis ut. Curabitur lectus enim, maximus et
-                        condimentum eget, condimentum vitae erat. Cras rutrum nisi ligula, et tristique augue aliquet
-                        eget.
-                        Fusce ut congue justo. Vestibulum tempor nisi a aliquet suscipit.</p>
-                </div>
-            </div>
-            <button class="modal-close is-large" aria-label="Close" id="js-default-modal-close"></button>
-        </div>
 
         <hr>
-        <h2 class="subtitle has-text-weight-bold">Modal card</h2>
-        <button class="button is-primary" id="js-card-modal-trigger">Open modal card</button>
+        <h2 class="subtitle has-text-weight-bold">Transparent navbar</h2>
 
-        <div class="modal" id="js-card-modal">
-            <div class="modal-background"></div>
-            <div class="modal-card">
-                <header class="modal-card-head">
-                    <h2 class="modal-card-title">Modal card title</h2>
-                    <button class="delete js-card-modal-close" aria-label="Close"></button>
-                </header>
-                <section class="modal-card-body">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed pulvinar nulla. In congue
-                        ultricies
-                        nunc, a porttitor odio finibus vitae. Nulla aliquam risus dolor, nec bibendum mauris tincidunt
-                        ut.
-                        Donec finibus orci dolor, vel viverra tortor sagittis ut. Curabitur lectus enim, maximus et
-                        condimentum eget, condimentum vitae erat. Cras rutrum nisi ligula, et tristique augue aliquet
-                        eget.
-                        Fusce ut congue justo. Vestibulum tempor nisi a aliquet suscipit.</p>
-                </section>
-                <footer class="modal-card-foot">
-                    <button class="button is-success js-card-modal-close">Confirm</button>
-                    <button class="button js-card-modal-close">Cancel</button>
-                </footer>
-            </div>
-        </div>
 
-        <script type="text/javascript">
-            document.addEventListener('DOMContentLoaded', function () {
-                var defaultModal = document.getElementById('js-default-modal');
-                var defaultModalTrigger = document.getElementById('js-default-modal-trigger');
-                var defaultModalClose = document.getElementById('js-default-modal-close');
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Primary navbar</h2>
 
-                defaultModalTrigger.addEventListener('click', function () {
-                    defaultModal.classList.toggle('is-active');
-                })
 
-                defaultModalClose.addEventListener('click', function () {
-                    defaultModal.classList.toggle('is-active');
-                })
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Link navbar</h2>
 
-                var cardModal = document.getElementById('js-card-modal');
-                var cardModalTrigger = document.getElementById('js-card-modal-trigger');
-                var cardModalClose = document.getElementsByClassName('js-card-modal-close');
 
-                cardModalTrigger.addEventListener('click', function () {
-                    cardModal.classList.toggle('is-active');
-                })
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Info navbar</h2>
 
-                Array.prototype.forEach.call(cardModalClose, function (el, i) {
-                    el.addEventListener('click', function () {
-                        cardModal.classList.toggle('is-active');
-                    })
-                });
 
-            });
-        </script>
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Success navbar</h2>
+
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Warning navbar</h2>
+
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Danger navbar</h2>
+
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Black navbar</h2>
+
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Dark navbar</h2>
+
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Light navbar</h2>
+
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">White navbar</h2>
+
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Navbar with navbar brand, navbar menu and navbar burger</h2>
+
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Navbar with navbar brand, navbar menu, dropdown and navbar burger</h2>
+
+
+        <br>
+
+        <hr>
+        <h2 class="subtitle has-text-weight-bold">Navbar with navbar brand, navbar menu, arrowless dropdown and navbar
+            burger</h2>
+
+
+        <br><br><br>
 
     </main>
 </body>
