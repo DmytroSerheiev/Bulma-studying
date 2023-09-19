@@ -45,134 +45,39 @@
         <i class="fa-solid fa-wifi" style="color: #1eed02;"></i>
     </div>
 
-    //=======================Dropdown==========================
+    //=======================Menu==========================
 
-    <h2 class="subtitle has-text-weight-bold">Default dropdown (expands on hover)</h2>
-    <div class="dropdown is-hoverable">
-        <div class="dropdown-trigger">
-            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-                <span>Dropdown on hover</span>
-                <span class="icon is-small">
-                    <i class="fas fa-angle-down"></i>
-                </span>
-            </button>
-        </div>
-        <div class="dropdown-menu" id="dropdown-menu" role="menu">
-            <div class="dropdown-content">
-                <a href="#0" class="dropdown-item">Dropdown item</a>
-                <a href="#0" class="dropdown-item">Dropdown item</a>
-                <a href="#0" class="dropdown-item is-active">Active dropdown item</a>
-                <a href="#0" class="dropdown-item">Dropdown item</a>
-                <hr class="dropdown-divider">
-                <a href="#0" class="dropdown-item">Dropdown item</a>
-            </div>
-        </div>
-    </div>
+    <main>
 
-    <hr>
-    <h2 class="subtitle has-text-weight-bold">Default dropdown (expands on click)</h2>
-    <div class="dropdown" id="js-dropdown">
-        <div class="dropdown-trigger">
-            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu" id="js-dropdown-trigger">
-                <span>Dropdown on click</span>
-                <span class="icon is-small">
-                    <i class="fas fa-angle-down"></i>
-                </span>
-            </button>
-        </div>
-        <div class="dropdown-menu" id="dropdown-menu" role="menu">
-            <div class="dropdown-content">
-                <a href="#0" class="dropdown-item">Dropdown item</a>
-                <a href="#0" class="dropdown-item">Dropdown item</a>
-                <a href="#0" class="dropdown-item is-active">Active dropdown item</a>
-                <a href="#0" class="dropdown-item">Dropdown item</a>
-                <hr class="dropdown-divider">
-                <a href="#0" class="dropdown-item">Dropdown item</a>
-            </div>
-        </div>
-    </div>
-
-    <hr>
-    <h2 class="subtitle has-text-weight-bold">Dropdown with content</h2>
-    <div class="dropdown is-hoverable">
-        <div class="dropdown-trigger">
-            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-                <span>Dropdown with content</span>
-                <span class="icon is-small">
-                    <i class="fas fa-angle-down"></i>
-                </span>
-            </button>
-        </div>
-        <div class="dropdown-menu" id="dropdown-menu" role="menu">
-            <div class="dropdown-content">
-                <a href="#0" class="dropdown-item">
-                    <p>Random <em>text content</em> for a <br><strong>dropdown</strong> item.</p>
-                </a>
-                <a href="#0" class="dropdown-item">Dropdown item</a>
-                <a href="#0" class="dropdown-item is-active">Active dropdown item</a>
-                <a href="#0" class="dropdown-item">
-                    <p>Use all kinds of <code>&lt;html&gt;</code> <br>in a dropdown item.</p>
-                </a>
-                <hr class="dropdown-divider">
-                <a href="#0" class="dropdown-item">Dropdown item</a>
-            </div>
-        </div>
-    </div>
-
-    <hr>
-    <h2 class="subtitle has-text-weight-bold">Right-aligned dropdown</h2>
-    <div class="dropdown is-right is-hoverable">
-        <div class="dropdown-trigger">
-            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-                <span>Right-aligned dropdown</span>
-                <span class="icon is-small">
-                    <i class="fas fa-angle-down"></i>
-                </span>
-            </button>
-        </div>
-        <div class="dropdown-menu" id="dropdown-menu" role="menu">
-            <div class="dropdown-content">
-                <a href="#0" class="dropdown-item">Dropdown item</a>
-                <a href="#0" class="dropdown-item">Dropdown item</a>
-                <a href="#0" class="dropdown-item is-active">Active dropdown item</a>
-                <a href="#0" class="dropdown-item">Dropdown item</a>
-                <hr class="dropdown-divider">
-                <a href="#0" class="dropdown-item">Dropdown item</a>
-            </div>
-        </div>
-    </div>
-
-    <hr>
-    <h2 class="subtitle has-text-weight-bold">Dropup</h2>
-    <div class="dropdown is-up is-hoverable">
-        <div class="dropdown-trigger">
-            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-                <span>Dropup</span>
-                <span class="icon is-small">
-                    <i class="fas fa-angle-down"></i>
-                </span>
-            </button>
-        </div>
-        <div class="dropdown-menu" id="dropdown-menu" role="menu">
-            <div class="dropdown-content">
-                <a href="#0" class="dropdown-item">Dropdown item</a>
-                <a href="#0" class="dropdown-item">Dropdown item</a>
-                <a href="#0" class="dropdown-item is-active">Active dropdown item</a>
-                <a href="#0" class="dropdown-item">Dropdown item</a>
-            </div>
-        </div>
-    </div>
-
-    <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded', function () {
-            var dropdown = document.getElementById('js-dropdown');
-            var dropdownTrigger = document.getElementById('js-dropdown-trigger');
-
-            dropdownTrigger.addEventListener('click', function () {
-                dropdown.classList.toggle('is-active');
-            })
-        });
-    </script>
+        <h2 class="subtitle has-text-weight-bold">Default menu</h2>
+        <aside>
+            <h2>General</h2>
+            <ul>
+                <li><a href="#0">Dashboard</a></li>
+                <li><a href="#0">Customers</a></li>
+            </ul>
+            <h2>Administration</h2>
+            <ul>
+                <li><a href="#0">Team Settings</a></li>
+                <li>
+                    <a href="#0">Manage Your Team</a>
+                    <ul>
+                        <li><a href="#0">Members</a></li>
+                        <li><a href="#0">Plugins</a></li>
+                        <li><a href="#0">Add a member</a></li>
+                    </ul>
+                </li>
+                <li><a href="#0">Invitations</a></li>
+                <li><a href="#0">Cloud Storage Environment Settings</a></li>
+                <li><a href="#0">Authentication</a></li>
+            </ul>
+            <h2>Transactions</h2>
+            <ul>
+                <li><a href="#0">Payments</a></li>
+                <li><a href="#0">Transfers</a></li>
+                <li><a href="#0">Balance</a></li>
+            </ul>
+        </aside>
 
     </main>
 </body>
