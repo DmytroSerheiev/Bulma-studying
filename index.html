@@ -45,135 +45,134 @@
         <i class="fa-solid fa-wifi" style="color: #1eed02;"></i>
     </div>
 
-    //=======================Card==========================
-    <main>
+    //=======================Dropdown==========================
 
-        <h2 class="subtitle has-text-weight-bold">Card with content only</h2>
-        <div class="card">
-            <div class="card-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique dolor a turpis laoreet posuere.
-                Nulla
-                malesuada, velit vel tempus ullamcorper, diam lorem porta est, nec sodales sem dui eget purus.
+    <h2 class="subtitle has-text-weight-bold">Default dropdown (expands on hover)</h2>
+    <div class="dropdown is-hoverable">
+        <div class="dropdown-trigger">
+            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                <span>Dropdown on hover</span>
+                <span class="icon is-small">
+                    <i class="fas fa-angle-down"></i>
+                </span>
+            </button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu" role="menu">
+            <div class="dropdown-content">
+                <a href="#0" class="dropdown-item">Dropdown item</a>
+                <a href="#0" class="dropdown-item">Dropdown item</a>
+                <a href="#0" class="dropdown-item is-active">Active dropdown item</a>
+                <a href="#0" class="dropdown-item">Dropdown item</a>
+                <hr class="dropdown-divider">
+                <a href="#0" class="dropdown-item">Dropdown item</a>
             </div>
         </div>
+    </div>
 
-        <br>
+    <hr>
+    <h2 class="subtitle has-text-weight-bold">Default dropdown (expands on click)</h2>
+    <div class="dropdown" id="js-dropdown">
+        <div class="dropdown-trigger">
+            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu" id="js-dropdown-trigger">
+                <span>Dropdown on click</span>
+                <span class="icon is-small">
+                    <i class="fas fa-angle-down"></i>
+                </span>
+            </button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu" role="menu">
+            <div class="dropdown-content">
+                <a href="#0" class="dropdown-item">Dropdown item</a>
+                <a href="#0" class="dropdown-item">Dropdown item</a>
+                <a href="#0" class="dropdown-item is-active">Active dropdown item</a>
+                <a href="#0" class="dropdown-item">Dropdown item</a>
+                <hr class="dropdown-divider">
+                <a href="#0" class="dropdown-item">Dropdown item</a>
+            </div>
+        </div>
+    </div>
 
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Card with header</h2>
-        <div class="card">
-            <header class="card-header">
-                <p class="card-header-title">Card header title</p>
-                <a href="#0" class="card-header-icon" aria-label="More options">
-                    <span class="icon">
-                        <i class="fas fa-angle-down"></i>
-                    </span>
+    <hr>
+    <h2 class="subtitle has-text-weight-bold">Dropdown with content</h2>
+    <div class="dropdown is-hoverable">
+        <div class="dropdown-trigger">
+            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                <span>Dropdown with content</span>
+                <span class="icon is-small">
+                    <i class="fas fa-angle-down"></i>
+                </span>
+            </button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu" role="menu">
+            <div class="dropdown-content">
+                <a href="#0" class="dropdown-item">
+                    <p>Random <em>text content</em> for a <br><strong>dropdown</strong> item.</p>
                 </a>
-            </header>
-            <div class="card-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique dolor a turpis laoreet posuere.
-                Nulla
-                malesuada, velit vel tempus ullamcorper, diam lorem porta est, nec sodales sem dui eget purus.
-            </div>
-        </div>
-
-        <br>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Card with image</h2>
-        <div class="card">
-            <div class="card-image">
-                <figure class="image is-4by3">
-                    <img src="../img/400x300.png" alt="Card image">
-                </figure>
-            </div>
-            <div class="card-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique dolor a turpis laoreet posuere.
-                Nulla
-                malesuada, velit vel tempus ullamcorper, diam lorem porta est, nec sodales sem dui eget purus.
-            </div>
-        </div>
-
-        <br>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Card with footer</h2>
-        <div class="card">
-            <div class="card-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique dolor a turpis laoreet posuere.
-                Nulla
-                malesuada, velit vel tempus ullamcorper, diam lorem porta est, nec sodales sem dui eget purus.
-            </div>
-            <footer class="card-footer">
-                <a href="#0" class="card-footer-item"><i class="fas fa-fw fa-star"></i> Favourite</a>
-                <a href="#0" class="card-footer-item"><i class="fas fa-fw fa-flag"></i> Share</a>
-                <a href="#0" class="card-footer-item"><i class="fas fa-fw fa-share"></i> Report</a>
-            </footer>
-        </div>
-
-        <br>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Card with everything</h2>
-        <div class="card">
-            <header class="card-header">
-                <p class="card-header-title">Card header title</p>
-                <a href="#0" class="card-header-icon" aria-label="More options">
-                    <span class="icon">
-                        <i class="fas fa-angle-down"></i>
-                    </span>
+                <a href="#0" class="dropdown-item">Dropdown item</a>
+                <a href="#0" class="dropdown-item is-active">Active dropdown item</a>
+                <a href="#0" class="dropdown-item">
+                    <p>Use all kinds of <code>&lt;html&gt;</code> <br>in a dropdown item.</p>
                 </a>
-            </header>
-            <div class="card-image">
-                <figure class="image is-4by3">
-                    <img src="../img/400x300.png" alt="Card image">
-                </figure>
+                <hr class="dropdown-divider">
+                <a href="#0" class="dropdown-item">Dropdown item</a>
             </div>
-            <div class="card-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique dolor a turpis laoreet posuere.
-                Nulla
-                malesuada, velit vel tempus ullamcorper, diam lorem porta est, nec sodales sem dui eget purus.
-            </div>
-            <footer class="card-footer">
-                <a href="#0" class="card-footer-item"><i class="fas fa-fw fa-star"></i> Favourite</a>
-                <a href="#0" class="card-footer-item"><i class="fas fa-fw fa-flag"></i> Share</a>
-                <a href="#0" class="card-footer-item"><i class="fas fa-fw fa-share"></i> Report</a>
-            </footer>
         </div>
+    </div>
 
-        //====================exercise====================
-        <div class="card">
-            <!-- Заголовок карты -->
-            <header class="card-header">
-                <p class="card-header-title">
-                    Заголовок карты
-                </p>
-            </header>
-
-            <!-- Изображение карты 4:3 -->
-            <div class="card-image">
-                <figure class="image is-4by3">
-                    <img src="https://placekitten.com/800/600" alt="Изображение карты">
-                </figure>
-            </div>
-
-            <div class="card-content">
-                <!-- Содержание карты -->
-                <div class="content">
-                    Содержание карты с текстом
-                </div>
-            </div>
-
-            <!-- Нижний колонтитул карты -->
-            <footer class="card-footer">
-                <!-- Три элемента нижнего колонтитула карты (ссылки) -->
-                <a href="#" class="card-footer-item">Ссылка 1</a>
-                <a href="#" class="card-footer-item">Ссылка 2</a>
-                <a href="#" class="card-footer-item">Ссылка 3</a>
-            </footer>
+    <hr>
+    <h2 class="subtitle has-text-weight-bold">Right-aligned dropdown</h2>
+    <div class="dropdown is-right is-hoverable">
+        <div class="dropdown-trigger">
+            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                <span>Right-aligned dropdown</span>
+                <span class="icon is-small">
+                    <i class="fas fa-angle-down"></i>
+                </span>
+            </button>
         </div>
+        <div class="dropdown-menu" id="dropdown-menu" role="menu">
+            <div class="dropdown-content">
+                <a href="#0" class="dropdown-item">Dropdown item</a>
+                <a href="#0" class="dropdown-item">Dropdown item</a>
+                <a href="#0" class="dropdown-item is-active">Active dropdown item</a>
+                <a href="#0" class="dropdown-item">Dropdown item</a>
+                <hr class="dropdown-divider">
+                <a href="#0" class="dropdown-item">Dropdown item</a>
+            </div>
+        </div>
+    </div>
 
-        <!-- Write your solution above this comment -->
+    <hr>
+    <h2 class="subtitle has-text-weight-bold">Dropup</h2>
+    <div class="dropdown is-up is-hoverable">
+        <div class="dropdown-trigger">
+            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                <span>Dropup</span>
+                <span class="icon is-small">
+                    <i class="fas fa-angle-down"></i>
+                </span>
+            </button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu" role="menu">
+            <div class="dropdown-content">
+                <a href="#0" class="dropdown-item">Dropdown item</a>
+                <a href="#0" class="dropdown-item">Dropdown item</a>
+                <a href="#0" class="dropdown-item is-active">Active dropdown item</a>
+                <a href="#0" class="dropdown-item">Dropdown item</a>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            var dropdown = document.getElementById('js-dropdown');
+            var dropdownTrigger = document.getElementById('js-dropdown-trigger');
+
+            dropdownTrigger.addEventListener('click', function () {
+                dropdown.classList.toggle('is-active');
+            })
+        });
+    </script>
 
     </main>
 </body>
