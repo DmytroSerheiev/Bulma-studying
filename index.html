@@ -45,107 +45,181 @@
         <i class="fa-solid fa-wifi" style="color: #1eed02;"></i>
     </div>
 
-    //=======================Pagination==========================
+    //=======================Panel==========================
 
     <main>
 
-        <h2 class="subtitle has-text-weight-bold">Default pagination with disabled "Previous" button</h2>
-        <nav class="pagination" role="navigation" aria-label="Pagination">
-            <a href="#0" class="pagination-previous" title="This is the first page" disabled>Previous</a>
-            <a href="#0" class="pagination-next">Next page</a>
-            <ul class="pagination-list">
-                <li><a href="#0" class="pagination-link is-current" aria-label="Page 1" aria-current="page">1</a></li>
-                <li><a href="#0" class="pagination-link" aria-label="Goto page 2">2</a></li>
-                <li><a href="#0" class="pagination-link" aria-label="Goto page 3">3</a></li>
-            </ul>
+        <h2 class="subtitle has-text-weight-bold">Default panel</h2>
+        <nav class="panel">
+            <p class="panel-heading">Panel heading</p>
+            <div class="panel-block">
+                <p class="control has-icons-left">
+                    <input type="search" class="input is-small" placeholder="Search">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </p>
+            </div>
+            <p class="panel-tabs">
+                <a href="#0" class="is-active">All</a>
+                <a href="#0">Public</a>
+                <a href="#0">Private</a>
+                <a href="#0">Sources</a>
+                <a href="#0">Forks</a>
+            </p>
+            <a href="#0" class="panel-block is-active"><span class="panel-icon"><i
+                       class="fas fa-code-branch"></i></span>Bootstrap</a>
+            <a href="#0" class="panel-block"><span class="panel-icon"><i class="fas fa-code-branch"></i></span>Bulma</a>
+            <a href="#0" class="panel-block"><span class="panel-icon"><i
+                       class="fas fa-code-branch"></i></span>Foundation</a>
+            <a href="#0" class="panel-block"><span class="panel-icon"><i
+                       class="fas fa-code-branch"></i></span>Materialize</a>
+            <a href="#0" class="panel-block"><span class="panel-icon"><i class="fas fa-code-branch"></i></span>Semantic
+                UI</a>
+            <label class="panel-block">
+                <input type="checkbox" id="selectAll" value="selectAll" name="selectAll">Select all
+            </label>
+            <div class="panel-block">
+                <button type="reset" class="button is-link is-outlined is-fullwidth">Reset all filters</button>
+            </div>
         </nav>
 
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Centered pagination</h2>
-        <nav class="pagination is-centered" role="navigation" aria-label="Pagination">
-            <a href="#0" class="pagination-previous" title="This is the first page" disabled>Previous</a>
-            <a href="#0" class="pagination-next">Next page</a>
-            <ul class="pagination-list">
-                <li><a href="#0" class="pagination-link is-current" aria-label="Page 1" aria-current="page">1</a></li>
-                <li><a href="#0" class="pagination-link" aria-label="Goto page 2">2</a></li>
-                <li><a href="#0" class="pagination-link" aria-label="Goto page 3">3</a></li>
-            </ul>
+        <h2 class="subtitle has-text-weight-bold">Primary panel</h2>
+        <nav class="panel is-primary">
+            <p class="panel-heading">Panel heading</p>
+            <div class="panel-block">
+                <p class="control has-icons-left">
+                    <input type="search" class="input is-small is-primary" placeholder="Search">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </p>
+            </div>
+            <p class="panel-tabs">
+                <a href="#0" class="is-active">All</a>
+                <a href="#0">Public</a>
+                <a href="#0">Private</a>
+                <a href="#0">Sources</a>
+                <a href="#0">Forks</a>
+            </p>
+            <a href="#0" class="panel-block is-active"><span class="panel-icon"><i
+                       class="fas fa-code-branch"></i></span>Bootstrap</a>
+            <!-- More panel content here -->
         </nav>
 
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Right-aligned pagination</h2>
-        <nav class="pagination is-right" role="navigation" aria-label="Pagination">
-            <a href="#0" class="pagination-previous" title="This is the first page" disabled>Previous</a>
-            <a href="#0" class="pagination-next">Next page</a>
-            <ul class="pagination-list">
-                <li><a href="#0" class="pagination-link is-current" aria-label="Page 1" aria-current="page">1</a></li>
-                <li><a href="#0" class="pagination-link" aria-label="Goto page 2">2</a></li>
-                <li><a href="#0" class="pagination-link" aria-label="Goto page 3">3</a></li>
-            </ul>
+        <h2 class="subtitle has-text-weight-bold">Link panel</h2>
+        <nav class="panel is-link">
+            <p class="panel-heading">Panel heading</p>
+            <div class="panel-block">
+                <p class="control has-icons-left">
+                    <input type="search" class="input is-small is-link" placeholder="Search">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </p>
+            </div>
+            <p class="panel-tabs">
+                <a href="#0" class="is-active">All</a>
+                <a href="#0">Public</a>
+                <a href="#0">Private</a>
+                <a href="#0">Sources</a>
+                <a href="#0">Forks</a>
+            </p>
+            <a href="#0" class="panel-block is-active"><span class="panel-icon"><i
+                       class="fas fa-code-branch"></i></span>Bootstrap</a>
+            <!-- More panel content here -->
         </nav>
 
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Pagination with rounded style</h2>
-        <nav class="pagination is-rounded" role="navigation" aria-label="Pagination">
-            <a href="#0" class="pagination-previous" title="This is the first page" disabled>Previous</a>
-            <a href="#0" class="pagination-next">Next page</a>
-            <ul class="pagination-list">
-                <li><a href="#0" class="pagination-link is-current" aria-label="Page 1" aria-current="page">1</a></li>
-                <li><a href="#0" class="pagination-link" aria-label="Goto page 2">2</a></li>
-                <li><a href="#0" class="pagination-link" aria-label="Goto page 3">3</a></li>
-            </ul>
+        <h2 class="subtitle has-text-weight-bold">Info panel</h2>
+        <nav class="panel is-info">
+            <p class="panel-heading">Panel heading</p>
+            <div class="panel-block">
+                <p class="control has-icons-left">
+                    <input type="search" class="input is-small is-info" placeholder="Search">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </p>
+            </div>
+            <p class="panel-tabs">
+                <a href="#0" class="is-active">All</a>
+                <a href="#0">Public</a>
+                <a href="#0">Private</a>
+                <a href="#0">Sources</a>
+                <a href="#0">Forks</a>
+            </p>
+            <a href="#0" class="panel-block is-active"><span class="panel-icon"><i
+                       class="fas fa-code-branch"></i></span>Bootstrap</a>
+            <!-- More panel content here -->
         </nav>
 
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Small pagination</h2>
-        <nav class="pagination is-small" role="navigation" aria-label="Pagination">
-            <a href="#0" class="pagination-previous" title="This is the first page" disabled>Previous</a>
-            <a href="#0" class="pagination-next">Next page</a>
-            <ul class="pagination-list">
-                <li><a href="#0" class="pagination-link is-current" aria-label="Page 1" aria-current="page">1</a></li>
-                <li><a href="#0" class="pagination-link" aria-label="Goto page 2">2</a></li>
-                <li><a href="#0" class="pagination-link" aria-label="Goto page 3">3</a></li>
-            </ul>
+        <h2 class="subtitle has-text-weight-bold">Success panel</h2>
+        <nav class="panel is-success">
+            <p class="panel-heading">Panel heading</p>
+            <div class="panel-block">
+                <p class="control has-icons-left">
+                    <input type="search" class="input is-small is-success" placeholder="Search">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </p>
+            </div>
+            <p class="panel-tabs">
+                <a href="#0" class="is-active">All</a>
+                <a href="#0">Public</a>
+                <a href="#0">Private</a>
+                <a href="#0">Sources</a>
+                <a href="#0">Forks</a>
+            </p>
+            <a href="#0" class="panel-block is-active"><span class="panel-icon"><i
+                       class="fas fa-code-branch"></i></span>Bootstrap</a>
+            <!-- More panel content here -->
         </nav>
 
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Medium pagination</h2>
-        <nav class="pagination is-medium" role="navigation" aria-label="Pagination">
-            <a href="#0" class="pagination-previous" title="This is the first page" disabled>Previous</a>
-            <a href="#0" class="pagination-next">Next page</a>
-            <ul class="pagination-list">
-                <li><a href="#0" class="pagination-link is-current" aria-label="Page 1" aria-current="page">1</a></li>
-                <li><a href="#0" class="pagination-link" aria-label="Goto page 2">2</a></li>
-                <li><a href="#0" class="pagination-link" aria-label="Goto page 3">3</a></li>
-            </ul>
+        <h2 class="subtitle has-text-weight-bold">Warning panel</h2>
+        <nav class="panel is-warning">
+            <p class="panel-heading">Panel heading</p>
+            <div class="panel-block">
+                <p class="control has-icons-left">
+                    <input type="search" class="input is-small is-warning" placeholder="Search">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </p>
+            </div>
+            <p class="panel-tabs">
+                <a href="#0" class="is-active">All</a>
+                <a href="#0">Public</a>
+                <a href="#0">Private</a>
+                <a href="#0">Sources</a>
+                <a href="#0">Forks</a>
+            </p>
+            <a href="#0" class="panel-block is-active"><span class="panel-icon"><i
+                       class="fas fa-code-branch"></i></span>Bootstrap</a>
+            <!-- More panel content here -->
         </nav>
 
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Large pagination</h2>
-        <nav class="pagination is-large" role="navigation" aria-label="Pagination">
-            <a href="#0" class="pagination-previous" title="This is the first page" disabled>Previous</a>
-            <a href="#0" class="pagination-next">Next page</a>
-            <ul class="pagination-list">
-                <li><a href="#0" class="pagination-link is-current" aria-label="Page 1" aria-current="page">1</a></li>
-                <li><a href="#0" class="pagination-link" aria-label="Goto page 2">2</a></li>
-                <li><a href="#0" class="pagination-link" aria-label="Goto page 3">3</a></li>
-            </ul>
-        </nav>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Pagination with ellipses</h2>
-        <nav class="pagination" role="navigation" aria-label="Pagination">
-            <a href="#0" class="pagination-previous">Previous</a>
-            <a href="#0" class="pagination-next">Next page</a>
-            <ul class="pagination-list">
-                <li><a href="#0" class="pagination-link" aria-label="Goto page 1">1</a></li>
-                <li><span class="pagination-ellipsis">&hellip;</span></li>
-                <li><a href="#0" class="pagination-link" aria-label="Goto page 5">5</a></li>
-                <li><a href="#0" class="pagination-link is-current" aria-label="Page 6" aria-current="page">6</a></li>
-                <li><a href="#0" class="pagination-link" aria-label="Goto page 7">7</a></li>
-                <li><span class="pagination-ellipsis">&hellip;</span></li>
-                <li><a href="#0" class="pagination-link" aria-label="Goto page 11">11</a></li>
-            </ul>
+        <h2 class="subtitle has-text-weight-bold">Danger panel</h2>
+        <nav class="panel is-danger">
+            <p class="panel-heading">Panel heading</p>
+            <div class="panel-block">
+                <p class="control has-icons-left">
+                    <input type="search" class="input is-small is-danger" placeholder="Search">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </p>
+            </div>
+            <p class="panel-tabs">
+                <a href="#0" class="is-active">All</a>
+                <a href="#0">Public</a>
+                <a href="#0">Private</a>
+                <a href="#0">Sources</a>
+                <a href="#0">Forks</a>
+            </p>
+            <a href="#0" class="panel-block is-active"><span class="panel-icon"><i
+                       class="fas fa-code-branch"></i></span>Bootstrap</a>
+            <!-- More panel content here -->
         </nav>
 
     </main>
