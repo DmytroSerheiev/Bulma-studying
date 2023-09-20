@@ -9,6 +9,7 @@
     <!-- Bulma CSS -->
     <link rel="stylesheet" type="text/css" href="css/bulma-rtl.min.css">
     <link rel="stylesheet" type="text/css" href="css/bulma-accordion.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bulma-badge.min.css">
 
     Bulma-chapter-8
     <title>Dimon Bulma-chapter-8</title>
@@ -58,78 +59,64 @@
 
 
 
-    //=======================Accordion==========================
+    //=======================Badge==========================
 
-    <section class="section">
-        <div class="container">
-            <h1 class="title">Extensions: Accordion</h1>
-            <p class="is-size-5">Documentation: <a href="https://wikiki.github.io/components/accordion/"
-                   target="_blank">https://wikiki.github.io/components/accordion/</a></p>
-            <p class="is-size-5">Source files on GitHub: <a href="https://github.com/Wikiki/bulma-accordion"
-                   target="_blank">https://github.com/Wikiki/bulma-accordion</a></p>
+    ction class="section">
+    <div class="container">
+        <h1 class="title">Extensions: Badge</h1>
+        <p class="is-size-5">Documentation: <a href="https://demo.creativebulma.net/elements/badge/demonstration/"
+               target="_blank">https://demo.creativebulma.net/elements/badge/demonstration/</a></p>
+        <p class="is-size-5">Source files on GitHub: <a href="https://github.com/Wikiki/bulma-badge"
+               target="_blank">https://github.com/Wikiki/bulma-badge</a></p>
+        <hr>
+        <main>
+
+            <h2 class="subtitle has-text-weight-bold">Default</h2>
+            <button class="button" data-badge="1">Button</button>
+
             <hr>
-            <main>
+            <h2 class="subtitle has-text-weight-bold">Rounded</h2>
+            <button class="button has-badge-rounded" data-badge="1">Button</button>
 
-                <h2 class="subtitle has-text-weight-bold">Default</h2>
-                <section class="accordions">
-                    <article class="accordion is-active">
-                        <div class="accordion-header">
-                            <p>Accordion Header</p>
-                            <button class="toggle" aria-label="toggle"></button>
-                        </div>
-                        <div class="accordion-body">
-                            <div class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Pellentesque risus mi, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac
-                                ex
-                                sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur.
-                                Aenean
-                                ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor,
-                                tortor
-                                urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,
-                                facilisis sodales sem.</div>
-                        </div>
-                    </article>
-                    <article class="accordion">
-                        <div class="accordion-header">
-                            <p>Accordion Header</p>
-                            <button class="toggle" aria-label="toggle"></button>
-                        </div>
-                        <div class="accordion-body">
-                            <div class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Pellentesque risus mi, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac
-                                ex
-                                sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur.
-                                Aenean
-                                ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor,
-                                tortor
-                                urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,
-                                facilisis sodales sem.</div>
-                        </div>
-                    </article>
-                    <article class="accordion">
-                        <div class="accordion-header">
-                            <p>Accordion Header</p>
-                            <button class="toggle" aria-label="toggle"></button>
-                        </div>
-                        <div class="accordion-body">
-                            <div class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Pellentesque risus mi, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac
-                                ex
-                                sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur.
-                                Aenean
-                                ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor,
-                                tortor
-                                urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,
-                                facilisis sodales sem.</div>
-                        </div>
-                    </article>
-                </section>
+            <hr>
+            <h2 class="subtitle has-text-weight-bold">Outlined</h2>
+            <button class="button has-badge-outlined" data-badge="1">Button</button>
 
-            </main>
-        </div>
+            <hr>
+            <h2 class="subtitle has-text-weight-bold">Rounded and outlined</h2>
+            <button class="button has-badge-rounded has-badge-outlined" data-badge="1">Button</button>
+
+            <hr>
+            <h2 class="subtitle has-text-weight-bold">Colors</h2>
+            <button class="button has-badge-primary" data-badge="1">Primary</button>
+            <button class="button has-badge-info" data-badge="1">Info</button>
+            <button class="button has-badge-link" data-badge="1">Link</button>
+            <button class="button has-badge-success" data-badge="1">Success</button>
+            <button class="button has-badge-warning" data-badge="1">Warning</button>
+            <button class="button has-badge-danger" data-badge="1">Danger</button>
+
+            <hr>
+            <h2 class="subtitle has-text-weight-bold">Sizes</h2>
+            <button class="button has-badge-small" data-badge="1">Small</button>
+            <button class="button" data-badge="1">Default</button>
+            <button class="button has-badge-medium" data-badge="1">Medium</button>
+            <button class="button has-badge-large" data-badge="1">Large</button>
+
+            <hr>
+            <h2 class="subtitle has-text-weight-bold">Position</h2>
+            <button class="button" data-badge="1">Default</button>
+            <button class="button has-badge-bottom" data-badge="1">Bottom</button>
+            <button class="button has-badge-left" data-badge="1">Left</button>
+            <button class="button has-badge-bottom-left" data-badge="1">Bottom left</button>
+
+            <hr>
+            <h2 class="subtitle has-text-weight-bold">Inline</h2>
+            <button class="button has-badge-inline" data-badge="1">Button</button>
+
+
+        </main>
+    </div>
     </section>
-
-    <script type="text/javascript" src="../js/bulma-accordion.min.js"></script>
 
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
@@ -155,9 +142,6 @@
                     });
                 });
             }
-
-            // Initialize the Accordion extension
-            bulmaAccordion.attach();
 
         });
     </script>
