@@ -8,9 +8,11 @@
 
     <!-- Bulma CSS -->
     <link rel="stylesheet" type="text/css" href="css/bulma-rtl.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bulma-accordion.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bulma-badge.min.css">
 
-    Bulma-chapter-5
-    <title>Dimon</title>
+    Bulma-chapter-8
+    <title>Dimon Bulma-chapter-8</title>
 
 
     <!-- Styling to better show these examples -->
@@ -57,202 +59,92 @@
 
 
 
-    //=======================Tabs==========================
+    //=======================Badge==========================
 
-    <main>
-
-
-
-        <h2 class="subtitle has-text-weight-bold">Combined title and subtitle without spacing</h2>
-        <br>
-        <h1 class="title">Title</h1>
-        <h2 class="subtitle">Subtitle</h2>
-
-        <br>
-
+    ction class="section">
+    <div class="container">
+        <h1 class="title">Extensions: Badge</h1>
+        <p class="is-size-5">Documentation: <a href="https://demo.creativebulma.net/elements/badge/demonstration/"
+               target="_blank">https://demo.creativebulma.net/elements/badge/demonstration/</a></p>
+        <p class="is-size-5">Source files on GitHub: <a href="https://github.com/Wikiki/bulma-badge"
+               target="_blank">https://github.com/Wikiki/bulma-badge</a></p>
         <hr>
-        <h2 class="subtitle has-text-weight-bold">Combined title and subtitle with spacing maintained</h2>
-        <br>
-        <h1 class="title is-spaced">Title</h1>
-        <h2 class="subtitle">Subtitle</h2>
+        <main>
 
-        <br>
+            <h2 class="subtitle has-text-weight-bold">Default</h2>
+            <button class="button" data-badge="1">Button</button>
 
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Sizes</h2>
-        <br>
-        <h1 class="title is-1">Title 1</h1>
-        <h2 class="title is-2">Title 2</h2>
-        <h3 class="title is-3">Title 3</h3><!-- Default size -->
-        <h4 class="title is-4">Title 4</h4>
-        <h5 class="title is-5">Title 5</h5>
-        <h6 class="title is-6">Title 6</h6>
+            <hr>
+            <h2 class="subtitle has-text-weight-bold">Rounded</h2>
+            <button class="button has-badge-rounded" data-badge="1">Button</button>
 
-        <br>
+            <hr>
+            <h2 class="subtitle has-text-weight-bold">Outlined</h2>
+            <button class="button has-badge-outlined" data-badge="1">Button</button>
 
-        <h1 class="subtitle is-1">Subtitle 1</h1>
-        <h2 class="subtitle is-2">Subtitle 2</h2>
-        <h3 class="subtitle is-3">Subtitle 3</h3>
-        <h4 class="subtitle is-4">Subtitle 4</h4>
-        <h5 class="subtitle is-5">Subtitle 5</h5><!-- Default size -->
-        <h6 class="subtitle is-6">Subtitle 6</h6>
+            <hr>
+            <h2 class="subtitle has-text-weight-bold">Rounded and outlined</h2>
+            <button class="button has-badge-rounded has-badge-outlined" data-badge="1">Button</button>
 
-        <h2 class="subtitle">Use a size difference of two, fx: "title is-1" and "subtitle is-3"</h2>
+            <hr>
+            <h2 class="subtitle has-text-weight-bold">Colors</h2>
+            <button class="button has-badge-primary" data-badge="1">Primary</button>
+            <button class="button has-badge-info" data-badge="1">Info</button>
+            <button class="button has-badge-link" data-badge="1">Link</button>
+            <button class="button has-badge-success" data-badge="1">Success</button>
+            <button class="button has-badge-warning" data-badge="1">Warning</button>
+            <button class="button has-badge-danger" data-badge="1">Danger</button>
+
+            <hr>
+            <h2 class="subtitle has-text-weight-bold">Sizes</h2>
+            <button class="button has-badge-small" data-badge="1">Small</button>
+            <button class="button" data-badge="1">Default</button>
+            <button class="button has-badge-medium" data-badge="1">Medium</button>
+            <button class="button has-badge-large" data-badge="1">Large</button>
+
+            <hr>
+            <h2 class="subtitle has-text-weight-bold">Position</h2>
+            <button class="button" data-badge="1">Default</button>
+            <button class="button has-badge-bottom" data-badge="1">Bottom</button>
+            <button class="button has-badge-left" data-badge="1">Left</button>
+            <button class="button has-badge-bottom-left" data-badge="1">Bottom left</button>
+
+            <hr>
+            <h2 class="subtitle has-text-weight-bold">Inline</h2>
+            <button class="button has-badge-inline" data-badge="1">Button</button>
 
 
-
-        <h2 class="subtitle has-text-weight-bold">Default tabs</h2>
-        <nav class="tabs">
-            <ul>
-                <li class="is-active"><a>Sitemap</a></li>
-                <li><a href="#0">Copyright</a></li>
-                <li><a href="#0">Support</a></li>
-                <li><a href="#0">Jobs</a></li>
-            </ul>
-        </nav>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Centered tabs</h2>
-        <nav class="tabs is-centered">
-            <ul>
-                <li class="is-active"><a>Sitemap</a></li>
-                <li><a href="#0">Copyright</a></li>
-                <li><a href="#0">Support</a></li>
-                <li><a href="#0">Jobs</a></li>
-            </ul>
-        </nav>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Right-aligned tabs</h2>
-        <nav class="tabs is-right">
-            <ul>
-                <li class="is-active"><a>Sitemap</a></li>
-                <li><a href="#0">Copyright</a></li>
-                <li><a href="#0">Support</a></li>
-                <li><a href="#0">Jobs</a></li>
-            </ul>
-        </nav>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Tabs with icons</h2>
-        <nav class="tabs">
-            <ul>
-                <li class="is-active">
-                    <a href="#0">
-                        <span class="icon is-small"><i class="fas fa-sitemap"></i></span>
-                        <span>Sitemap</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#0">
-                        <span class="icon is-small"><i class="far fa-copyright"></i></span>
-                        <span>Copyright</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#0">
-                        <span class="icon is-small"><i class="far fa-question-circle"></i></span>
-                        <span>Support</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#0">
-                        <span class="icon is-small"><i class="fas fa-briefcase"></i></span>
-                        <span>Jobs</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Small tabs</h2>
-        <nav class="tabs is-small">
-            <ul>
-                <li class="is-active"><a>Sitemap</a></li>
-                <li><a href="#0">Copyright</a></li>
-                <li><a href="#0">Support</a></li>
-                <li><a href="#0">Jobs</a></li>
-            </ul>
-        </nav>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Medium tabs</h2>
-        <nav class="tabs is-medium">
-            <ul>
-                <li class="is-active"><a>Sitemap</a></li>
-                <li><a href="#0">Copyright</a></li>
-                <li><a href="#0">Support</a></li>
-                <li><a href="#0">Jobs</a></li>
-            </ul>
-        </nav>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Large tabs</h2>
-        <nav class="tabs is-large">
-            <ul>
-                <li class="is-active"><a>Sitemap</a></li>
-                <li><a href="#0">Copyright</a></li>
-                <li><a href="#0">Support</a></li>
-                <li><a href="#0">Jobs</a></li>
-            </ul>
-        </nav>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Boxed tabs</h2>
-        <nav class="tabs is-boxed">
-            <ul>
-                <li class="is-active"><a>Sitemap</a></li>
-                <li><a href="#0">Copyright</a></li>
-                <li><a href="#0">Support</a></li>
-                <li><a href="#0">Jobs</a></li>
-            </ul>
-        </nav>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Toggle tabs</h2>
-        <nav class="tabs is-toggle">
-            <ul>
-                <li class="is-active"><a>Sitemap</a></li>
-                <li><a href="#0">Copyright</a></li>
-                <li><a href="#0">Support</a></li>
-                <li><a href="#0">Jobs</a></li>
-            </ul>
-        </nav>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Rounded toggle tabs</h2>
-        <nav class="tabs is-toggle is-toggle-rounded">
-            <ul>
-                <li class="is-active"><a>Sitemap</a></li>
-                <li><a href="#0">Copyright</a></li>
-                <li><a href="#0">Support</a></li>
-                <li><a href="#0">Jobs</a></li>
-            </ul>
-        </nav>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Full-width tabs</h2>
-        <nav class="tabs is-fullwidth">
-            <ul>
-                <li class="is-active"><a>Sitemap</a></li>
-                <li><a href="#0">Copyright</a></li>
-                <li><a href="#0">Support</a></li>
-                <li><a href="#0">Jobs</a></li>
-            </ul>
-        </nav>
-
-        <hr>
-        <h2 class="subtitle has-text-weight-bold">Combination: Centered, large and rounded toggle tabs</h2>
-        <nav class="tabs is-centered is-large is-toggle is-toggle-rounded">
-            <ul>
-                <li class="is-active"><a>Sitemap</a></li>
-                <li><a href="#0">Copyright</a></li>
-                <li><a href="#0">Support</a></li>
-                <li><a href="#0">Jobs</a></li>
-            </ul>
-        </nav>
-    </main>
+        </main>
     </div>
+    </section>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+
+            // Get all "navbar-burger" elements
+            var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+
+                // Add a click event on each of them
+                $navbarBurgers.forEach(function ($el) {
+                    $el.addEventListener('click', function () {
+
+                        // Get the target from the "data-target" attribute
+                        var target = $el.dataset.target;
+                        var $target = document.getElementById(target);
+
+                        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+                        $el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+
+                    });
+                });
+            }
+
+        });
+    </script>
 
 </body>
 
