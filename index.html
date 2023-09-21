@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/bulma-accordion.min.css">
     <link rel="stylesheet" type="text/css" href="css/bulma-badge.min.css">
     <link rel="stylesheet" type="text/css" href="css/bulma-calendar.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bulma-carousel.min.css">
 
     Bulma-chapter-8
     <title>Dimon Bulma-chapter-8</title>
@@ -60,90 +61,77 @@
 
 
 
-    //=======================Calendar==========================
+    //=======================Carousel==========================
 
-    <section class="section">
-        <div class="container">
-            <h1 class="title">Extensions: Calendar</h1>
-            <p class="is-size-5">Documentation: <a href="https://creativebulma.net/product/calendar/demo"
-                   target="_blank">https://creativebulma.net/product/calendar/demo</a></p>
-            <p class="is-size-5">Source files on GitHub: <a href="https://github.com/wikiki/bulma-calendar"
-                   target="_blank">https://github.com/wikiki/bulma-calendar</a></p>
+    ction class="section">
+    <div class="container">
+        <h1 class="title">Extensions: Carousel</h1>
+        <p class="is-size-5">Documentation: <a href="https://creativebulma.net/product/carousel/demo"
+               target="_blank">https://creativebulma.net/product/carousel/demo</a></p>
+        <p class="is-size-5">Source files on GitHub: <a href="https://github.com/wikiki/bulma-carousel"
+               target="_blank">https://github.com/wikiki/bulma-carousel</a></p>
+        <hr>
+        <main>
+
+            <h2 class="subtitle has-text-weight-bold">Carousel: Default</h2>
+            <div class="carousel">
+                <img src="../img/1600x600-f1c40f.png">
+                <img src="../img/1600x600-e67e22.png">
+                <img src="../img/1600x600-e74c3c.png">
+                <img src="../img/1600x600-f39c12.png">
+                <img src="../img/1600x600-d35400.png">
+                <img src="../img/1600x600-c0392b.png">
+            </div>
+
             <hr>
-            <main>
+            <h2 class="subtitle has-text-weight-bold">Carousel: Infinite</h2>
+            <div class="carousel" data-infinite="true">
+                <img src="../img/1600x600-f1c40f.png">
+                <img src="../img/1600x600-e67e22.png">
+                <img src="../img/1600x600-e74c3c.png">
+                <img src="../img/1600x600-f39c12.png">
+                <img src="../img/1600x600-d35400.png">
+                <img src="../img/1600x600-c0392b.png">
+            </div>
 
-                <h2 class="subtitle has-text-weight-bold">Date picker: Default</h2>
-                <input type="date">
+            <hr>
+            <h2 class="subtitle has-text-weight-bold">Carousel: Loop</h2>
+            <div class="carousel" data-loop="true">
+                <img src="../img/1600x600-f1c40f.png">
+                <img src="../img/1600x600-e67e22.png">
+                <img src="../img/1600x600-e74c3c.png">
+                <img src="../img/1600x600-f39c12.png">
+                <img src="../img/1600x600-d35400.png">
+                <img src="../img/1600x600-c0392b.png">
+            </div>
 
-                <hr>
-                <h2 class="subtitle has-text-weight-bold">Date picker: Dialog</h2>
-                <input type="date" data-display-mode="dialog">
+            <hr>
+            <h2 class="subtitle has-text-weight-bold">Carousel: Autoplay and infinite</h2>
+            <div class="carousel" data-autoplay="true" data-infinite="true">
+                <img src="../img/1600x600-f1c40f.png">
+                <img src="../img/1600x600-e67e22.png">
+                <img src="../img/1600x600-e74c3c.png">
+                <img src="../img/1600x600-f39c12.png">
+                <img src="../img/1600x600-d35400.png">
+                <img src="../img/1600x600-c0392b.png">
+            </div>
 
-                <hr>
-                <h2 class="subtitle has-text-weight-bold">Date picker: Inline</h2>
-                <input type="date" data-display-mode="inline">
+            <hr>
+            <h2 class="subtitle has-text-weight-bold">Carousel: Slides to show</h2>
+            <div class="carousel" data-slides-to-show="2">
+                <img src="../img/1600x600-f1c40f.png">
+                <img src="../img/1600x600-e67e22.png">
+                <img src="../img/1600x600-e74c3c.png">
+                <img src="../img/1600x600-f39c12.png">
+                <img src="../img/1600x600-d35400.png">
+                <img src="../img/1600x600-c0392b.png">
+            </div>
 
-                <hr>
-                <h2 class="subtitle has-text-weight-bold">Date picker: Week start</h2>
-                <input type="date" data-week-start="1">
-
-                <hr>
-                <h2 class="subtitle has-text-weight-bold">Date range selection: Default</h2>
-                <input type="date" data-is-range="true">
-
-                <hr>
-                <h2 class="subtitle has-text-weight-bold">Date range selection: Dialog</h2>
-                <input type="date" data-display-mode="dialog" data-is-range="true">
-
-                <hr>
-                <h2 class="subtitle has-text-weight-bold">Date range selection: Inline</h2>
-                <input type="date" data-display-mode="inline" data-is-range="true">
-
-                <hr>
-                <h2 class="subtitle has-text-weight-bold">Date range selection: Custom labels</h2>
-                <input type="date" data-is-range="true" data-label-from="Check-in" data-label-to="Check-out">
-
-                <hr>
-                <h2 class="subtitle has-text-weight-bold">Time picker: Default</h2>
-                <input type="time">
-
-                <hr>
-                <h2 class="subtitle has-text-weight-bold">Time picker: Dialog</h2>
-                <input type="time" data-display-mode="dialog">
-
-                <hr>
-                <h2 class="subtitle has-text-weight-bold">Time picker: Inline</h2>
-                <input type="time" data-display-mode="inline">
-
-                <hr>
-                <h2 class="subtitle has-text-weight-bold">Time range selection: Default</h2>
-                <input type="time" data-is-range="true">
-
-                <hr>
-                <h2 class="subtitle has-text-weight-bold">Time range selection: Dialog</h2>
-                <input type="time" data-display-mode="dialog" data-is-range="true">
-
-                <hr>
-                <h2 class="subtitle has-text-weight-bold">Time range selection: Inline</h2>
-                <input type="time" data-display-mode="inline" data-is-range="true">
-
-                <hr>
-                <h2 class="subtitle has-text-weight-bold">Date/time picker: Default</h2>
-                <input type="datetime">
-
-                <hr>
-                <h2 class="subtitle has-text-weight-bold">Date/time picker: Dialog</h2>
-                <input type="datetime" data-display-mode="dialog">
-
-                <hr>
-                <h2 class="subtitle has-text-weight-bold">Date/time picker: Inline</h2>
-                <input type="datetime" data-display-mode="inline">
-
-            </main>
-        </div>
+        </main>
+    </div>
     </section>
 
-    <script type="text/javascript" src="../js/bulma-calendar.min.js"></script>
+    <script type="text/javascript" src="../js/bulma-carousel.min.js"></script>
 
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
@@ -170,10 +158,8 @@
                 });
             }
 
-            // Initialize the Calendar extension
-            var datePickers = bulmaCalendar.attach('[type="date"]');
-            var timePickers = bulmaCalendar.attach('[type="time"]');
-            var dateTimePickers = bulmaCalendar.attach('[type="datetime"]');
+            // Initialize the Carousel extension
+            var carousels = bulmaCarousel.attach('.carousel');
 
         });
     </script>
