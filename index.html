@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="css/bulma-rtl.min.css">
     <link rel="stylesheet" type="text/css" href="css/bulma-accordion.min.css">
     <link rel="stylesheet" type="text/css" href="css/bulma-badge.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bulma-calendar.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bulma-carousel.min.css">
 
     Bulma-chapter-8
     <title>Dimon Bulma-chapter-8</title>
@@ -48,6 +50,11 @@
     <!-- Bulma CSS -->
     <link rel="stylesheet"
           href="https://www.frontendworkshop.com/courses/bulma-responsive-web-design-and-development/files/bulma.min.css">
+    <style type="text/css">
+        .carousel {
+            overflow: hidden;
+        }
+    </style>
 </head>
 
 <body>
@@ -59,64 +66,77 @@
 
 
 
-    //=======================Badge==========================
+    //=======================Carousel==========================
 
-    ction class="section">
-    <div class="container">
-        <h1 class="title">Extensions: Badge</h1>
-        <p class="is-size-5">Documentation: <a href="https://demo.creativebulma.net/elements/badge/demonstration/"
-               target="_blank">https://demo.creativebulma.net/elements/badge/demonstration/</a></p>
-        <p class="is-size-5">Source files on GitHub: <a href="https://github.com/Wikiki/bulma-badge"
-               target="_blank">https://github.com/Wikiki/bulma-badge</a></p>
-        <hr>
-        <main>
-
-            <h2 class="subtitle has-text-weight-bold">Default</h2>
-            <button class="button" data-badge="1">Button</button>
-
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Extensions: Carousel</h1>
+            <p class="is-size-5">Documentation: <a href="https://creativebulma.net/product/carousel/demo"
+                   target="_blank">https://creativebulma.net/product/carousel/demo</a></p>
+            <p class="is-size-5">Source files on GitHub: <a href="https://github.com/wikiki/bulma-carousel"
+                   target="_blank">https://github.com/wikiki/bulma-carousel</a></p>
             <hr>
-            <h2 class="subtitle has-text-weight-bold">Rounded</h2>
-            <button class="button has-badge-rounded" data-badge="1">Button</button>
+            <main>
 
-            <hr>
-            <h2 class="subtitle has-text-weight-bold">Outlined</h2>
-            <button class="button has-badge-outlined" data-badge="1">Button</button>
+                <h2 class="subtitle has-text-weight-bold">Carousel: Default</h2>
+                <div class="carousel">
+                    <img src="../img/1600x600-f1c40f.png">
+                    <img src="../img/1600x600-e67e22.png">
+                    <img src="../img/1600x600-e74c3c.png">
+                    <img src="../img/1600x600-f39c12.png">
+                    <img src="../img/1600x600-d35400.png">
+                    <img src="../img/1600x600-c0392b.png">
+                </div>
 
-            <hr>
-            <h2 class="subtitle has-text-weight-bold">Rounded and outlined</h2>
-            <button class="button has-badge-rounded has-badge-outlined" data-badge="1">Button</button>
+                <hr>
+                <h2 class="subtitle has-text-weight-bold">Carousel: Infinite</h2>
+                <div class="carousel" data-infinite="true">
+                    <img src="../img/1600x600-f1c40f.png">
+                    <img src="../img/1600x600-e67e22.png">
+                    <img src="../img/1600x600-e74c3c.png">
+                    <img src="../img/1600x600-f39c12.png">
+                    <img src="../img/1600x600-d35400.png">
+                    <img src="../img/1600x600-c0392b.png">
+                </div>
 
-            <hr>
-            <h2 class="subtitle has-text-weight-bold">Colors</h2>
-            <button class="button has-badge-primary" data-badge="1">Primary</button>
-            <button class="button has-badge-info" data-badge="1">Info</button>
-            <button class="button has-badge-link" data-badge="1">Link</button>
-            <button class="button has-badge-success" data-badge="1">Success</button>
-            <button class="button has-badge-warning" data-badge="1">Warning</button>
-            <button class="button has-badge-danger" data-badge="1">Danger</button>
+                <hr>
+                <h2 class="subtitle has-text-weight-bold">Carousel: Loop</h2>
+                <div class="carousel" data-loop="true">
+                    <img src="../img/1600x600-f1c40f.png">
+                    <img src="../img/1600x600-e67e22.png">
+                    <img src="../img/1600x600-e74c3c.png">
+                    <img src="../img/1600x600-f39c12.png">
+                    <img src="../img/1600x600-d35400.png">
+                    <img src="../img/1600x600-c0392b.png">
+                </div>
 
-            <hr>
-            <h2 class="subtitle has-text-weight-bold">Sizes</h2>
-            <button class="button has-badge-small" data-badge="1">Small</button>
-            <button class="button" data-badge="1">Default</button>
-            <button class="button has-badge-medium" data-badge="1">Medium</button>
-            <button class="button has-badge-large" data-badge="1">Large</button>
+                <hr>
+                <h2 class="subtitle has-text-weight-bold">Carousel: Autoplay and infinite</h2>
+                <div class="carousel" data-autoplay="true" data-infinite="true">
+                    <img src="../img/1600x600-f1c40f.png">
+                    <img src="../img/1600x600-e67e22.png">
+                    <img src="../img/1600x600-e74c3c.png">
+                    <img src="../img/1600x600-f39c12.png">
+                    <img src="../img/1600x600-d35400.png">
+                    <img src="../img/1600x600-c0392b.png">
+                </div>
 
-            <hr>
-            <h2 class="subtitle has-text-weight-bold">Position</h2>
-            <button class="button" data-badge="1">Default</button>
-            <button class="button has-badge-bottom" data-badge="1">Bottom</button>
-            <button class="button has-badge-left" data-badge="1">Left</button>
-            <button class="button has-badge-bottom-left" data-badge="1">Bottom left</button>
+                <hr>
+                <h2 class="subtitle has-text-weight-bold">Carousel: Slides to show</h2>
+                <div class="carousel" data-slides-to-show="2">
+                    <img src="../img/1600x600-f1c40f.png">
+                    <img src="../img/1600x600-e67e22.png">
+                    <img src="../img/1600x600-e74c3c.png">
+                    <img src="../img/1600x600-f39c12.png">
+                    <img src="../img/1600x600-d35400.png">
+                    <img src="../img/1600x600-c0392b.png">
+                </div>
 
-            <hr>
-            <h2 class="subtitle has-text-weight-bold">Inline</h2>
-            <button class="button has-badge-inline" data-badge="1">Button</button>
-
-
-        </main>
-    </div>
+            </main>
+        </div>
     </section>
+
+    <script type="text/javascript" src="../js/bulma-carousel.min.js"></script>
 
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
@@ -143,9 +163,11 @@
                 });
             }
 
+            // Initialize the Carousel extension
+            var carousels = bulmaCarousel.attach('.carousel');
+
         });
     </script>
-
 </body>
 
 </html>
