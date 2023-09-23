@@ -17,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="css/bulma-pageloader.min.css">
     <link rel="stylesheet" type="text/css" href="css/bulma-pricingtable.min.css">
     <link rel="stylesheet" type="text/css" href="css/bulma-quickview.min.css"
+          <link rel="stylesheet" type="text/css" href="css/bulma-extensions.min.css"
 
           <title>Dimon Bulma-chapter-8</title>
 
@@ -70,44 +71,54 @@
 
 
 
-    //=======================Quickview==========================
+    //=======================Slider==========================
 
     <section class="section">
         <div class="container">
-            <h1 class="title">Extensions: Quickview</h1>
-            <p class="is-size-5">Documentation: <a href="https://wikiki.github.io/components/quickview/"
-                   target="_blank">https://wikiki.github.io/components/quickview/</a></p>
-            <p class="is-size-5">Source files on GitHub: <a href="https://github.com/Wikiki/bulma-quickview"
-                   target="_blank">https://github.com/Wikiki/bulma-quickview</a></p>
+            <h1 class="title">Extensions: Slider</h1>
+            <p class="is-size-5">Documentation: <a href="https://wikiki.github.io/form/slider/"
+                   target="_blank">https://wikiki.github.io/form/slider/</a></p>
+            <p class="is-size-5">Source files on GitHub: <a href="https://github.com/Wikiki/bulma-extensions/"
+                   target="_blank">https://github.com/Wikiki/bulma-extensions/</a></p>
             <hr>
             <main>
 
                 <h2 class="subtitle has-text-weight-bold">Default</h2>
-                <button class="button is-primary" data-show="quickview" data-target="quickviewDefault">Show
-                    quickview</button>
-                <div id="quickviewDefault" class="quickview">
-                    <header class="quickview-header">
-                        <p class="title">Quickview title</p>
-                        <span class="delete" data-dismiss="quickview"></span>
-                    </header>
-                    <div class="quickview-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis
-                            placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
-                            purus
-                            diam, et dictum felis venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec
-                            sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a
-                            neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.</p>
-                    </div>
-                    <footer class="quickview-footer">
-                        <p>Quickview footer</p>
-                    </footer>
-                </div>
+                <input type="range" step="1" min="0" max="100" value="50">
+
+                <h2 class="subtitle has-text-weight-bold">Disabled</h2>
+                <input type="range" step="1" min="0" max="100" value="50" disabled>
+
+                <hr>
+                <h2 class="subtitle has-text-weight-bold">Full-width</h2>
+                <input type="range" step="1" min="0" max="100" value="50">
+
+                <hr>
+                <h2 class="subtitle has-text-weight-bold">Colors</h2>
+                <input type="range" step="1" min="0" max="100" value="50">
+                <input type="range" step="1" min="0" max="100" value="50">
+                <input type="range" step="1" min="0" max="100" value="50">
+                <input type="range" step="1" min="0" max="100" value="50">
+                <input type="range" step="1" min="0" max="100" value="50">
+
+                <hr>
+                <h2 class="subtitle has-text-weight-bold">Sizes</h2>
+                <input type="range" step="1" min="0" max="100" value="50">
+                <input type="range" step="1" min="0" max="100" value="50">
+                <input type="range" step="1" min="0" max="100" value="50">
+                <input type="range" step="1" min="0" max="100" value="50">
+
+                <hr>
+                <h2 class="subtitle has-text-weight-bold">Styles</h2>
+                <input type="range" step="1" min="0" max="100" value="50">
+
+                <hr>
+                <h2 class="subtitle has-text-weight-bold">Positions</h2>
+                <input type="range" step="1" min="0" max="100" value="50">
 
             </main>
         </div>
     </section>
-
-    <script type="text/javascript" src="../js/bulma-quickview.min.js"></script>
 
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
@@ -134,12 +145,8 @@
                 });
             }
 
-            // Initialize the Quickview extension
-            bulmaQuickview.attach();
-
         });
     </script>
-</body>
 
 
 </body>
