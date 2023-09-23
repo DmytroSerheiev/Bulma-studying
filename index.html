@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/bulma-calendar.min.css">
     <link rel="stylesheet" type="text/css" href="css/bulma-carousel.min.css">
     <link rel="stylesheet" type="text/css" href="css/bulma-checkradio.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bulma-divider.min.css">
 
     <title>Dimon Bulma-chapter-8</title>
 
@@ -66,288 +67,30 @@
 
 
 
-    //=======================Checkradio==========================
+    //=======================Divider==========================
 
-    <header>
-        <nav class="navbar is-primary" role="navigation" aria-label="Main navigation">
-            <div class="container">
-                <div class="navbar-brand">
-                    <a href="../index.html" class="navbar-item">Bulma Learning Kit</a>
-                    <div class="navbar-burger" data-target="navbar">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-                <div class="navbar-menu" id="navbar">
-                    <div class="navbar-start">
-                        <div class="navbar-item has-dropdown is-hoverable">
-                            <a href="#0" class="navbar-link">Helpers</a>
-                            <ul class="navbar-dropdown is-boxed">
-                                <a href="color.html" class="navbar-item">Color</a>
-                                <a href="spacing.html" class="navbar-item">Spacing</a>
-                                <a href="typography.html" class="navbar-item">Typography</a>
-                                <a href="visibility.html" class="navbar-item">Visibility</a>
-                                <a href="flexbox.html" class="navbar-item">Flexbox</a>
-                                <a href="other.html" class="navbar-item">Other</a>
-                            </ul>
-                        </div>
-                        <div class="navbar-item has-dropdown is-hoverable">
-                            <a href="#0" class="navbar-link">Columns</a>
-                            <ul class="navbar-dropdown is-boxed">
-                                <a href="basics.html" class="navbar-item">Basics</a>
-                                <a href="sizes.html" class="navbar-item">Sizes</a>
-                                <a href="responsiveness.html" class="navbar-item">Responsiveness</a>
-                                <a href="nesting.html" class="navbar-item">Nesting</a>
-                                <a href="gap.html" class="navbar-item">Gap</a>
-                                <a href="options.html" class="navbar-item">Options</a>
-                            </ul>
-                        </div>
-                        <div class="navbar-item has-dropdown is-hoverable">
-                            <a href="#0" class="navbar-link">Layout</a>
-                            <ul class="navbar-dropdown is-boxed">
-                                <a href="container.html" class="navbar-item">Container</a>
-                                <a href="level.html" class="navbar-item">Level</a>
-                                <a href="media-object.html" class="navbar-item">Media Object</a>
-                                <a href="hero.html" class="navbar-item">Hero</a>
-                                <a href="section.html" class="navbar-item">Section</a>
-                                <a href="footer.html" class="navbar-item">Footer</a>
-                                <a href="tiles.html" class="navbar-item">Tiles</a>
-                            </ul>
-                        </div>
-                        <div class="navbar-item has-dropdown is-hoverable">
-                            <a href="#0" class="navbar-link">Forms</a>
-                            <ul class="navbar-dropdown is-boxed">
-                                <a href="general.html" class="navbar-item">General</a>
-                                <a href="input.html" class="navbar-item">Input</a>
-                                <a href="textarea.html" class="navbar-item">Textarea</a>
-                                <a href="select.html" class="navbar-item">Select</a>
-                                <a href="checkbox.html" class="navbar-item">Checkbox</a>
-                                <a href="radio.html" class="navbar-item">Radio</a>
-                                <a href="file.html" class="navbar-item">File</a>
-                            </ul>
-                        </div>
-                        <div class="navbar-item has-dropdown is-hoverable">
-                            <a href="#0" class="navbar-link">Elements</a>
-                            <ul class="navbar-dropdown is-boxed">
-                                <a href="block.html" class="navbar-item">Block</a>
-                                <a href="box.html" class="navbar-item">Box</a>
-                                <a href="button.html" class="navbar-item">Button</a>
-                                <a href="content.html" class="navbar-item">Content</a>
-                                <a href="delete.html" class="navbar-item">Delete</a>
-                                <a href="icon.html" class="navbar-item">Icon</a>
-                                <a href="image.html" class="navbar-item">Image</a>
-                                <a href="notification.html" class="navbar-item">Notification</a>
-                                <a href="progress-bar.html" class="navbar-item">Progress Bar</a>
-                                <a href="table.html" class="navbar-item">Table</a>
-                                <a href="tag.html" class="navbar-item">Tag</a>
-                                <a href="title.html" class="navbar-item">Title</a>
-                            </ul>
-                        </div>
-                        <div class="navbar-item has-dropdown is-hoverable">
-                            <a href="#0" class="navbar-link">Components</a>
-                            <ul class="navbar-dropdown is-boxed">
-                                <a href="breadcrumb.html" class="navbar-item">Breadcrumb</a>
-                                <a href="card.html" class="navbar-item">Card</a>
-                                <a href="dropdown.html" class="navbar-item">Dropdown</a>
-                                <a href="menu.html" class="navbar-item">Menu</a>
-                                <a href="message.html" class="navbar-item">Message</a>
-                                <a href="modal.html" class="navbar-item">Modal</a>
-                                <a href="navbar.html" class="navbar-item">Navbar</a>
-                                <a href="pagination.html" class="navbar-item">Pagination</a>
-                                <a href="panel.html" class="navbar-item">Panel</a>
-                                <a href="tabs.html" class="navbar-item">Tabs</a>
-                            </ul>
-                        </div>
-                        <div class="navbar-item has-dropdown is-hoverable">
-                            <a href="#0" class="navbar-link">Extensions</a>
-                            <ul class="navbar-dropdown is-boxed">
-                                <a href="accordion.html" class="navbar-item">Accordion</a>
-                                <a href="badge.html" class="navbar-item">Badge</a>
-                                <a href="calendar.html" class="navbar-item">Calendar</a>
-                                <a href="carousel.html" class="navbar-item">Carousel</a>
-                                <a href="checkradio.html" class="navbar-item">Checkradio</a>
-                                <a href="divider.html" class="navbar-item">Divider</a>
-                                <a href="page-loader.html" class="navbar-item">Page Loader</a>
-                                <a href="pricing-table.html" class="navbar-item">Pricing Table</a>
-                                <a href="quickview.html" class="navbar-item">Quickview</a>
-                                <a href="slider.html" class="navbar-item">Slider</a>
-                                <a href="steps.html" class="navbar-item">Steps</a>
-                                <a href="switch.html" class="navbar-item">Switch</a>
-                                <a href="tags-input.html" class="navbar-item">Tags Input</a>
-                                <a href="timeline.html" class="navbar-item">Timeline</a>
-                                <a href="toast.html" class="navbar-item">Toast</a>
-                                <a href="tooltip.html" class="navbar-item">Tooltip</a>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="navbar-end">
-                        <div class="buttons has-addons">
-                            <a href="../reference/checkradio.html" class="button is-dark">Reference</a>
-                            <a href="../practice/checkradio.html" class="button is-light">Practice</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
     <section class="section">
         <div class="container">
-            <h1 class="title">Extensions: Checkradio</h1>
-            <p class="is-size-5">Documentation: <a href="https://wikiki.github.io/form/checkradio/"
-                   target="_blank">https://wikiki.github.io/form/checkradio/</a></p>
-            <p class="is-size-5">Source files on GitHub: <a href="https://github.com/Wikiki/bulma-checkradio/"
-                   target="_blank">https://github.com/Wikiki/bulma-checkradio/</a></p>
+            <h1 class="title">Extensions: Divider</h1>
+            <p class="is-size-5">Documentation: <a href="https://wikiki.github.io/layout/divider/"
+                   target="_blank">https://wikiki.github.io/layout/divider/</a></p>
+            <p class="is-size-5">Source files on GitHub: <a href="https://github.com/Wikiki/bulma-divider/"
+                   target="_blank">https://github.com/Wikiki/bulma-divider/</a></p>
             <hr>
             <main>
 
-                <h2 class="subtitle has-text-weight-bold">Default</h2>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio" id="exampleCheckbox" name="exampleCheckbox"
-                           checked="checked">
-                    <label for="exampleCheckbox">Checkbox</label>
-                    <input type="checkbox" class="is-checkradio" id="exampleCheckboxDisabled"
-                           name="exampleCheckboxDisabled" checked="checked" disabled>
-                    <label for="exampleCheckboxDisabled">Checkbox (disabled)</label>
-                </div>
-                <div class="field">
-                    <input type="radio" class="is-checkradio" id="exampleRadioInline1" name="exampleRadioInline"
-                           checked="checked">
-                    <label for="exampleRadioInline1">Radio Button 1</label>
-                    <input type="radio" class="is-checkradio" id="exampleRadioInline2" name="exampleRadioInline">
-                    <label for="exampleRadioInline2">Radio Button 2</label>
-                    <input type="radio" class="is-checkradio" id="exampleRadioInline3" name="exampleRadioInline"
-                           disabled>
-                    <label for="exampleRadioInline3">Radio Button 3</label>
-                </div>
+                <h2 class="subtitle has-text-weight-bold">Horizontal divider</h2>
+                <div class="is-divider" data-content="OR"></div>
 
-                <hr>
-                <h2 class="subtitle has-text-weight-bold">Default Right-To-Left</h2>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio is-rtl" id="exampleCheckboxRtl"
-                           name="exampleCheckboxRtl" checked="checked">
-                    <label for="exampleCheckboxRtl">Checkbox</label>
-                </div>
-                <div class="field">
-                    <input type="radio" class="is-checkradio is-rtl" id="exampleRadioInlineRtl1"
-                           name="exampleRadioInlineRtl" checked="checked">
-                    <label for="exampleRadioInlineRtl1">Radio Button 1</label>
-                    <input type="radio" class="is-checkradio is-rtl" id="exampleRadioInlineRtl2"
-                           name="exampleRadioInlineRtl">
-                    <label for="exampleRadioInlineRtl2">Radio Button 2</label>
-                </div>
-
-                <hr>
-                <h2 class="subtitle has-text-weight-bold">Colors</h2>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio" id="exampleCheckboxColorDefault"
-                           name="exampleCheckboxColorDefault" checked="checked">
-                    <label for="exampleCheckboxColorDefault">Default</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio is-success" id="exampleCheckboxColorSuccess"
-                           name="exampleCheckboxColorSuccess" checked="checked">
-                    <label for="exampleCheckboxColorSuccess">Success</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio is-warning" id="exampleCheckboxColorWarning"
-                           name="exampleCheckboxColorWarning" checked="checked">
-                    <label for="exampleCheckboxColorWarning">Warning</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio is-danger" id="exampleCheckboxColorDanger"
-                           name="exampleCheckboxColorDanger" checked="checked">
-                    <label for="exampleCheckboxColorDanger">Danger</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio is-info" id="exampleCheckboxColorInfo"
-                           name="exampleCheckboxColorInfo" checked="checked">
-                    <label for="exampleCheckboxColorInfo">Info</label>
-                </div>
-                <div class="field has-background-dark has-text-white">
-                    <input type="checkbox" class="is-checkradio is-white" id="exampleCheckboxColorWhite"
-                           name="exampleCheckboxColorWhite" checked="checked">
-                    <label for="exampleCheckboxColorWhite">White</label>
-                </div>
-
-                <hr>
-                <h2 class="subtitle has-text-weight-bold">Colors (background)</h2>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio has-background-color"
-                           id="exampleCheckboxBackgroundColorDefault" name="exampleCheckboxBackgroundColorDefault"
-                           checked="checked">
-                    <label for="exampleCheckboxBackgroundColorDefault">Default</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio has-background-color is-success"
-                           id="exampleCheckboxBackgroundColorSuccess" name="exampleCheckboxBackgroundColorSuccess"
-                           checked="checked">
-                    <label for="exampleCheckboxBackgroundColorSuccess">Success</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio has-background-color is-warning"
-                           id="exampleCheckboxBackgroundColorWarning" name="exampleCheckboxBackgroundColorWarning"
-                           checked="checked">
-                    <label for="exampleCheckboxBackgroundColorWarning">Warning</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio has-background-color is-danger"
-                           id="exampleCheckboxBackgroundColorDanger" name="exampleCheckboxBackgroundColorDanger"
-                           checked="checked">
-                    <label for="exampleCheckboxBackgroundColorDanger">Danger</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio has-background-color is-info"
-                           id="exampleCheckboxBackgroundColorInfo" name="exampleCheckboxBackgroundColorInfo"
-                           checked="checked">
-                    <label for="exampleCheckboxBackgroundColorInfo">Info</label>
-                </div>
-                <div class="field has-background-dark has-text-white">
-                    <input type="checkbox" class="is-checkradio has-background-color is-white"
-                           id="exampleCheckboxBackgroundColorWhite" name="exampleCheckboxBackgroundColorWhite"
-                           checked="checked">
-                    <label for="exampleCheckboxBackgroundColorWhite">White</label>
-                </div>
-
-                <hr>
-                <h2 class="subtitle has-text-weight-bold">Sizes</h2>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio is-small" id="exampleCheckboxSizeSmall"
-                           name="exampleCheckboxSizeSmall" checked="checked">
-                    <label for="exampleCheckboxSizeSmall">Small</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio" id="exampleCheckboxSizeDefault"
-                           name="exampleCheckboxSizeDefault" checked="checked">
-                    <label for="exampleCheckboxSizeDefault">Default</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio is-mediun" id="exampleCheckboxSizeMedium"
-                           name="exampleCheckboxSizeMedium" checked="checked">
-                    <label for="exampleCheckboxSizeMedium">Medium</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio is-large" id="exampleCheckboxSizeLarge"
-                           name="exampleCheckboxSizeLarge" checked="checked">
-                    <label for="exampleCheckboxSizeLarge">Large</label>
-                </div>
-
-                <hr>
-                <h2 class="subtitle has-text-weight-bold">Styles</h2>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio is-circle" id="exampleCheckboxStyleCircle"
-                           name="exampleCheckboxStyleCircle" checked="checked">
-                    <label for="exampleCheckboxStyleCircle">Circle</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio is-block" id="exampleCheckboxStyleBlock"
-                           name="exampleCheckboxStyleBlock" checked="checked">
-                    <label for="exampleCheckboxStyleBlock">Block</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio has-no-border" id="exampleCheckboxStyleNoBorder"
-                           name="exampleCheckboxStyleNoBorder" checked="checked">
-                    <label for="exampleCheckboxStyleNoBorder">No Border</label>
+                <h2 class="subtitle has-text-weight-bold">Vertical divider</h2>
+                <div class="columns">
+                    <div class="column">Column</div>
+                    <div class="is-divider-vertical" data-content="OR"></div>
+                    <div class="column">
+                        Column
+                        <br><br><br>
+                        Column
+                    </div>
                 </div>
 
             </main>
