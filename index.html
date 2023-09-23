@@ -18,6 +18,7 @@
     <link rel="stylesheet" type="text/css" href="css/bulma-pricingtable.min.css">
     <link rel="stylesheet" type="text/css" href="css/bulma-quickview.min.css">
     <link rel="stylesheet" type="text/css" href="css/bulma-extensions.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bulma-steps.min.css">
 
     <title>Dimon Bulma-chapter-8</title>
 
@@ -71,53 +72,259 @@
 
 
 
-    //=======================Slider==========================
+    //=======================Steps==========================
 
-    section class="section">
-    <div class="container">
-        <h1 class="title">Extensions: Slider</h1>
-        <p class="is-size-5">Documentation: <a href="https://wikiki.github.io/form/slider/"
-               target="_blank">https://wikiki.github.io/form/slider/</a></p>
-        <p class="is-size-5">Source files on GitHub: <a href="https://github.com/Wikiki/bulma-extensions/"
-               target="_blank">https://github.com/Wikiki/bulma-extensions/</a></p>
-        <hr>
-        <main>
-
-            <h2 class="subtitle has-text-weight-bold">Default</h2>
-            <input type="range" class="slider" step="1" min="0" max="100" value="50">
-
-            <h2 class="subtitle has-text-weight-bold">Disabled</h2>
-            <input type="range" class="slider" step="1" min="0" max="100" value="50" disabled>
-
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Extensions: Steps</h1>
+            <p class="is-size-5">Documentation: <a href="https://wikiki.github.io/components/steps/"
+                   target="_blank">https://wikiki.github.io/components/steps/</a></p>
+            <p class="is-size-5">Source files on GitHub: <a href="https://github.com/Wikiki/bulma-steps"
+                   target="_blank">https://github.com/Wikiki/bulma-steps</a></p>
             <hr>
-            <h2 class="subtitle has-text-weight-bold">Full-width</h2>
-            <input type="range" class="slider is-fullwidth" step="1" min="0" max="100" value="50">
+            <main>
 
-            <hr>
-            <h2 class="subtitle has-text-weight-bold">Colors</h2>
-            <input type="range" class="slider is-fullwidth" step="1" min="0" max="100" value="50">
-            <input type="range" class="slider is-fullwidth is-success" step="1" min="0" max="100" value="50">
-            <input type="range" class="slider is-fullwidth is-warning" step="1" min="0" max="100" value="50">
-            <input type="range" class="slider is-fullwidth is-danger" step="1" min="0" max="100" value="50">
-            <input type="range" class="slider is-fullwidth is-info" step="1" min="0" max="100" value="50">
+                <h2 class="subtitle has-text-weight-bold">Default</h2>
+                <div class="steps">
+                    <div class="step-item is-completed">
+                        <div class="step-marker">
+                            <span class="icon">
+                                <i class="fa fa-check"></i>
+                            </span>
+                        </div>
+                        <div class="step-details">
+                            <p class="step-title">Step 1</p>
+                            <p>This is the first step of the process.</p>
+                        </div>
+                    </div>
+                    <div class="step-item is-active">
+                        <div class="step-marker">2</div>
+                        <div class="step-details">
+                            <p class="step-title">Step 2</p>
+                            <p>This is the second step. You get here once you have completed the first step.</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-marker">3</div>
+                        <div class="step-details">
+                            <p class="step-title">Step 3</p>
+                            <p>This is the third step. One more step before the end.</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-marker">
+                            <span class="icon">
+                                <i class="fa fa-flag"></i>
+                            </span>
+                        </div>
+                        <div class="step-details">
+                            <p class="step-title">Step 4</p>
+                            <p>Final step. You have completed all the previous steps and end the process.</p>
+                        </div>
+                    </div>
+                </div>
 
-            <hr>
-            <h2 class="subtitle has-text-weight-bold">Sizes</h2>
-            <input type="range" class="slider is-fullwidth is-small" step="1" min="0" max="100" value="50">
-            <input type="range" class="slider is-fullwidth" step="1" min="0" max="100" value="50">
-            <input type="range" class="slider is-fullwidth is-medium" step="1" min="0" max="100" value="50">
-            <input type="range" class="slider is-fullwidth is-large" step="1" min="0" max="100" value="50">
+                <hr>
+                <h2 class="subtitle has-text-weight-bold">Colors</h2>
+                <div class="steps">
+                    <div class="step-item is-completed is-success">
+                        <div class="step-marker">
+                            <span class="icon">
+                                <i class="fa fa-check"></i>
+                            </span>
+                        </div>
+                        <div class="step-details">
+                            <p class="step-title">Step 1</p>
+                            <p>This is the first step of the process.</p>
+                        </div>
+                    </div>
+                    <div class="step-item is-completed is-info">
+                        <div class="step-marker">2</div>
+                        <div class="step-details">
+                            <p class="step-title">Step 2</p>
+                            <p>This is the second step. You get here once you have completed the first step.</p>
+                        </div>
+                    </div>
+                    <div class="step-item is-completed is-danger">
+                        <div class="step-marker">3</div>
+                        <div class="step-details">
+                            <p class="step-title">Step 3</p>
+                            <p>This is the third step. One more step before the end.</p>
+                        </div>
+                    </div>
+                    <div class="step-item is-active">
+                        <div class="step-marker">
+                            <span class="icon">
+                                <i class="fa fa-flag"></i>
+                            </span>
+                        </div>
+                        <div class="step-details">
+                            <p class="step-title">Step 4</p>
+                            <p>Final step. You have completed all the previous steps and end the process.</p>
+                        </div>
+                    </div>
+                </div>
 
-            <hr>
-            <h2 class="subtitle has-text-weight-bold">Styles</h2>
-            <input type="range" class="slider is-fullwidth is-circle" step="1" min="0" max="100" value="50">
+                <hr>
+                <h2 class="subtitle has-text-weight-bold">Sizes</h2>
+                <div class="steps is-small">
+                    <div class="step-item is-completed is-success">
+                        <div class="step-marker">
+                            <span class="icon">
+                                <i class="fa fa-check"></i>
+                            </span>
+                        </div>
+                        <div class="step-details">
+                            <p class="step-title">Step 1</p>
+                            <p>This is the first step of the process.</p>
+                        </div>
+                    </div>
+                    <div class="step-item is-active">
+                        <div class="step-marker">2</div>
+                        <div class="step-details">
+                            <p class="step-title">Step 2</p>
+                            <p>This is the second step. You get here once you have completed the first step.</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-marker">3</div>
+                        <div class="step-details">
+                            <p class="step-title">Step 3</p>
+                            <p>This is the third step. One more step before the end.</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-marker">
+                            <span class="icon">
+                                <i class="fa fa-flag"></i>
+                            </span>
+                        </div>
+                        <div class="step-details">
+                            <p class="step-title">Step 4</p>
+                            <p>Final step. You have completed all the previous steps and end the process.</p>
+                        </div>
+                    </div>
+                </div>
 
-            <hr>
-            <h2 class="subtitle has-text-weight-bold">Positions</h2>
-            <input type="range" class="slider is-fullwidth" step="1" min="0" max="100" value="50" orient="vertical">
+                <div class="steps">
+                    <div class="step-item is-completed is-success">
+                        <div class="step-marker">
+                            <span class="icon">
+                                <i class="fa fa-check"></i>
+                            </span>
+                        </div>
+                        <div class="step-details">
+                            <p class="step-title">Step 1</p>
+                            <p>This is the first step of the process.</p>
+                        </div>
+                    </div>
+                    <div class="step-item is-active">
+                        <div class="step-marker">2</div>
+                        <div class="step-details">
+                            <p class="step-title">Step 2</p>
+                            <p>This is the second step. You get here once you have completed the first step.</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-marker">3</div>
+                        <div class="step-details">
+                            <p class="step-title">Step 3</p>
+                            <p>This is the third step. One more step before the end.</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-marker">
+                            <span class="icon">
+                                <i class="fa fa-flag"></i>
+                            </span>
+                        </div>
+                        <div class="step-details">
+                            <p class="step-title">Step 4</p>
+                            <p>Final step. You have completed all the previous steps and end the process.</p>
+                        </div>
+                    </div>
+                </div>
 
-        </main>
-    </div>
+                <div class="steps is-medium">
+                    <div class="step-item is-completed is-success">
+                        <div class="step-marker">
+                            <span class="icon">
+                                <i class="fa fa-check"></i>
+                            </span>
+                        </div>
+                        <div class="step-details">
+                            <p class="step-title">Step 1</p>
+                            <p>This is the first step of the process.</p>
+                        </div>
+                    </div>
+                    <div class="step-item is-active">
+                        <div class="step-marker">2</div>
+                        <div class="step-details">
+                            <p class="step-title">Step 2</p>
+                            <p>This is the second step. You get here once you have completed the first step.</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-marker">3</div>
+                        <div class="step-details">
+                            <p class="step-title">Step 3</p>
+                            <p>This is the third step. One more step before the end.</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-marker">
+                            <span class="icon">
+                                <i class="fa fa-flag"></i>
+                            </span>
+                        </div>
+                        <div class="step-details">
+                            <p class="step-title">Step 4</p>
+                            <p>Final step. You have completed all the previous steps and end the process.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="steps is-large">
+                    <div class="step-item is-completed is-success">
+                        <div class="step-marker">
+                            <span class="icon">
+                                <i class="fa fa-check"></i>
+                            </span>
+                        </div>
+                        <div class="step-details">
+                            <p class="step-title">Step 1</p>
+                            <p>This is the first step of the process.</p>
+                        </div>
+                    </div>
+                    <div class="step-item is-active">
+                        <div class="step-marker">2</div>
+                        <div class="step-details">
+                            <p class="step-title">Step 2</p>
+                            <p>This is the second step. You get here once you have completed the first step.</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-marker">3</div>
+                        <div class="step-details">
+                            <p class="step-title">Step 3</p>
+                            <p>This is the third step. One more step before the end.</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-marker">
+                            <span class="icon">
+                                <i class="fa fa-flag"></i>
+                            </span>
+                        </div>
+                        <div class="step-details">
+                            <p class="step-title">Step 4</p>
+                            <p>Final step. You have completed all the previous steps and end the process.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
     </section>
 
     <script type="text/javascript">
@@ -147,7 +354,6 @@
 
         });
     </script>
-
 </body>
 
 </html>
