@@ -69,213 +69,44 @@
 
 
 
-    //=======================Pricing Table==========================
+    //=======================Quickview==========================
 
-    ction class="section">
-    <div class="container">
-        <h1 class="title">Extensions: Pricing Table</h1>
-        <p class="is-size-5">Documentation: <a href="https://wikiki.github.io/components/pricingtable/"
-               target="_blank">https://wikiki.github.io/components/pricingtable/</a></p>
-        <p class="is-size-5">Source files on GitHub: <a href="https://github.com/Wikiki/bulma-pricingtable"
-               target="_blank">https://github.com/Wikiki/bulma-pricingtable</a></p>
-        <hr>
-        <main>
-
-            <h2 class="subtitle has-text-weight-bold">Default</h2>
-            <div class="pricing-table">
-                <div class="pricing-plan">
-                    <div class="plan-header">Starter</div>
-                    <div class="plan-price"><span class="plan-price-amount"><span
-                                  class="plan-price-currency">$</span>20</span>/month</div>
-                    <div class="plan-items">
-                        <div class="plan-item">20GB Storage</div>
-                        <div class="plan-item">100 Domains</div>
-                        <div class="plan-item">-</div>
-                        <div class="plan-item">-</div>
-                    </div>
-                    <div class="plan-footer">
-                        <button class="button is-fullwidth" disabled="disabled">Current plan</button>
-                    </div>
-                </div>
-                <div class="pricing-plan is-primary">
-                    <div class="plan-header">Startups</div>
-                    <div class="plan-price"><span class="plan-price-amount"><span
-                                  class="plan-price-currency">$</span>40</span>/month</div>
-                    <div class="plan-items">
-                        <div class="plan-item">20GB Storage</div>
-                        <div class="plan-item">25 Domains</div>
-                        <div class="plan-item">1TB Bandwidth</div>
-                        <div class="plan-item">-</div>
-                    </div>
-                    <div class="plan-footer">
-                        <button class="button is-fullwidth">Choose</button>
-                    </div>
-                </div>
-                <div class="pricing-plan is-warning is-active">
-                    <div class="plan-header">Growing Team</div>
-                    <div class="plan-price"><span class="plan-price-amount"><span
-                                  class="plan-price-currency">$</span>60</span>/month</div>
-                    <div class="plan-items">
-                        <div class="plan-item">200GB Storage</div>
-                        <div class="plan-item">50 Domains</div>
-                        <div class="plan-item">1TB Bandwidth</div>
-                        <div class="plan-item">100 Email Boxes</div>
-                    </div>
-                    <div class="plan-footer">
-                        <button class="button is-fullwidth">Choose</button>
-                    </div>
-                </div>
-                <div class="pricing-plan is-danger">
-                    <div class="plan-header">Enterprise</div>
-                    <div class="plan-price"><span class="plan-price-amount"><span
-                                  class="plan-price-currency">$</span>100</span>/month</div>
-                    <div class="plan-items">
-                        <div class="plan-item">2TB Storage</div>
-                        <div class="plan-item">100 Domains</div>
-                        <div class="plan-item">1TB Bandwidth</div>
-                        <div class="plan-item">1000 Email Boxes</div>
-                    </div>
-                    <div class="plan-footer">
-                        <button class="button is-fullwidth">Choose</button>
-                    </div>
-                </div>
-            </div>
-
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Extensions: Quickview</h1>
+            <p class="is-size-5">Documentation: <a href="https://wikiki.github.io/components/quickview/"
+                   target="_blank">https://wikiki.github.io/components/quickview/</a></p>
+            <p class="is-size-5">Source files on GitHub: <a href="https://github.com/Wikiki/bulma-quickview"
+                   target="_blank">https://github.com/Wikiki/bulma-quickview</a></p>
             <hr>
-            <h2 class="subtitle has-text-weight-bold">Comparative</h2>
-            <div class="pricing-table is-comparative">
-                <div class="pricing-plan is-features">
-                    <div class="plan-header">Features</div>
-                    <div class="plan-price"><span class="plan-price-amount">&nbsp;</span></div>
-                    <div class="plan-items">
-                        <div class="plan-item">Storage</div>
-                        <div class="plan-item">Domains</div>
-                        <div class="plan-item">Bandwidth</div>
-                        <div class="plan-item">Email Boxes</div>
-                    </div>
-                </div>
-                <div class="pricing-plan">
-                    <div class="plan-header">Starter</div>
-                    <div class="plan-price"><span class="plan-price-amount"><span
-                                  class="plan-price-currency">$</span>20</span>/month</div>
-                    <div class="plan-items">
-                        <div class="plan-item" data-feature="Storage">20GB</div>
-                        <div class="plan-item" data-feature="Domains">100</div>
-                        <div class="plan-item" data-feature="Bandwidth">-</div>
-                        <div class="plan-item" data-feature="Email Boxes">-</div>
-                    </div>
-                    <div class="plan-footer">
-                        <button class="button is-fullwidth" disabled="disabled">Current plan</button>
-                    </div>
-                </div>
-                <div class="pricing-plan is-primary">
-                    <div class="plan-header">Startups</div>
-                    <div class="plan-price"><span class="plan-price-amount"><span
-                                  class="plan-price-currency">$</span>40</span>/month</div>
-                    <div class="plan-items">
-                        <div class="plan-item" data-feature="Storage">20GB</div>
-                        <div class="plan-item" data-feature="Domains">25</div>
-                        <div class="plan-item" data-feature="Bandwidth">1TB</div>
-                        <div class="plan-item" data-feature="Email Boxes">-</div>
-                    </div>
-                    <div class="plan-footer">
-                        <button class="button is-fullwidth">Choose</button>
-                    </div>
-                </div>
-                <div class="pricing-plan is-warning is-active">
-                    <div class="plan-header">Growing Team</div>
-                    <div class="plan-price"><span class="plan-price-amount"><span
-                                  class="plan-price-currency">$</span>60</span>/month</div>
-                    <div class="plan-items">
-                        <div class="plan-item" data-feature="Storage">200GB</div>
-                        <div class="plan-item" data-feature="Domains">50</div>
-                        <div class="plan-item" data-feature="Bandwidth">1TB</div>
-                        <div class="plan-item" data-feature="Email Boxes">100</div>
-                    </div>
-                    <div class="plan-footer">
-                        <button class="button is-fullwidth">Choose</button>
-                    </div>
-                </div>
-                <div class="pricing-plan is-danger">
-                    <div class="plan-header">Enterprise</div>
-                    <div class="plan-price"><span class="plan-price-amount"><span
-                                  class="plan-price-currency">$</span>100</span>/month</div>
-                    <div class="plan-items">
-                        <div class="plan-item" data-feature="Storage">2TB</div>
-                        <div class="plan-item" data-feature="Domains">100</div>
-                        <div class="plan-item" data-feature="Bandwidth">1TB</div>
-                        <div class="plan-item" data-feature="Email Boxes">1000</div>
-                    </div>
-                    <div class="plan-footer">
-                        <button class="button is-fullwidth">Choose</button>
-                    </div>
-                </div>
-            </div>
+            <main>
 
-            <hr>
-            <h2 class="subtitle has-text-weight-bold">Horizontal</h2>
-            <div class="pricing-table is-horizontal">
-                <div class="pricing-plan">
-                    <div class="plan-header">Starter</div>
-                    <div class="plan-price"><span class="plan-price-amount"><span
-                                  class="plan-price-currency">$</span>20</span>/month</div>
-                    <div class="plan-items">
-                        <div class="plan-item">20GB Storage</div>
-                        <div class="plan-item">100 Domains</div>
-                        <div class="plan-item">-</div>
-                        <div class="plan-item">-</div>
+                <h2 class="subtitle has-text-weight-bold">Default</h2>
+                <button class="button is-primary" data-show="quickview" data-target="quickviewDefault">Show
+                    quickview</button>
+                <div id="quickviewDefault" class="quickview">
+                    <header class="quickview-header">
+                        <p class="title">Quickview title</p>
+                        <span class="delete" data-dismiss="quickview"></span>
+                    </header>
+                    <div class="quickview-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis
+                            placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
+                            purus
+                            diam, et dictum felis venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec
+                            sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a
+                            neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.</p>
                     </div>
-                    <div class="plan-footer">
-                        <button class="button is-fullwidth" disabled="disabled">Current plan</button>
-                    </div>
+                    <footer class="quickview-footer">
+                        <p>Quickview footer</p>
+                    </footer>
                 </div>
-                <div class="pricing-plan is-primary">
-                    <div class="plan-header">Startups</div>
-                    <div class="plan-price"><span class="plan-price-amount"><span
-                                  class="plan-price-currency">$</span>40</span>/month</div>
-                    <div class="plan-items">
-                        <div class="plan-item">20GB Storage</div>
-                        <div class="plan-item">25 Domains</div>
-                        <div class="plan-item">1TB Bandwidth</div>
-                        <div class="plan-item">-</div>
-                    </div>
-                    <div class="plan-footer">
-                        <button class="button is-fullwidth">Choose</button>
-                    </div>
-                </div>
-                <div class="pricing-plan is-warning is-active">
-                    <div class="plan-header">Growing Team</div>
-                    <div class="plan-price"><span class="plan-price-amount"><span
-                                  class="plan-price-currency">$</span>60</span>/month</div>
-                    <div class="plan-items">
-                        <div class="plan-item">200GB Storage</div>
-                        <div class="plan-item">50 Domains</div>
-                        <div class="plan-item">1TB Bandwidth</div>
-                        <div class="plan-item">100 Email Boxes</div>
-                    </div>
-                    <div class="plan-footer">
-                        <button class="button is-fullwidth">Choose</button>
-                    </div>
-                </div>
-                <div class="pricing-plan is-danger">
-                    <div class="plan-header">Enterprise</div>
-                    <div class="plan-price"><span class="plan-price-amount"><span
-                                  class="plan-price-currency">$</span>100</span>/month</div>
-                    <div class="plan-items">
-                        <div class="plan-item">2TB Storage</div>
-                        <div class="plan-item">100 Domains</div>
-                        <div class="plan-item">1TB Bandwidth</div>
-                        <div class="plan-item">1000 Email Boxes</div>
-                    </div>
-                    <div class="plan-footer">
-                        <button class="button is-fullwidth">Choose</button>
-                    </div>
-                </div>
-            </div>
 
-        </main>
-    </div>
+            </main>
+        </div>
     </section>
+
+    <script type="text/javascript" src="../js/bulma-quickview.min.js"></script>
 
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
@@ -302,8 +133,12 @@
                 });
             }
 
+            // Initialize the Quickview extension
+            bulmaQuickview.attach();
+
         });
     </script>
+</body>
 
 
 </body>
