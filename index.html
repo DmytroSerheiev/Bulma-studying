@@ -76,251 +76,119 @@
 
     <section class="section">
         <div class="container">
-            <h1 class="title">Extensions: Steps</h1>
-            <p class="is-size-5">Documentation: <a href="https://wikiki.github.io/components/steps/"
-                   target="_blank">https://wikiki.github.io/components/steps/</a></p>
-            <p class="is-size-5">Source files on GitHub: <a href="https://github.com/Wikiki/bulma-steps"
-                   target="_blank">https://github.com/Wikiki/bulma-steps</a></p>
+            <h1 class="title">Extensions: Switch</h1>
+            <p class="is-size-5">Documentation: <a href="https://wikiki.github.io/form/switch/"
+                   target="_blank">https://wikiki.github.io/form/switch/</a></p>
+            <p class="is-size-5">Source files on GitHub: <a href="https://github.com/Wikiki/bulma-extensions/"
+                   target="_blank">https://github.com/Wikiki/bulma-extensions/</a></p>
             <hr>
             <main>
 
                 <h2 class="subtitle has-text-weight-bold">Default</h2>
-                <div class="steps">
-                    <div class="step-item is-completed">
-                        <div class="step-marker">
-                            <span class="icon">
-                                <i class="fa fa-check"></i>
-                            </span>
-                        </div>
-                        <div class="step-details">
-                            <p class="step-title">Step 1</p>
-                            <p>This is the first step of the process.</p>
-                        </div>
-                    </div>
-                    <div class="step-item is-active">
-                        <div class="step-marker">2</div>
-                        <div class="step-details">
-                            <p class="step-title">Step 2</p>
-                            <p>This is the second step. You get here once you have completed the first step.</p>
-                        </div>
-                    </div>
-                    <div class="step-item">
-                        <div class="step-marker">3</div>
-                        <div class="step-details">
-                            <p class="step-title">Step 3</p>
-                            <p>This is the third step. One more step before the end.</p>
-                        </div>
-                    </div>
-                    <div class="step-item">
-                        <div class="step-marker">
-                            <span class="icon">
-                                <i class="fa fa-flag"></i>
-                            </span>
-                        </div>
-                        <div class="step-details">
-                            <p class="step-title">Step 4</p>
-                            <p>Final step. You have completed all the previous steps and end the process.</p>
-                        </div>
-                    </div>
+                <div class="field">
+                    <input type="checkbox" class="switch" id="exampleSwitch" name="exampleSwitch" checked="checked">
+                    <label for="exampleSwitch">Switch</label>
+                </div>
+
+                <hr>
+                <h2 class="subtitle has-text-weight-bold">Disabled</h2>
+                <div class="field">
+                    <input type="checkbox" class="switch" id="exampleSwitchDisabled" name="exampleSwitchDisabled"
+                           checked="checked" disabled>
+                    <label for="exampleSwitchDisabled">Switch</label>
+                </div>
+
+                <hr>
+                <h2 class="subtitle has-text-weight-bold">Default Right-To-Left</h2>
+                <div class="field">
+                    <input type="checkbox" class="switch is-rtl" id="exampleSwitchRtl" name="exampleSwitchRtl"
+                           checked="checked">
+                    <label for="exampleSwitchRtl">Switch</label>
                 </div>
 
                 <hr>
                 <h2 class="subtitle has-text-weight-bold">Colors</h2>
-                <div class="steps">
-                    <div class="step-item is-completed is-success">
-                        <div class="step-marker">
-                            <span class="icon">
-                                <i class="fa fa-check"></i>
-                            </span>
-                        </div>
-                        <div class="step-details">
-                            <p class="step-title">Step 1</p>
-                            <p>This is the first step of the process.</p>
-                        </div>
-                    </div>
-                    <div class="step-item is-completed is-info">
-                        <div class="step-marker">2</div>
-                        <div class="step-details">
-                            <p class="step-title">Step 2</p>
-                            <p>This is the second step. You get here once you have completed the first step.</p>
-                        </div>
-                    </div>
-                    <div class="step-item is-completed is-danger">
-                        <div class="step-marker">3</div>
-                        <div class="step-details">
-                            <p class="step-title">Step 3</p>
-                            <p>This is the third step. One more step before the end.</p>
-                        </div>
-                    </div>
-                    <div class="step-item is-active">
-                        <div class="step-marker">
-                            <span class="icon">
-                                <i class="fa fa-flag"></i>
-                            </span>
-                        </div>
-                        <div class="step-details">
-                            <p class="step-title">Step 4</p>
-                            <p>Final step. You have completed all the previous steps and end the process.</p>
-                        </div>
-                    </div>
+                <div class="field">
+                    <input type="checkbox" class="switch" id="exampleSwitchColorDefault"
+                           name="exampleSwitchColorDefault"
+                           checked="checked">
+                    <label for="exampleSwitchColorDefault">Default</label>
+                </div>
+                <div class="field">
+                    <input type="checkbox" class="switch is-success" id="exampleSwitchColorSuccess"
+                           name="exampleSwitchColorSuccess" checked="checked">
+                    <label for="exampleSwitchColorSuccess">Success</label>
+                </div>
+                <div class="field">
+                    <input type="checkbox" class="switch is-warning" id="exampleSwitchColorWarning"
+                           name="exampleSwitchColorWarning" checked="checked">
+                    <label for="exampleSwitchColorWarning">Warning</label>
+                </div>
+                <div class="field">
+                    <input type="checkbox" class="switch is-danger" id="exampleSwitchColorDanger"
+                           name="exampleSwitchColorDanger" checked="checked">
+                    <label for="exampleSwitchColorDanger">Danger</label>
+                </div>
+                <div class="field">
+                    <input type="checkbox" class="switch is-info" id="exampleSwitchColorInfo"
+                           name="exampleSwitchColorInfo"
+                           checked="checked">
+                    <label for="exampleSwitchColorInfo">Info</label>
                 </div>
 
                 <hr>
                 <h2 class="subtitle has-text-weight-bold">Sizes</h2>
-                <div class="steps is-small">
-                    <div class="step-item is-completed is-success">
-                        <div class="step-marker">
-                            <span class="icon">
-                                <i class="fa fa-check"></i>
-                            </span>
-                        </div>
-                        <div class="step-details">
-                            <p class="step-title">Step 1</p>
-                            <p>This is the first step of the process.</p>
-                        </div>
-                    </div>
-                    <div class="step-item is-active">
-                        <div class="step-marker">2</div>
-                        <div class="step-details">
-                            <p class="step-title">Step 2</p>
-                            <p>This is the second step. You get here once you have completed the first step.</p>
-                        </div>
-                    </div>
-                    <div class="step-item">
-                        <div class="step-marker">3</div>
-                        <div class="step-details">
-                            <p class="step-title">Step 3</p>
-                            <p>This is the third step. One more step before the end.</p>
-                        </div>
-                    </div>
-                    <div class="step-item">
-                        <div class="step-marker">
-                            <span class="icon">
-                                <i class="fa fa-flag"></i>
-                            </span>
-                        </div>
-                        <div class="step-details">
-                            <p class="step-title">Step 4</p>
-                            <p>Final step. You have completed all the previous steps and end the process.</p>
-                        </div>
-                    </div>
+                <div class="field">
+                    <input type="checkbox" class="switch is-small" id="exampleSwitchSizeSmall"
+                           name="exampleSwitchSizeSmall"
+                           checked="checked">
+                    <label for="exampleSwitchSizeSmall">Small</label>
+                </div>
+                <div class="field">
+                    <input type="checkbox" class="switch" id="exampleSwitchSizeDefault" name="exampleSwitchSizeDefault"
+                           checked="checked">
+                    <label for="exampleSwitchSizeDefault">Default</label>
+                </div>
+                <div class="field">
+                    <input type="checkbox" class="switch is-medium" id="exampleSwitchSizeMedium"
+                           name="exampleSwitchSizeMedium" checked="checked">
+                    <label for="exampleSwitchSizeMedium">Medium</label>
+                </div>
+                <div class="field">
+                    <input type="checkbox" class="switch is-large" id="exampleSwitchSizeLarge"
+                           name="exampleSwitchSizeLarge"
+                           checked="checked">
+                    <label for="exampleSwitchSizeLarge">Large</label>
                 </div>
 
-                <div class="steps">
-                    <div class="step-item is-completed is-success">
-                        <div class="step-marker">
-                            <span class="icon">
-                                <i class="fa fa-check"></i>
-                            </span>
-                        </div>
-                        <div class="step-details">
-                            <p class="step-title">Step 1</p>
-                            <p>This is the first step of the process.</p>
-                        </div>
-                    </div>
-                    <div class="step-item is-active">
-                        <div class="step-marker">2</div>
-                        <div class="step-details">
-                            <p class="step-title">Step 2</p>
-                            <p>This is the second step. You get here once you have completed the first step.</p>
-                        </div>
-                    </div>
-                    <div class="step-item">
-                        <div class="step-marker">3</div>
-                        <div class="step-details">
-                            <p class="step-title">Step 3</p>
-                            <p>This is the third step. One more step before the end.</p>
-                        </div>
-                    </div>
-                    <div class="step-item">
-                        <div class="step-marker">
-                            <span class="icon">
-                                <i class="fa fa-flag"></i>
-                            </span>
-                        </div>
-                        <div class="step-details">
-                            <p class="step-title">Step 4</p>
-                            <p>Final step. You have completed all the previous steps and end the process.</p>
-                        </div>
-                    </div>
+                <hr>
+                <h2 class="subtitle has-text-weight-bold">Styles</h2>
+                <div class="field">
+                    <input type="checkbox" class="switch is-thin" id="exampleSwitchStyleThin"
+                           name="exampleSwitchStyleThin"
+                           checked="checked">
+                    <label for="exampleSwitchStyleThin">Thin</label>
                 </div>
-
-                <div class="steps is-medium">
-                    <div class="step-item is-completed is-success">
-                        <div class="step-marker">
-                            <span class="icon">
-                                <i class="fa fa-check"></i>
-                            </span>
-                        </div>
-                        <div class="step-details">
-                            <p class="step-title">Step 1</p>
-                            <p>This is the first step of the process.</p>
-                        </div>
-                    </div>
-                    <div class="step-item is-active">
-                        <div class="step-marker">2</div>
-                        <div class="step-details">
-                            <p class="step-title">Step 2</p>
-                            <p>This is the second step. You get here once you have completed the first step.</p>
-                        </div>
-                    </div>
-                    <div class="step-item">
-                        <div class="step-marker">3</div>
-                        <div class="step-details">
-                            <p class="step-title">Step 3</p>
-                            <p>This is the third step. One more step before the end.</p>
-                        </div>
-                    </div>
-                    <div class="step-item">
-                        <div class="step-marker">
-                            <span class="icon">
-                                <i class="fa fa-flag"></i>
-                            </span>
-                        </div>
-                        <div class="step-details">
-                            <p class="step-title">Step 4</p>
-                            <p>Final step. You have completed all the previous steps and end the process.</p>
-                        </div>
-                    </div>
+                <div class="field">
+                    <input type="checkbox" class="switch is-rounded" id="exampleSwitchStyleRounded"
+                           name="exampleSwitchStyleRounded" checked="checked">
+                    <label for="exampleSwitchStyleRounded">Rounded</label>
                 </div>
-
-                <div class="steps is-large">
-                    <div class="step-item is-completed is-success">
-                        <div class="step-marker">
-                            <span class="icon">
-                                <i class="fa fa-check"></i>
-                            </span>
-                        </div>
-                        <div class="step-details">
-                            <p class="step-title">Step 1</p>
-                            <p>This is the first step of the process.</p>
-                        </div>
-                    </div>
-                    <div class="step-item is-active">
-                        <div class="step-marker">2</div>
-                        <div class="step-details">
-                            <p class="step-title">Step 2</p>
-                            <p>This is the second step. You get here once you have completed the first step.</p>
-                        </div>
-                    </div>
-                    <div class="step-item">
-                        <div class="step-marker">3</div>
-                        <div class="step-details">
-                            <p class="step-title">Step 3</p>
-                            <p>This is the third step. One more step before the end.</p>
-                        </div>
-                    </div>
-                    <div class="step-item">
-                        <div class="step-marker">
-                            <span class="icon">
-                                <i class="fa fa-flag"></i>
-                            </span>
-                        </div>
-                        <div class="step-details">
-                            <p class="step-title">Step 4</p>
-                            <p>Final step. You have completed all the previous steps and end the process.</p>
-                        </div>
-                    </div>
+                <div class="field">
+                    <input type="checkbox" class="switch is-outlined" id="exampleSwitchStyleOutlined"
+                           name="exampleSwitchStyleOutlined" checked="checked">
+                    <label for="exampleSwitchStyleOutlined">Outlined</label>
+                </div>
+                <div class="field">
+                    <input type="checkbox" class="switch is-rounded is-outlined" id="exampleSwitchStyleRoundedOutlined"
+                           name="exampleSwitchStyleRoundedOutlined" checked="checked">
+                    <label for="exampleSwitchStyleRoundedOutlined">Rounded and Outlined</label>
+                </div>
+                <div class="field">
+                    <input type="checkbox" class="switch is-thin is-rounded is-outlined"
+                           id="exampleSwitchStyleThinRoundedOutlined" name="exampleSwitchStyleThinRoundedOutlined"
+                           checked="checked">
+                    <label for="exampleSwitchStyleThinRoundedOutlined">Thin, Rounded and Outlined</label>
                 </div>
 
             </main>
