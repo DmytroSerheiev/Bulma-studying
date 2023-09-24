@@ -13,12 +13,19 @@
     <link rel="stylesheet" type="text/css" href="css/bulma-calendar.min.css">
     <link rel="stylesheet" type="text/css" href="css/bulma-carousel.min.css">
     <link rel="stylesheet" type="text/css" href="css/bulma-checkradio.min.css">
-
+    <link rel="stylesheet" type="text/css" href="css/bulma-divider.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bulma-pageloader.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bulma-pricingtable.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bulma-quickview.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bulma-extensions.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bulma-steps.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bulma-tagsinput.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bulma-timeline.min.css">
     <title>Dimon Bulma-chapter-8</title>
 
 
     <!-- Styling to better show these examples -->
-    <style type="text/css">
+    <style type=" text/css">
         .is-flex {
             background-color: #f8f9fa;
         }
@@ -64,295 +71,74 @@
         <i class="fa-solid fa-wifi" style="color: #1eed02;"></i>
     </div>
 
+    <div class="is-flex is-justify-content-center">
+        <h1 class="title">=======================Toast==========================</h1>
+    </div>
 
 
-    //=======================Carousel==========================
+    <!-- =======================Toast========================== -->
 
-    <header>
-        <nav class="navbar is-primary" role="navigation" aria-label="Main navigation">
-            <div class="container">
-                <div class="navbar-brand">
-                    <a href="../index.html" class="navbar-item">Bulma Learning Kit</a>
-                    <div class="navbar-burger" data-target="navbar">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-                <div class="navbar-menu" id="navbar">
-                    <div class="navbar-start">
-                        <div class="navbar-item has-dropdown is-hoverable">
-                            <a href="#0" class="navbar-link">Helpers</a>
-                            <ul class="navbar-dropdown is-boxed">
-                                <a href="color.html" class="navbar-item">Color</a>
-                                <a href="spacing.html" class="navbar-item">Spacing</a>
-                                <a href="typography.html" class="navbar-item">Typography</a>
-                                <a href="visibility.html" class="navbar-item">Visibility</a>
-                                <a href="flexbox.html" class="navbar-item">Flexbox</a>
-                                <a href="other.html" class="navbar-item">Other</a>
-                            </ul>
-                        </div>
-                        <div class="navbar-item has-dropdown is-hoverable">
-                            <a href="#0" class="navbar-link">Columns</a>
-                            <ul class="navbar-dropdown is-boxed">
-                                <a href="basics.html" class="navbar-item">Basics</a>
-                                <a href="sizes.html" class="navbar-item">Sizes</a>
-                                <a href="responsiveness.html" class="navbar-item">Responsiveness</a>
-                                <a href="nesting.html" class="navbar-item">Nesting</a>
-                                <a href="gap.html" class="navbar-item">Gap</a>
-                                <a href="options.html" class="navbar-item">Options</a>
-                            </ul>
-                        </div>
-                        <div class="navbar-item has-dropdown is-hoverable">
-                            <a href="#0" class="navbar-link">Layout</a>
-                            <ul class="navbar-dropdown is-boxed">
-                                <a href="container.html" class="navbar-item">Container</a>
-                                <a href="level.html" class="navbar-item">Level</a>
-                                <a href="media-object.html" class="navbar-item">Media Object</a>
-                                <a href="hero.html" class="navbar-item">Hero</a>
-                                <a href="section.html" class="navbar-item">Section</a>
-                                <a href="footer.html" class="navbar-item">Footer</a>
-                                <a href="tiles.html" class="navbar-item">Tiles</a>
-                            </ul>
-                        </div>
-                        <div class="navbar-item has-dropdown is-hoverable">
-                            <a href="#0" class="navbar-link">Forms</a>
-                            <ul class="navbar-dropdown is-boxed">
-                                <a href="general.html" class="navbar-item">General</a>
-                                <a href="input.html" class="navbar-item">Input</a>
-                                <a href="textarea.html" class="navbar-item">Textarea</a>
-                                <a href="select.html" class="navbar-item">Select</a>
-                                <a href="checkbox.html" class="navbar-item">Checkbox</a>
-                                <a href="radio.html" class="navbar-item">Radio</a>
-                                <a href="file.html" class="navbar-item">File</a>
-                            </ul>
-                        </div>
-                        <div class="navbar-item has-dropdown is-hoverable">
-                            <a href="#0" class="navbar-link">Elements</a>
-                            <ul class="navbar-dropdown is-boxed">
-                                <a href="block.html" class="navbar-item">Block</a>
-                                <a href="box.html" class="navbar-item">Box</a>
-                                <a href="button.html" class="navbar-item">Button</a>
-                                <a href="content.html" class="navbar-item">Content</a>
-                                <a href="delete.html" class="navbar-item">Delete</a>
-                                <a href="icon.html" class="navbar-item">Icon</a>
-                                <a href="image.html" class="navbar-item">Image</a>
-                                <a href="notification.html" class="navbar-item">Notification</a>
-                                <a href="progress-bar.html" class="navbar-item">Progress Bar</a>
-                                <a href="table.html" class="navbar-item">Table</a>
-                                <a href="tag.html" class="navbar-item">Tag</a>
-                                <a href="title.html" class="navbar-item">Title</a>
-                            </ul>
-                        </div>
-                        <div class="navbar-item has-dropdown is-hoverable">
-                            <a href="#0" class="navbar-link">Components</a>
-                            <ul class="navbar-dropdown is-boxed">
-                                <a href="breadcrumb.html" class="navbar-item">Breadcrumb</a>
-                                <a href="card.html" class="navbar-item">Card</a>
-                                <a href="dropdown.html" class="navbar-item">Dropdown</a>
-                                <a href="menu.html" class="navbar-item">Menu</a>
-                                <a href="message.html" class="navbar-item">Message</a>
-                                <a href="modal.html" class="navbar-item">Modal</a>
-                                <a href="navbar.html" class="navbar-item">Navbar</a>
-                                <a href="pagination.html" class="navbar-item">Pagination</a>
-                                <a href="panel.html" class="navbar-item">Panel</a>
-                                <a href="tabs.html" class="navbar-item">Tabs</a>
-                            </ul>
-                        </div>
-                        <div class="navbar-item has-dropdown is-hoverable">
-                            <a href="#0" class="navbar-link">Extensions</a>
-                            <ul class="navbar-dropdown is-boxed">
-                                <a href="accordion.html" class="navbar-item">Accordion</a>
-                                <a href="badge.html" class="navbar-item">Badge</a>
-                                <a href="calendar.html" class="navbar-item">Calendar</a>
-                                <a href="carousel.html" class="navbar-item">Carousel</a>
-                                <a href="checkradio.html" class="navbar-item">Checkradio</a>
-                                <a href="divider.html" class="navbar-item">Divider</a>
-                                <a href="page-loader.html" class="navbar-item">Page Loader</a>
-                                <a href="pricing-table.html" class="navbar-item">Pricing Table</a>
-                                <a href="quickview.html" class="navbar-item">Quickview</a>
-                                <a href="slider.html" class="navbar-item">Slider</a>
-                                <a href="steps.html" class="navbar-item">Steps</a>
-                                <a href="switch.html" class="navbar-item">Switch</a>
-                                <a href="tags-input.html" class="navbar-item">Tags Input</a>
-                                <a href="timeline.html" class="navbar-item">Timeline</a>
-                                <a href="toast.html" class="navbar-item">Toast</a>
-                                <a href="tooltip.html" class="navbar-item">Tooltip</a>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="navbar-end">
-                        <div class="buttons has-addons">
-                            <a href="../reference/checkradio.html" class="button is-dark">Reference</a>
-                            <a href="../practice/checkradio.html" class="button is-light">Practice</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
     <section class="section">
         <div class="container">
-            <h1 class="title">Extensions: Checkradio</h1>
-            <p class="is-size-5">Documentation: <a href="https://wikiki.github.io/form/checkradio/"
-                   target="_blank">https://wikiki.github.io/form/checkradio/</a></p>
-            <p class="is-size-5">Source files on GitHub: <a href="https://github.com/Wikiki/bulma-checkradio/"
-                   target="_blank">https://github.com/Wikiki/bulma-checkradio/</a></p>
+            <h1 class="title">Extensions: Toast</h1>
+            <p class="is-size-5">Documentation: <a href="https://rfoel.github.io/bulma-toast/"
+                   target="_blank">https://rfoel.github.io/bulma-toast/</a></p>
+            <p class="is-size-5">Source files on GitHub: <a href="https://github.com/rfoel/bulma-toast"
+                   target="_blank">https://github.com/rfoel/bulma-toast</a></p>
             <hr>
             <main>
 
                 <h2 class="subtitle has-text-weight-bold">Default</h2>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio" id="exampleCheckbox" name="exampleCheckbox"
-                           checked="checked">
-                    <label for="exampleCheckbox">Checkbox</label>
-                    <input type="checkbox" class="is-checkradio" id="exampleCheckboxDisabled"
-                           name="exampleCheckboxDisabled" checked="checked" disabled>
-                    <label for="exampleCheckboxDisabled">Checkbox (disabled)</label>
-                </div>
-                <div class="field">
-                    <input type="radio" class="is-checkradio" id="exampleRadioInline1" name="exampleRadioInline"
-                           checked="checked">
-                    <label for="exampleRadioInline1">Radio Button 1</label>
-                    <input type="radio" class="is-checkradio" id="exampleRadioInline2" name="exampleRadioInline">
-                    <label for="exampleRadioInline2">Radio Button 2</label>
-                    <input type="radio" class="is-checkradio" id="exampleRadioInline3" name="exampleRadioInline"
-                           disabled>
-                    <label for="exampleRadioInline3">Radio Button 3</label>
-                </div>
+                <button class="button is-primary" id="toastDefault">Default</button>
 
                 <hr>
-                <h2 class="subtitle has-text-weight-bold">Default Right-To-Left</h2>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio is-rtl" id="exampleCheckboxRtl"
-                           name="exampleCheckboxRtl" checked="checked">
-                    <label for="exampleCheckboxRtl">Checkbox</label>
-                </div>
-                <div class="field">
-                    <input type="radio" class="is-checkradio is-rtl" id="exampleRadioInlineRtl1"
-                           name="exampleRadioInlineRtl" checked="checked">
-                    <label for="exampleRadioInlineRtl1">Radio Button 1</label>
-                    <input type="radio" class="is-checkradio is-rtl" id="exampleRadioInlineRtl2"
-                           name="exampleRadioInlineRtl">
-                    <label for="exampleRadioInlineRtl2">Radio Button 2</label>
-                </div>
+                <h2 class="subtitle has-text-weight-bold">HTML Message</h2>
+                <button class="button is-primary" id="toastHTML">HTML Message</button>
 
                 <hr>
                 <h2 class="subtitle has-text-weight-bold">Colors</h2>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio" id="exampleCheckboxColorDefault"
-                           name="exampleCheckboxColorDefault" checked="checked">
-                    <label for="exampleCheckboxColorDefault">Default</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio is-success" id="exampleCheckboxColorSuccess"
-                           name="exampleCheckboxColorSuccess" checked="checked">
-                    <label for="exampleCheckboxColorSuccess">Success</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio is-warning" id="exampleCheckboxColorWarning"
-                           name="exampleCheckboxColorWarning" checked="checked">
-                    <label for="exampleCheckboxColorWarning">Warning</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio is-danger" id="exampleCheckboxColorDanger"
-                           name="exampleCheckboxColorDanger" checked="checked">
-                    <label for="exampleCheckboxColorDanger">Danger</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio is-info" id="exampleCheckboxColorInfo"
-                           name="exampleCheckboxColorInfo" checked="checked">
-                    <label for="exampleCheckboxColorInfo">Info</label>
-                </div>
-                <div class="field has-background-dark has-text-white">
-                    <input type="checkbox" class="is-checkradio is-white" id="exampleCheckboxColorWhite"
-                           name="exampleCheckboxColorWhite" checked="checked">
-                    <label for="exampleCheckboxColorWhite">White</label>
-                </div>
+                <button class="button is-primary" id="toastPrimary">Primary</button>
+                <button class="button is-primary" id="toastLink">Link</button>
+                <button class="button is-primary" id="toastInfo">Info</button>
+                <button class="button is-primary" id="toastSuccess">Success</button>
+                <button class="button is-primary" id="toastWarning">Warning</button>
+                <button class="button is-primary" id="toastDanger">Danger</button>
 
                 <hr>
-                <h2 class="subtitle has-text-weight-bold">Colors (background)</h2>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio has-background-color"
-                           id="exampleCheckboxBackgroundColorDefault" name="exampleCheckboxBackgroundColorDefault"
-                           checked="checked">
-                    <label for="exampleCheckboxBackgroundColorDefault">Default</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio has-background-color is-success"
-                           id="exampleCheckboxBackgroundColorSuccess" name="exampleCheckboxBackgroundColorSuccess"
-                           checked="checked">
-                    <label for="exampleCheckboxBackgroundColorSuccess">Success</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio has-background-color is-warning"
-                           id="exampleCheckboxBackgroundColorWarning" name="exampleCheckboxBackgroundColorWarning"
-                           checked="checked">
-                    <label for="exampleCheckboxBackgroundColorWarning">Warning</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio has-background-color is-danger"
-                           id="exampleCheckboxBackgroundColorDanger" name="exampleCheckboxBackgroundColorDanger"
-                           checked="checked">
-                    <label for="exampleCheckboxBackgroundColorDanger">Danger</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio has-background-color is-info"
-                           id="exampleCheckboxBackgroundColorInfo" name="exampleCheckboxBackgroundColorInfo"
-                           checked="checked">
-                    <label for="exampleCheckboxBackgroundColorInfo">Info</label>
-                </div>
-                <div class="field has-background-dark has-text-white">
-                    <input type="checkbox" class="is-checkradio has-background-color is-white"
-                           id="exampleCheckboxBackgroundColorWhite" name="exampleCheckboxBackgroundColorWhite"
-                           checked="checked">
-                    <label for="exampleCheckboxBackgroundColorWhite">White</label>
-                </div>
+                <h2 class="subtitle has-text-weight-bold">Duration</h2>
+                <button class="button is-primary" id="toastDuration">Duration</button>
 
                 <hr>
-                <h2 class="subtitle has-text-weight-bold">Sizes</h2>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio is-small" id="exampleCheckboxSizeSmall"
-                           name="exampleCheckboxSizeSmall" checked="checked">
-                    <label for="exampleCheckboxSizeSmall">Small</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio" id="exampleCheckboxSizeDefault"
-                           name="exampleCheckboxSizeDefault" checked="checked">
-                    <label for="exampleCheckboxSizeDefault">Default</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio is-mediun" id="exampleCheckboxSizeMedium"
-                           name="exampleCheckboxSizeMedium" checked="checked">
-                    <label for="exampleCheckboxSizeMedium">Medium</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio is-large" id="exampleCheckboxSizeLarge"
-                           name="exampleCheckboxSizeLarge" checked="checked">
-                    <label for="exampleCheckboxSizeLarge">Large</label>
-                </div>
+                <h2 class="subtitle has-text-weight-bold">Position</h2>
+                <button class="button is-primary" id="toastTopLeft">Top Left</button>
+                <button class="button is-primary" id="toastTopCenter">Top Center</button>
+                <button class="button is-primary" id="toastTopRight">Top Right</button>
+                <button class="button is-primary" id="toastCenter">Center</button>
+                <button class="button is-primary" id="toastBottomLeft">Bottom Left</button>
+                <button class="button is-primary" id="toastBottomCenter">Bottom Center</button>
+                <button class="button is-primary" id="toastBottomRight">Bottom Right</button>
 
                 <hr>
-                <h2 class="subtitle has-text-weight-bold">Styles</h2>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio is-circle" id="exampleCheckboxStyleCircle"
-                           name="exampleCheckboxStyleCircle" checked="checked">
-                    <label for="exampleCheckboxStyleCircle">Circle</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio is-block" id="exampleCheckboxStyleBlock"
-                           name="exampleCheckboxStyleBlock" checked="checked">
-                    <label for="exampleCheckboxStyleBlock">Block</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="is-checkradio has-no-border" id="exampleCheckboxStyleNoBorder"
-                           name="exampleCheckboxStyleNoBorder" checked="checked">
-                    <label for="exampleCheckboxStyleNoBorder">No Border</label>
-                </div>
+                <h2 class="subtitle has-text-weight-bold">Dismissible</h2>
+                <button class="button is-primary" id="toastDismissible">Dismissible</button>
+
+                <hr>
+                <h2 class="subtitle has-text-weight-bold">Pause On Hover</h2>
+                <button class="button is-primary" id="toastPauseOnHover">Pause On Hover</button>
+
+                <hr>
+                <h2 class="subtitle has-text-weight-bold">Close On Click</h2>
+                <button class="button is-primary" id="toastCloseOnClick">Close On Click</button>
+
+                <hr>
+                <h2 class="subtitle has-text-weight-bold">Opacity</h2>
+                <button class="button is-primary" id="toastOpacity">Opacity</button>
 
             </main>
         </div>
     </section>
+
+    <script type="text/javascript" src="../js/bulma-toast.min.js"></script>
 
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
@@ -379,9 +165,164 @@
                 });
             }
 
+            // Default
+            var toastDefault = document.getElementById('toastDefault');
+            toastDefault.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Default toast'
+                })
+            })
+
+            // HTML Message
+            var toastHTML = document.getElementById('toastHTML');
+            toastHTML.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: '<strong>HTML <em>toast</em></strong>'
+                })
+            })
+
+            // Colors
+            var toastPrimary = document.getElementById('toastPrimary');
+            toastPrimary.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Primary toast',
+                    type: 'is-primary'
+                })
+            })
+            var toastLink = document.getElementById('toastLink');
+            toastLink.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Link toast',
+                    type: 'is-link'
+                })
+            })
+            var toastInfo = document.getElementById('toastInfo');
+            toastInfo.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Info toast',
+                    type: 'is-info'
+                })
+            })
+            var toastSuccess = document.getElementById('toastSuccess');
+            toastSuccess.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Success toast',
+                    type: 'is-success'
+                })
+            })
+            var toastWarning = document.getElementById('toastWarning');
+            toastWarning.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Warning toast',
+                    type: 'is-warning'
+                })
+            })
+            var toastDanger = document.getElementById('toastDanger');
+            toastDanger.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Danger toast',
+                    type: 'is-danger'
+                })
+            })
+
+            // Duration
+            var toastDuration = document.getElementById('toastDuration');
+            toastDuration.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Duration: 5000 ms',
+                    duration: 5000
+                })
+            })
+
+            // Position
+            var toastTopLeft = document.getElementById('toastTopLeft');
+            toastTopLeft.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Top Left',
+                    position: 'top-left'
+                })
+            })
+            var toastTopCenter = document.getElementById('toastTopCenter');
+            toastTopCenter.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Top Center',
+                    position: 'top-center'
+                })
+            })
+            var toastTopRight = document.getElementById('toastTopRight');
+            toastTopRight.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Top Right',
+                    position: 'top-right'
+                })
+            })
+            var toastCenter = document.getElementById('toastCenter');
+            toastCenter.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Center',
+                    position: 'center'
+                })
+            })
+            var toastBottomLeft = document.getElementById('toastBottomLeft');
+            toastBottomLeft.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Bottom Left',
+                    position: 'bottom-left'
+                })
+            })
+            var toastBottomCenter = document.getElementById('toastBottomCenter');
+            toastBottomCenter.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Bottom Center',
+                    position: 'bottom-center'
+                })
+            })
+            var toastBottomRight = document.getElementById('toastBottomRight');
+            toastBottomRight.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Bottom Right',
+                    position: 'bottom-right'
+                })
+            })
+
+            // Dismissible
+            var toastDismissible = document.getElementById('toastDismissible');
+            toastDismissible.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Dismissible',
+                    dismissible: true
+                })
+            })
+
+            // Pause On Hover
+            var toastPauseOnHover = document.getElementById('toastPauseOnHover');
+            toastPauseOnHover.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Pause On Hover',
+                    pauseOnHover: true
+                })
+            })
+
+            // Close On Click
+            var toastCloseOnClick = document.getElementById('toastCloseOnClick');
+            toastCloseOnClick.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Close On Click',
+                    closeOnClick: false
+                })
+            })
+
+            // Opacity
+            var toastOpacity = document.getElementById('toastOpacity');
+            toastOpacity.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Opacity: 0.5',
+                    opacity: 0.5
+                })
+            })
+
         });
     </script>
-
 </body>
 
 </html>
