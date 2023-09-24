@@ -20,7 +20,7 @@
     <link rel="stylesheet" type="text/css" href="css/bulma-extensions.min.css">
     <link rel="stylesheet" type="text/css" href="css/bulma-steps.min.css">
     <link rel="stylesheet" type="text/css" href="css/bulma-tagsinput.min.css">
-
+    <link rel="stylesheet" type="text/css" href="css/bulma-timeline.min.css">
     <title>Dimon Bulma-chapter-8</title>
 
 
@@ -71,28 +71,179 @@
         <i class="fa-solid fa-wifi" style="color: #1eed02;"></i>
     </div>
 
+    <div class="is-flex is-justify-content-center">
+        <h1 class="title">=======================Timeline==========================</h1>
+    </div>
 
 
-    //=======================Tags Input==========================
+    <!-- =======================Timeline========================== -->
 
     <section class="section">
         <div class="container">
-            <h1 class="title">Extensions: Tags Input</h1>
-            <p class="is-size-5">Documentation: <a href="https://wikiki.github.io/form/tagsinput/"
-                   target="_blank">https://wikiki.github.io/form/tagsinput/</a></p>
-            <p class="is-size-5">Source files on GitHub: <a href="https://github.com/Wikiki/bulma-tagsinput"
-                   target="_blank">https://github.com/Wikiki/bulma-tagsinput</a></p>
+            <h1 class="title">Extensions: Timeline</h1>
+            <p class="is-size-5">Documentation: <a href="https://wikiki.github.io/components/timeline/"
+                   target="_blank">https://wikiki.github.io/components/timeline/</a></p>
+            <p class="is-size-5">Source files on GitHub: <a href="https://github.com/Wikiki/bulma-timeline/"
+                   target="_blank">https://github.com/Wikiki/bulma-timeline/</a></p>
             <hr>
             <main>
 
                 <h2 class="subtitle has-text-weight-bold">Default</h2>
-                <input type="tags" class="input" placeholder="Add Tag" value="Tag 1,Tag 2,Tag 3">
+                <div class="timeline">
+                    <header class="timeline-header">
+                        <span class="tag is-medium is-primary">Start</span>
+                    </header>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <p class="heading">January 2016</p>
+                            <p>Timeline content - Can include any HTML element</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker is-image is-32x32">
+                            <img src="../img/32x32.png">
+                        </div>
+                        <div class="timeline-content">
+                            <p class="heading">February 2016</p>
+                            <p>Timeline content - Can include any HTML element</p>
+                        </div>
+                    </div>
+                    <header class="timeline-header">
+                        <span class="tag is-primary">2017</span>
+                    </header>
+                    <div class="timeline-item">
+                        <div class="timeline-marker is-icon">
+                            <i class="fa fa-flag"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <p class="heading">March 2017</p>
+                            <p>Timeline content - Can include any HTML element</p>
+                        </div>
+                    </div>
+                    <div class="timeline-header">
+                        <span class="tag is-medium is-primary">End</span>
+                    </div>
+                </div>
+
+                <hr>
+                <h2 class="subtitle has-text-weight-bold">Colors</h2>
+                <div class="timeline">
+                    <header class="timeline-header">
+                        <span class="tag is-medium is-primary">Start</span>
+                    </header>
+                    <div class="timeline-item is-info">
+                        <div class="timeline-marker is-info"></div>
+                        <div class="timeline-content">
+                            <p class="heading">January 2016</p>
+                            <p>Timeline content - Can include any HTML element</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item is-warning">
+                        <div class="timeline-marker is-image is-32x32 is-warning">
+                            <img src="../img/32x32.png">
+                        </div>
+                        <div class="timeline-content">
+                            <p class="heading">February 2016</p>
+                            <p>Timeline content - Can include any HTML element</p>
+                        </div>
+                    </div>
+                    <header class="timeline-header">
+                        <span class="tag is-primary">2017</span>
+                    </header>
+                    <div class="timeline-item is-danger">
+                        <div class="timeline-marker is-icon is-danger">
+                            <i class="fa fa-flag"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <p class="heading">March 2017</p>
+                            <p>Timeline content - Can include any HTML element</p>
+                        </div>
+                    </div>
+                    <div class="timeline-header">
+                        <span class="tag is-medium is-primary">End</span>
+                    </div>
+                </div>
+
+                <hr>
+                <h2 class="subtitle has-text-weight-bold">Positions</h2>
+                <div class="timeline is-centered">
+                    <header class="timeline-header">
+                        <span class="tag is-medium is-primary">Start</span>
+                    </header>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <p class="heading">January 2016</p>
+                            <p>Timeline content - Can include any HTML element</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker is-image is-32x32">
+                            <img src="../img/32x32.png">
+                        </div>
+                        <div class="timeline-content">
+                            <p class="heading">February 2016</p>
+                            <p>Timeline content - Can include any HTML element</p>
+                        </div>
+                    </div>
+                    <header class="timeline-header">
+                        <span class="tag is-primary">2017</span>
+                    </header>
+                    <div class="timeline-item">
+                        <div class="timeline-marker is-icon">
+                            <i class="fa fa-flag"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <p class="heading">March 2017</p>
+                            <p>Timeline content - Can include any HTML element</p>
+                        </div>
+                    </div>
+                    <div class="timeline-header">
+                        <span class="tag is-medium is-primary">End</span>
+                    </div>
+                </div>
+
+                <div class="timeline is-rtl">
+                    <header class="timeline-header">
+                        <span class="tag is-medium is-primary">Start</span>
+                    </header>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <p class="heading">January 2016</p>
+                            <p>Timeline content - Can include any HTML element</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker is-image is-32x32">
+                            <img src="../img/32x32.png">
+                        </div>
+                        <div class="timeline-content">
+                            <p class="heading">February 2016</p>
+                            <p>Timeline content - Can include any HTML element</p>
+                        </div>
+                    </div>
+                    <header class="timeline-header">
+                        <span class="tag is-primary">2017</span>
+                    </header>
+                    <div class="timeline-item">
+                        <div class="timeline-marker is-icon">
+                            <i class="fa fa-flag"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <p class="heading">March 2017</p>
+                            <p>Timeline content - Can include any HTML element</p>
+                        </div>
+                    </div>
+                    <div class="timeline-header">
+                        <span class="tag is-medium is-primary">End</span>
+                    </div>
+                </div>
 
             </main>
         </div>
     </section>
-
-    <script type="text/javascript" src="../js/bulma-tagsinput.min.js"></script>
 
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
@@ -118,9 +269,6 @@
                     });
                 });
             }
-
-            // Initialize the Tags Input extension
-            bulmaTagsinput.attach();
 
         });
     </script>
