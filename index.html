@@ -19,6 +19,7 @@
     <link rel="stylesheet" type="text/css" href="css/bulma-quickview.min.css">
     <link rel="stylesheet" type="text/css" href="css/bulma-extensions.min.css">
     <link rel="stylesheet" type="text/css" href="css/bulma-steps.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bulma-tagsinput.min.css">
 
     <title>Dimon Bulma-chapter-8</title>
 
@@ -72,128 +73,26 @@
 
 
 
-    //=======================Switch==========================
+    //=======================Tags Input==========================
 
     <section class="section">
         <div class="container">
-            <h1 class="title">Extensions: Switch</h1>
-            <p class="is-size-5">Documentation: <a href="https://wikiki.github.io/form/switch/"
-                   target="_blank">https://wikiki.github.io/form/switch/</a></p>
-            <p class="is-size-5">Source files on GitHub: <a href="https://github.com/Wikiki/bulma-extensions/"
-                   target="_blank">https://github.com/Wikiki/bulma-extensions/</a></p>
+            <h1 class="title">Extensions: Tags Input</h1>
+            <p class="is-size-5">Documentation: <a href="https://wikiki.github.io/form/tagsinput/"
+                   target="_blank">https://wikiki.github.io/form/tagsinput/</a></p>
+            <p class="is-size-5">Source files on GitHub: <a href="https://github.com/Wikiki/bulma-tagsinput"
+                   target="_blank">https://github.com/Wikiki/bulma-tagsinput</a></p>
             <hr>
             <main>
 
                 <h2 class="subtitle has-text-weight-bold">Default</h2>
-                <div class="field">
-                    <input type="checkbox" class="switch" id="exampleSwitch" name="exampleSwitch" checked="checked">
-                    <label for="exampleSwitch">Switch</label>
-                </div>
-
-                <hr>
-                <h2 class="subtitle has-text-weight-bold">Disabled</h2>
-                <div class="field">
-                    <input type="checkbox" class="switch" id="exampleSwitchDisabled" name="exampleSwitchDisabled"
-                           checked="checked" disabled>
-                    <label for="exampleSwitchDisabled">Switch</label>
-                </div>
-
-                <hr>
-                <h2 class="subtitle has-text-weight-bold">Default Right-To-Left</h2>
-                <div class="field">
-                    <input type="checkbox" class="switch is-rtl" id="exampleSwitchRtl" name="exampleSwitchRtl"
-                           checked="checked">
-                    <label for="exampleSwitchRtl">Switch</label>
-                </div>
-
-                <hr>
-                <h2 class="subtitle has-text-weight-bold">Colors</h2>
-                <div class="field">
-                    <input type="checkbox" class="switch" id="exampleSwitchColorDefault"
-                           name="exampleSwitchColorDefault"
-                           checked="checked">
-                    <label for="exampleSwitchColorDefault">Default</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="switch is-success" id="exampleSwitchColorSuccess"
-                           name="exampleSwitchColorSuccess" checked="checked">
-                    <label for="exampleSwitchColorSuccess">Success</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="switch is-warning" id="exampleSwitchColorWarning"
-                           name="exampleSwitchColorWarning" checked="checked">
-                    <label for="exampleSwitchColorWarning">Warning</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="switch is-danger" id="exampleSwitchColorDanger"
-                           name="exampleSwitchColorDanger" checked="checked">
-                    <label for="exampleSwitchColorDanger">Danger</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="switch is-info" id="exampleSwitchColorInfo"
-                           name="exampleSwitchColorInfo"
-                           checked="checked">
-                    <label for="exampleSwitchColorInfo">Info</label>
-                </div>
-
-                <hr>
-                <h2 class="subtitle has-text-weight-bold">Sizes</h2>
-                <div class="field">
-                    <input type="checkbox" class="switch is-small" id="exampleSwitchSizeSmall"
-                           name="exampleSwitchSizeSmall"
-                           checked="checked">
-                    <label for="exampleSwitchSizeSmall">Small</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="switch" id="exampleSwitchSizeDefault" name="exampleSwitchSizeDefault"
-                           checked="checked">
-                    <label for="exampleSwitchSizeDefault">Default</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="switch is-medium" id="exampleSwitchSizeMedium"
-                           name="exampleSwitchSizeMedium" checked="checked">
-                    <label for="exampleSwitchSizeMedium">Medium</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="switch is-large" id="exampleSwitchSizeLarge"
-                           name="exampleSwitchSizeLarge"
-                           checked="checked">
-                    <label for="exampleSwitchSizeLarge">Large</label>
-                </div>
-
-                <hr>
-                <h2 class="subtitle has-text-weight-bold">Styles</h2>
-                <div class="field">
-                    <input type="checkbox" class="switch is-thin" id="exampleSwitchStyleThin"
-                           name="exampleSwitchStyleThin"
-                           checked="checked">
-                    <label for="exampleSwitchStyleThin">Thin</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="switch is-rounded" id="exampleSwitchStyleRounded"
-                           name="exampleSwitchStyleRounded" checked="checked">
-                    <label for="exampleSwitchStyleRounded">Rounded</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="switch is-outlined" id="exampleSwitchStyleOutlined"
-                           name="exampleSwitchStyleOutlined" checked="checked">
-                    <label for="exampleSwitchStyleOutlined">Outlined</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="switch is-rounded is-outlined" id="exampleSwitchStyleRoundedOutlined"
-                           name="exampleSwitchStyleRoundedOutlined" checked="checked">
-                    <label for="exampleSwitchStyleRoundedOutlined">Rounded and Outlined</label>
-                </div>
-                <div class="field">
-                    <input type="checkbox" class="switch is-thin is-rounded is-outlined"
-                           id="exampleSwitchStyleThinRoundedOutlined" name="exampleSwitchStyleThinRoundedOutlined"
-                           checked="checked">
-                    <label for="exampleSwitchStyleThinRoundedOutlined">Thin, Rounded and Outlined</label>
-                </div>
+                <input type="tags" class="input" placeholder="Add Tag" value="Tag 1,Tag 2,Tag 3">
 
             </main>
         </div>
     </section>
+
+    <script type="text/javascript" src="../js/bulma-tagsinput.min.js"></script>
 
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
@@ -219,6 +118,9 @@
                     });
                 });
             }
+
+            // Initialize the Tags Input extension
+            bulmaTagsinput.attach();
 
         });
     </script>
