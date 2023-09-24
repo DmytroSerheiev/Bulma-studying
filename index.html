@@ -72,178 +72,73 @@
     </div>
 
     <div class="is-flex is-justify-content-center">
-        <h1 class="title">=======================Timeline==========================</h1>
+        <h1 class="title">=======================Toast==========================</h1>
     </div>
 
 
-    <!-- =======================Timeline========================== -->
+    <!-- =======================Toast========================== -->
 
     <section class="section">
         <div class="container">
-            <h1 class="title">Extensions: Timeline</h1>
-            <p class="is-size-5">Documentation: <a href="https://wikiki.github.io/components/timeline/"
-                   target="_blank">https://wikiki.github.io/components/timeline/</a></p>
-            <p class="is-size-5">Source files on GitHub: <a href="https://github.com/Wikiki/bulma-timeline/"
-                   target="_blank">https://github.com/Wikiki/bulma-timeline/</a></p>
+            <h1 class="title">Extensions: Toast</h1>
+            <p class="is-size-5">Documentation: <a href="https://rfoel.github.io/bulma-toast/"
+                   target="_blank">https://rfoel.github.io/bulma-toast/</a></p>
+            <p class="is-size-5">Source files on GitHub: <a href="https://github.com/rfoel/bulma-toast"
+                   target="_blank">https://github.com/rfoel/bulma-toast</a></p>
             <hr>
             <main>
 
                 <h2 class="subtitle has-text-weight-bold">Default</h2>
-                <div class="timeline">
-                    <header class="timeline-header">
-                        <span class="tag is-medium is-primary">Start</span>
-                    </header>
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <p class="heading">January 2016</p>
-                            <p>Timeline content - Can include any HTML element</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-marker is-image is-32x32">
-                            <img src="../img/32x32.png">
-                        </div>
-                        <div class="timeline-content">
-                            <p class="heading">February 2016</p>
-                            <p>Timeline content - Can include any HTML element</p>
-                        </div>
-                    </div>
-                    <header class="timeline-header">
-                        <span class="tag is-primary">2017</span>
-                    </header>
-                    <div class="timeline-item">
-                        <div class="timeline-marker is-icon">
-                            <i class="fa fa-flag"></i>
-                        </div>
-                        <div class="timeline-content">
-                            <p class="heading">March 2017</p>
-                            <p>Timeline content - Can include any HTML element</p>
-                        </div>
-                    </div>
-                    <div class="timeline-header">
-                        <span class="tag is-medium is-primary">End</span>
-                    </div>
-                </div>
+                <button class="button is-primary" id="toastDefault">Default</button>
+
+                <hr>
+                <h2 class="subtitle has-text-weight-bold">HTML Message</h2>
+                <button class="button is-primary" id="toastHTML">HTML Message</button>
 
                 <hr>
                 <h2 class="subtitle has-text-weight-bold">Colors</h2>
-                <div class="timeline">
-                    <header class="timeline-header">
-                        <span class="tag is-medium is-primary">Start</span>
-                    </header>
-                    <div class="timeline-item is-info">
-                        <div class="timeline-marker is-info"></div>
-                        <div class="timeline-content">
-                            <p class="heading">January 2016</p>
-                            <p>Timeline content - Can include any HTML element</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item is-warning">
-                        <div class="timeline-marker is-image is-32x32 is-warning">
-                            <img src="../img/32x32.png">
-                        </div>
-                        <div class="timeline-content">
-                            <p class="heading">February 2016</p>
-                            <p>Timeline content - Can include any HTML element</p>
-                        </div>
-                    </div>
-                    <header class="timeline-header">
-                        <span class="tag is-primary">2017</span>
-                    </header>
-                    <div class="timeline-item is-danger">
-                        <div class="timeline-marker is-icon is-danger">
-                            <i class="fa fa-flag"></i>
-                        </div>
-                        <div class="timeline-content">
-                            <p class="heading">March 2017</p>
-                            <p>Timeline content - Can include any HTML element</p>
-                        </div>
-                    </div>
-                    <div class="timeline-header">
-                        <span class="tag is-medium is-primary">End</span>
-                    </div>
-                </div>
+                <button class="button is-primary" id="toastPrimary">Primary</button>
+                <button class="button is-primary" id="toastLink">Link</button>
+                <button class="button is-primary" id="toastInfo">Info</button>
+                <button class="button is-primary" id="toastSuccess">Success</button>
+                <button class="button is-primary" id="toastWarning">Warning</button>
+                <button class="button is-primary" id="toastDanger">Danger</button>
 
                 <hr>
-                <h2 class="subtitle has-text-weight-bold">Positions</h2>
-                <div class="timeline is-centered">
-                    <header class="timeline-header">
-                        <span class="tag is-medium is-primary">Start</span>
-                    </header>
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <p class="heading">January 2016</p>
-                            <p>Timeline content - Can include any HTML element</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-marker is-image is-32x32">
-                            <img src="../img/32x32.png">
-                        </div>
-                        <div class="timeline-content">
-                            <p class="heading">February 2016</p>
-                            <p>Timeline content - Can include any HTML element</p>
-                        </div>
-                    </div>
-                    <header class="timeline-header">
-                        <span class="tag is-primary">2017</span>
-                    </header>
-                    <div class="timeline-item">
-                        <div class="timeline-marker is-icon">
-                            <i class="fa fa-flag"></i>
-                        </div>
-                        <div class="timeline-content">
-                            <p class="heading">March 2017</p>
-                            <p>Timeline content - Can include any HTML element</p>
-                        </div>
-                    </div>
-                    <div class="timeline-header">
-                        <span class="tag is-medium is-primary">End</span>
-                    </div>
-                </div>
+                <h2 class="subtitle has-text-weight-bold">Duration</h2>
+                <button class="button is-primary" id="toastDuration">Duration</button>
 
-                <div class="timeline is-rtl">
-                    <header class="timeline-header">
-                        <span class="tag is-medium is-primary">Start</span>
-                    </header>
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <p class="heading">January 2016</p>
-                            <p>Timeline content - Can include any HTML element</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-marker is-image is-32x32">
-                            <img src="../img/32x32.png">
-                        </div>
-                        <div class="timeline-content">
-                            <p class="heading">February 2016</p>
-                            <p>Timeline content - Can include any HTML element</p>
-                        </div>
-                    </div>
-                    <header class="timeline-header">
-                        <span class="tag is-primary">2017</span>
-                    </header>
-                    <div class="timeline-item">
-                        <div class="timeline-marker is-icon">
-                            <i class="fa fa-flag"></i>
-                        </div>
-                        <div class="timeline-content">
-                            <p class="heading">March 2017</p>
-                            <p>Timeline content - Can include any HTML element</p>
-                        </div>
-                    </div>
-                    <div class="timeline-header">
-                        <span class="tag is-medium is-primary">End</span>
-                    </div>
-                </div>
+                <hr>
+                <h2 class="subtitle has-text-weight-bold">Position</h2>
+                <button class="button is-primary" id="toastTopLeft">Top Left</button>
+                <button class="button is-primary" id="toastTopCenter">Top Center</button>
+                <button class="button is-primary" id="toastTopRight">Top Right</button>
+                <button class="button is-primary" id="toastCenter">Center</button>
+                <button class="button is-primary" id="toastBottomLeft">Bottom Left</button>
+                <button class="button is-primary" id="toastBottomCenter">Bottom Center</button>
+                <button class="button is-primary" id="toastBottomRight">Bottom Right</button>
+
+                <hr>
+                <h2 class="subtitle has-text-weight-bold">Dismissible</h2>
+                <button class="button is-primary" id="toastDismissible">Dismissible</button>
+
+                <hr>
+                <h2 class="subtitle has-text-weight-bold">Pause On Hover</h2>
+                <button class="button is-primary" id="toastPauseOnHover">Pause On Hover</button>
+
+                <hr>
+                <h2 class="subtitle has-text-weight-bold">Close On Click</h2>
+                <button class="button is-primary" id="toastCloseOnClick">Close On Click</button>
+
+                <hr>
+                <h2 class="subtitle has-text-weight-bold">Opacity</h2>
+                <button class="button is-primary" id="toastOpacity">Opacity</button>
 
             </main>
         </div>
     </section>
+
+    <script type="text/javascript" src="../js/bulma-toast.min.js"></script>
 
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
@@ -269,6 +164,162 @@
                     });
                 });
             }
+
+            // Default
+            var toastDefault = document.getElementById('toastDefault');
+            toastDefault.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Default toast'
+                })
+            })
+
+            // HTML Message
+            var toastHTML = document.getElementById('toastHTML');
+            toastHTML.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: '<strong>HTML <em>toast</em></strong>'
+                })
+            })
+
+            // Colors
+            var toastPrimary = document.getElementById('toastPrimary');
+            toastPrimary.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Primary toast',
+                    type: 'is-primary'
+                })
+            })
+            var toastLink = document.getElementById('toastLink');
+            toastLink.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Link toast',
+                    type: 'is-link'
+                })
+            })
+            var toastInfo = document.getElementById('toastInfo');
+            toastInfo.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Info toast',
+                    type: 'is-info'
+                })
+            })
+            var toastSuccess = document.getElementById('toastSuccess');
+            toastSuccess.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Success toast',
+                    type: 'is-success'
+                })
+            })
+            var toastWarning = document.getElementById('toastWarning');
+            toastWarning.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Warning toast',
+                    type: 'is-warning'
+                })
+            })
+            var toastDanger = document.getElementById('toastDanger');
+            toastDanger.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Danger toast',
+                    type: 'is-danger'
+                })
+            })
+
+            // Duration
+            var toastDuration = document.getElementById('toastDuration');
+            toastDuration.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Duration: 5000 ms',
+                    duration: 5000
+                })
+            })
+
+            // Position
+            var toastTopLeft = document.getElementById('toastTopLeft');
+            toastTopLeft.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Top Left',
+                    position: 'top-left'
+                })
+            })
+            var toastTopCenter = document.getElementById('toastTopCenter');
+            toastTopCenter.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Top Center',
+                    position: 'top-center'
+                })
+            })
+            var toastTopRight = document.getElementById('toastTopRight');
+            toastTopRight.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Top Right',
+                    position: 'top-right'
+                })
+            })
+            var toastCenter = document.getElementById('toastCenter');
+            toastCenter.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Center',
+                    position: 'center'
+                })
+            })
+            var toastBottomLeft = document.getElementById('toastBottomLeft');
+            toastBottomLeft.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Bottom Left',
+                    position: 'bottom-left'
+                })
+            })
+            var toastBottomCenter = document.getElementById('toastBottomCenter');
+            toastBottomCenter.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Bottom Center',
+                    position: 'bottom-center'
+                })
+            })
+            var toastBottomRight = document.getElementById('toastBottomRight');
+            toastBottomRight.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Bottom Right',
+                    position: 'bottom-right'
+                })
+            })
+
+            // Dismissible
+            var toastDismissible = document.getElementById('toastDismissible');
+            toastDismissible.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Dismissible',
+                    dismissible: true
+                })
+            })
+
+            // Pause On Hover
+            var toastPauseOnHover = document.getElementById('toastPauseOnHover');
+            toastPauseOnHover.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Pause On Hover',
+                    pauseOnHover: true
+                })
+            })
+
+            // Close On Click
+            var toastCloseOnClick = document.getElementById('toastCloseOnClick');
+            toastCloseOnClick.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Close On Click',
+                    closeOnClick: false
+                })
+            })
+
+            // Opacity
+            var toastOpacity = document.getElementById('toastOpacity');
+            toastOpacity.addEventListener('click', function () {
+                bulmaToast.toast({
+                    message: 'Opacity: 0.5',
+                    opacity: 0.5
+                })
+            })
 
         });
     </script>
