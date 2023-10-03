@@ -19,7 +19,10 @@
         -webkit-overflow-scrolling: touch;
         -ms-overflow-style: -ms-autohiding-scrollbar;
       }
-      .pagination {
+      .field, .label {
+        margin-right: 10px;
+      }
+      .pagination, #reply {
         margin-bottom: 1.5rem;
       }
     </style>
@@ -136,6 +139,42 @@
             <li><a class="pagination-link" aria-label="Goto page 31">31</a></li>
           </ul>
         </nav>
+        <form id="reply">
+          <div class="field">
+            <label class="label" for="comment">Reply to this post:</label>
+            <div class="control">
+              <textarea class="textarea" id="comment" rows="10" placeholder="Write your comment here." required></textarea>
+            </div>
+          </div>
+          <button type="submit" class="button is-primary">Reply</button>
+          <button type="reset" class="button is-danger">Reset</button>
+        </form>
+        <form id="sign-in" class="is-flex-desktop">
+          <div class="field is-flex-desktop">
+            <label class="label" for="email">Email:</label>
+            <div class="control">
+              <input type="email" class="input is-small" placeholder="example@email.com" id="email" required>
+            </div>
+          </div>
+          <div class="field is-flex-desktop">
+            <label class="label" for="password">Password:</label>
+            <div class="control">
+              <input type="password" class="input is-small" id="password" required>
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <button type="submit" class="button is-small is-primary">Login</button>
+            </div>
+          </div>
+          <div class="field">or ...</div>
+          <div class="field">
+            <div class="control">
+              <button type="button" class="button is-small is-info">Create account</button>
+            </div>
+          </div>
+          <p class="small"><a href="#">Have you forgotten your account details?</a></p>
+        </form>
       </div>
     </section>
     <footer class="footer">
