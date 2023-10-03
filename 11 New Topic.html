@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>New Topic - Online Forum</title>
+    <link rel="stylesheet" href="css/bulma.css">
+  </head>
+  <body>
+    <nav class="navbar is-primary" role="navigation" aria-label="Main navigation">
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="index.html" class="navbar-item">Forum</a>
+          <button class="button navbar-burger" data-target="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <div class="navbar-menu" id="navMenu">
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <form>
+                <div class="field has-addons">
+                  <div class="control is-expanded">
+                    <input type="search" name="search" class="input" id="search" placeholder="Search" aria-label="Search">
+                  </div>
+                  <div class="control">
+                    <button type="submit" class="button is-info">Search</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="section">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+          <ul>
+            <li><a href="index.html">Board index</a></li>
+            <li><a href="forums-overview.html">Forum category</a></li>
+            <li><a href="topics-overview.html">Forum name</a></li>
+            <li class="is-active"><a href="#0" aria-current="page">Create new topic</a></li>
+          </ul>
+        </nav>
+        <h2 class="title">Create new topic</h2>
+        <form id="new-post">
+          <div class="field">
+            <label class="label" for="topic">Topic:</label>
+            <div class="control">
+              <input type="text" class="input" id="topic" placeholder="Give your topic a title." required>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label" for="comment">Comment:</label>
+            <div class="control">
+              <textarea class="textarea" id="comment" rows="10" placeholder="Write your comment here." required></textarea>
+            </div>
+          </div>
+          <div class="field">
+            <label class="checkbox">
+              <input type="checkbox" id="checkbox" value="notification">
+              Notify me upon replies.
+            </label>
+          </div>
+          <button type="submit" class="button is-primary">Create topic</button>
+          <button type="reset" class="button is-danger">Reset</button>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <ul class="level">
+          <li class="level-item">&copy; 2017 Web Company, Inc.</li>
+          <li class="level-item">All rights reserved.</li>
+          <li class="level-item"><a href="#">Terms of use and privacy policy</a>.</li>
+        </ul>
+      </div>
+    </footer>
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function () {
+
+        var $navbarBurger = document.getElementById('navToggle');
+
+        $navbarBurger.addEventListener('click', function () {
+          var target = $navbarBurger.dataset.target;
+          var $target = document.getElementById(target);
+
+          $navbarBurger.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+        })
+
+      });
+    </script>
+  </body>
+</html>
