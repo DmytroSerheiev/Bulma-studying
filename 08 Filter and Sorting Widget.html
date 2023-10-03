@@ -20,6 +20,12 @@
         -webkit-overflow-scrolling: touch;
         -ms-overflow-style: -ms-autohiding-scrollbar;
       }
+      .field, .label {
+        margin-right: 10px;
+      }
+      .pagination, #sort-and-filter {
+        margin-bottom: 1.5rem;
+      }
     </style>
   </head>
   <body>
@@ -261,6 +267,53 @@
             <li><a class="pagination-link" aria-label="Goto page 31">31</a></li>
           </ul>
         </nav>
+        <form id="sort-and-filter" class="is-flex-desktop">
+          <div class="field is-flex-desktop">
+            <label class="label" for="select-time">Display posts from previous:</label>
+            <div class="control">
+              <div class="select is-small">
+                <select id="select-time">
+                  <option value="all-posts" selected>All posts</option>
+                  <option value="day">1 day</option>
+                  <option value="week">1 week</option>
+                  <option value="month">1 month</option>
+                  <option value="year">1 year</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="field is-flex-desktop">
+            <label class="label" for="select-sort">Sort by:</label>
+            <div class="control">
+              <div class="select is-small">
+                <select id="select-sort">
+                  <option value="author">Author</option>
+                  <option value="post-time" selected>Post time</option>
+                  <option value="replies">Replies</option>
+                  <option value="subject">Subject</option>
+                  <option value="views">Views</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="field is-flex-desktop">
+            <label class="label" for="select-direction">Sort direction</label>
+            <div class="control">
+              <div class="select is-small">
+                <select id="select-direction">
+                  <option value="post-time">Ascending</option>
+                  <option value="author" selected="">Descending</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <button type="submit" class="button is-small is-primary">Go</button>
+            </div>
+          </div>
+        </form>
+        <a href="new-topic.html" class="button is-large is-primary">New topic</a>
       </div>
     </section>
     <footer class="footer">
